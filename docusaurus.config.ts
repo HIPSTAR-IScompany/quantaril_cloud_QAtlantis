@@ -130,6 +130,11 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
+          href: 'https://github.com/saitoomituru/ZeroRoomLab-manifest',
+          label: 'ZeroRoomLab',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/HIPSTAR-IScompany',
           label: 'GitHub',
           position: 'right',
