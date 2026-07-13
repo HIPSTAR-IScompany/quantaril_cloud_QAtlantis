@@ -32,8 +32,10 @@ jobs:
           test -d build || (echo "build directory missing" && exit 1)
           test -f build/index.html || (echo "index.html missing" && exit 1)
 
-      - name: Content pipeline check (transfer-queue)
-        run: npm run content:check
+      # content:check (転送キュー検証) はCIに含めない: pipeline/transfer-queue.jsonの
+      # source.pathが兄弟リポジトリ(ZeroRoomLab-manifest)を指す設計のため、単独checkoutの
+      # GitHub Actions環境では構造的に「原典が見つかりません」で失敗する。ローカル開発機での
+      # 手動チェック(npm run content:check)として維持する。
 
       - name: Content ledger check (migration coverage)
         run: npm run content:check-ledger
