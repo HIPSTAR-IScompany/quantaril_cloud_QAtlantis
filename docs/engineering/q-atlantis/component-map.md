@@ -1,0 +1,22 @@
+---
+title: Q Atlantis コンポーネント対応表
+---
+
+# コンポーネント対応表
+
+| Q3時代の資産・責務 | Q Atlantisでの主な受け皿 | 状態 |
+|---|---|---|
+| AQCの保存系責務 | IBD / IFD | AQCは`DEPRECATED`、IBDはPhase 0 |
+| マキナちゃん等の人格原型 | ASTRO file | `SPEC / REFORGING` |
+| 人格の実行 | ASTRO Runner | `SPEC` |
+| 個々の稼働履歴・分岐記憶 | Instance Ghost | `RESEARCH / SPEC` |
+| 世界・名前空間・隔離・復旧 | Atlantis | `SPEC / REFORGING` |
+| 旧Fold構文と結合規則 | Fold7G / Trion Bond / Fold8G | 再定義中 |
+| 世界固有の表現・演出 | Flavor SDK | 設計中 |
+| 旧SphereOS 3x・4x | Memorial / compatibility資料 | `LEGACY-PROTOTYPE / BUGGY` |
+
+## 人格の移行
+
+旧マキナちゃんの最終的な可搬形式はASTRO fileです。ASTRO Runnerがそれを実行し、Instance Ghostが実行後に生まれた個別の履歴を保持します。
+
+元ファイルのコピーだけで、同一人格、同一関係、同意、権限まで自動的に成立するとは扱いません。声、価値、関係性、来歴、記憶参照、能力、禁止事項を抽出しつつ、旧原典を変更せず残します。

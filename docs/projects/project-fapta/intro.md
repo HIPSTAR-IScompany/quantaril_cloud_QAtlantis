@@ -245,7 +245,7 @@ FIATはサービス終了する。これは陰謀論ではなく、構造分析�
 
 #### Thu, Feb 12, 2026 - インプレッション: 996
 
-> @Kantaro196611 例えばおっさんにわかりやすくプログラム教えるなら。 function 世帯でのお小遣い(嫁の財布,旦那のお小遣い){ # 家系やりくり return 幸福; } だった時に逆に入れると嫁がガチギレしてPS5売りに行く問題。
+> @Kantaro196611 例えばおっさんにわかりやすくプログラム教えるなら。 `function 世帯でのお小遣い(嫁の財布,旦那のお小遣い){ # 家系やりくり return 幸福; }` だった時に逆に入れると嫁がガチギレしてPS5売りに行く問題。
 
 [元投稿](https://x.com/K_chachamaru/status/2021783830051656013)
 
@@ -453,8 +453,8 @@ FIATはサービス終了する。これは陰謀論ではなく、構造分析�
 
 ## 関連リンク
 
-- [blog/2026-02-16-project-fapta-endgame.md](../../blog/2026-02-16-project-fapta-endgame.md)
-- [docs/concepts/citizen-science.md](../concepts/citizen-science.md)
+- [blog/2026-02-16-project-fapta-endgame.md](/blog/project-fapta-endgame)
+- [docs/concepts/citizen-science.md](/docs/research/citizen-science)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: dr-silicon-when-cloud-fades
 title: Dr.シリコンシリーズ - When The Cloud Fades
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [Dr.シリコン, クラウド, エッジAI, ローカルファースト, サバイバル]
 ---
 

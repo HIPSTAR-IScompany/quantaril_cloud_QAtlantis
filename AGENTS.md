@@ -31,7 +31,7 @@ When context is insufficient, preserve the text, record `UNKNOWN`, and read the 
 Before changing project identity, README language, document placement, status labels, architecture descriptions, or legacy assets, read:
 
 1. [README.md](README.md) — public first view, Q3 shutdown/migration guide, Q Atlantis direction.
-2. [docs/manifest-transfer-notes.md](docs/manifest-transfer-notes.md) — entrypoint to the ZeroRoomLab document system.
+2. [docs/operations/migration/manifest-transfer-notes.md](docs/operations/migration/manifest-transfer-notes.md) — entrypoint to the ZeroRoomLab document system.
 3. ZeroRoomLab-manifest [AGENTS.md](../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/AGENTS.md) — three-layer scope model, evidence hierarchy, bias firewall.
 4. [Quantaril Cloud Atlantis document hub](<../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1531__Quantaril Cloud Atlantis世代 — 文書体系マップ(ハブ).md>) — current stream pointers and status.
 5. [Manifest operating model](../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/docs/operations/manifest-operating-model.ja.md) — note/docs/transfer responsibilities.
@@ -138,13 +138,16 @@ Classify by the work the material needs, not by whether the author uses technica
 
 - `about/` — public world entrance and project identity.
 - `blog/` — narrative, chronology, public articles, replays, first-person voice.
-- `logos/` — raw dialogue, practice records, unrefined source material. Preserve provenance.
-- `docs/note/` — subjective observations and working notes.
-- `docs/concepts/` — normalized concepts and public explanations.
-- `docs/Dev/` — material that has reached a testable or implementable engineering/research issue.
-- `docs/sphere-os/` — Q3/SphereOS lineage, including legacy-persona and prototype documentation.
+- `sources/logos/` — raw dialogue and practice records. Preserve provenance and do not normalize in place.
+- `sources/fuel/` — unrefined mythology, occult, conspiracy-narrative, pain, and observation material awaiting or declining routing.
+- `docs/worlds/` and `docs/practice/` — mythology, theology, spiritual practice, experience records, and world flavor.
+- `docs/philosophy/` — normalized concepts, ethics, sovereignty, and public explanations.
+- `docs/research/` — academic framing, hypotheses, citations, and research comparisons.
+- `docs/engineering/` — testable or implementable engineering issues and Q Atlantis contracts.
+- `docs/legacy/q3-sphereos/` — Q3/SphereOS lineage, including legacy personas, services, incidents, policies, and prototype architecture.
 - `docs/projects/` — project plans, experiments, and implementation records.
-- occult/conspiracy fuel shelves, when introduced — holding and fermentation areas, not trash bins or punishment zones.
+- `docs/operations/` and `migration/` — transfer, provenance, status, redirect, and content-pipeline records.
+- occult/conspiracy fuel shelves are holding and fermentation areas, not trash bins or punishment zones.
 - archive/backup shelves — immutable historical evidence unless an explicit migration task says otherwise.
 
 Routing to science or engineering is optional and conditional. It occurs when a testable fragment has formed, the person requests that route, or a real-world causal/safety claim needs the appropriate workbench.

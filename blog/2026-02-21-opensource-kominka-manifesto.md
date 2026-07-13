@@ -1,7 +1,7 @@
 ---
 slug: opensource-kominka-manifesto
 title: オープンソース古民家 - Open Source Hardware Architecture Japan
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [オープンソース古民家, OSHA, DIY, サバイバル, 縄文技術]
 ---
 

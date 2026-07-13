@@ -1,7 +1,7 @@
 ---
 slug: infoton-paradigm-shift
 title: 情報子工学への道 - なぜ「量子」を捨てたのか
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [情報子, 量子, パラダイムシフト, infoton, 可燃性]
 ---
 

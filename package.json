@@ -2,7 +2,7 @@
   "name": "quantaril",
   "version": "0.1.0",
   "private": true,
-  "description": "観測者 齋藤みつる（ふさもふ統合思念体 第326号）による Fold構文記録プロジェクト",
+  "description": "神話・人格・体験・技術を保存し、Q3からQ Atlantisへ再鍛造する公開文書サイト",
   "author": {
     "name": "齋藤みつる",
     "foldId": "fusamofu_326",
@@ -21,18 +21,20 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "content:list": "node pipeline/scripts/content-pipeline.mjs list",
+    "content:check": "node pipeline/scripts/content-pipeline.mjs check",
+    "content:stage": "node pipeline/scripts/content-pipeline.mjs stage",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
+    "@docusaurus/plugin-client-redirects": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
     "@docusaurus/theme-mermaid": "^3.7.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "docusaurus-plugin-openapi-docs": "^4.3.7",
-    "docusaurus-theme-openapi-docs": "^4.3.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

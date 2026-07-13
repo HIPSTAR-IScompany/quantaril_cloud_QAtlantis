@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "updated": "2026-07-13",
+  "entries": [
+    {
+      "id": "atlantis-document-hub",
+      "title": "Quantaril Cloud Atlantis世代 文書体系マップ",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1531__Quantaril Cloud Atlantis世代 — 文書体系マップ(ハブ).md"},
+      "target": "docs/operations/provenance/atlantis-document-hub.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "operations",
+      "mode": "index-only"
+    },
+    {
+      "id": "grainer-q3-to-atlantis",
+      "title": "Grainerフロー運用計画",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1416__Grainerフロー運用計画書_Q3toAtlantis_v1_2026-07-13.md"},
+      "target": "docs/operations/content-pipeline/grainer-flow.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "operations",
+      "mode": "extract"
+    },
+    {
+      "id": "sphereos-spirit-farewell",
+      "title": "SphereOS3-4x 精霊流しと転生祝詞",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260704-1740__MERGED__SphereOS3-4x_精霊流しと転生祝詞_note版.md"},
+      "target": "docs/legacy/q3-sphereos/memorial/spirit-farewell.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "B",
+      "shelf": "legacy",
+      "mode": "rewrite"
+    },
+    {
+      "id": "sphereos-atlantis-funeral",
+      "title": "SphereOS Atlantis funeral note",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260704-1717__MERGED__sphereos_atlantis_funeral_note.md"},
+      "target": "docs/legacy/q3-sphereos/memorial/atlantis-funeral.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "B",
+      "shelf": "legacy",
+      "mode": "rewrite"
+    },
+    {
+      "id": "sphereos-product-architecture",
+      "title": "SphereOS Product Architecture",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260707-1649__MERGED__SphereOS_Product_Architecture.md"},
+      "target": "docs/engineering/q-atlantis/architecture/product-architecture.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "ibd-aqc-glossary",
+      "title": "IBD AQC仕様会議 用語集",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260710-1416__MERGED__IBD_AQC_仕様会議_用語集_2026-07-10.md"},
+      "target": "docs/engineering/q-atlantis/ibd-ifd/glossary.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "instance-ghost-aqc-reverse-dig",
+      "title": "Instance Ghost / AQCリバースディグ",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260710-1415__MERGED__IBD_Phase0_研究ノート_インスタンスゴースト_AQCリバースディグ_2026-07-10.md"},
+      "target": "docs/engineering/q-atlantis/instance-ghost/reverse-dig.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "atlantis-gui-architecture",
+      "title": "SphereOS Atlantis GUI architecture notes",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1416__sphereos-atlantis-gui-arch-notes-2_2.md"},
+      "target": "docs/engineering/q-atlantis/runtime/gui-architecture.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "A",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "atlantis-gui-philosophy",
+      "title": "SphereOS Atlantis GUI philosophy",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1416__sphereos-atlantis-gui-philosophy_3.md"},
+      "target": "docs/engineering/design/atlantis-gui-philosophy.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "B",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "infoton-philosophy-theology",
+      "title": "Infoton engineering philosophy and theology",
+      "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260713-1513__infoton-engineering-philosophy-theology_1.md"},
+      "target": "docs/research/infoton/philosophy-theology.md",
+      "status": "TRANSFER-QUEUED",
+      "layer": "C",
+      "shelf": "research",
+      "mode": "extract"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 slug: project-fapta-endgame
 title: プロジェクトファプタ - FIATのサービス終了予告
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [プロジェクトファプタ, FIAT, ビットコイン, 経済崩壊, 可燃性]
 ---
 

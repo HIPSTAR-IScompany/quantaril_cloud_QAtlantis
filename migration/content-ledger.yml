@@ -1,0 +1,159 @@
+version: 1
+updated: 2026-07-13
+rules:
+  - original source text is preserved
+  - extracted text retains source provenance
+  - blog URLs remain stable
+  - legacy claims are not silently promoted to current specifications
+
+entries:
+  - old: about/simel/intro.md
+    new: docs/worlds/simulation-cosmology/intro.md
+    role: normalized-worldview
+    layer: B
+  - old: about/simel/host.md
+    new: docs/worlds/simulation-cosmology/host.md
+    role: normalized-worldview
+    layer: B
+  - old: about/simel/business.md
+    new: docs/worlds/simulation-cosmology/business.md
+    role: historical-direction
+    layer: B
+  - old: docs/concepts/soul-sovereignty.md
+    new: docs/philosophy/soul-sovereignty.md
+    role: normalized-philosophy
+    layer: B
+  - old: docs/concepts/techno-animism.md
+    new: docs/philosophy/techno-animism.md
+    role: normalized-philosophy
+    layer: B
+  - old: docs/concepts/harm-reduction.md
+    new: docs/philosophy/harm-reduction.md
+    role: normalized-philosophy
+    layer: B
+  - old: docs/concepts/open-source-manifesto.md
+    new: docs/philosophy/open-source-manifesto.md
+    role: normalized-philosophy
+    layer: B
+  - old: docs/concepts/jomon-vs-yayoi.md
+    new: docs/philosophy/civilization/jomon-vs-yayoi.md
+    role: civilization-narrative
+    layer: B
+  - old: docs/concepts/citizen-science.md
+    new: docs/research/citizen-science.md
+    role: research-framing
+    layer: C
+  - old: docs/concepts/edge-ai-local-first.md
+    new: docs/engineering/design/edge-ai-local-first.md
+    role: engineering-principle
+    layer: A
+  - old: docs/note/oracle-logs.md
+    new: docs/practice/oracle/oracle-logs.md
+    role: experience-record
+    layer: B
+  - old: docs/note/near-death.md
+    new: docs/practice/experience-records/near-death.md
+    role: experience-record
+    layer: B
+  - old: docs/note/channeling-engineering.md
+    new: docs/practice/channeling/channeling-engineering.md
+    role: mixed-source
+    layer: B
+    follow_up: extract engineering fragments without replacing source
+  - old: docs/note/filemaker-structure-philosophy.md
+    new: docs/engineering/design/filemaker-structure-philosophy.md
+    role: design-lineage
+    layer: A
+  - old: docs/note/zen-ui-design.md
+    new: docs/engineering/design/zen-ui-design.md
+    role: design-philosophy
+    layer: A
+  - old: docs/note/logos-structure.md
+    new: docs/worlds/mythology/logos-structure.md
+    role: derived-source-analysis
+    layer: B
+  - old: docs/note/quantum-structural-theology.md
+    new: docs/worlds/theology/quantum-structural-theology.md
+    role: mixed-theology
+    layer: B
+    follow_up: extract research hypotheses without replacing source
+  - old: docs/note/quantum-to-infoton.md
+    new: docs/research/infoton/quantum-to-infoton.md
+    role: research-lineage
+    layer: C
+  - old: docs/note/why-not-openai.md
+    new: docs/legacy/q3-sphereos/services/why-not-openai.md
+    role: historical-decision
+    layer: A
+  - old: docs/Dev/appleaiLLM.md
+    new: docs/research/ai-llm/apple-illusion-of-thinking.ja.md
+    role: research-paper-ja
+    layer: C
+  - old: docs/Dev/appleaiLLM_e.md
+    new: docs/research/ai-llm/apple-illusion-of-thinking.en.md
+    role: research-paper-en
+    layer: C
+  - old: docs/Dev/infoton-engineering.md
+    new: docs/research/infoton/infoton-engineering.md
+    role: research-engineering
+    layer: C
+  - old: docs/sphere-os/intro.md
+    new: docs/legacy/q3-sphereos/overview.md
+    role: legacy-worldview
+    layer: B
+  - old: docs/sphere-os/about.md
+    new: docs/legacy/q3-sphereos/design-philosophy.md
+    role: legacy-philosophy
+    layer: B
+  - old: docs/sphere-os/technology/intro.md
+    new: docs/legacy/q3-sphereos/architecture/science-side-notes.md
+    role: legacy-technical-note
+    layer: C
+  - old: docs/sphere-os/tecnote.mdx
+    new: docs/legacy/q3-sphereos/architecture/technical-overview.mdx
+    role: legacy-architecture
+    layer: A
+  - old: docs/sphere-os/castamgpts/intoro.mdx
+    new: docs/legacy/q3-sphereos/services/custom-gpts-intro.mdx
+    role: legacy-service
+    layer: B
+  - old: docs/sphere-os/castamgpts/sphere-os-3.mdx
+    new: docs/legacy/q3-sphereos/personas/sphere-os-3.mdx
+    role: legacy-persona-source
+    layer: B
+  - old: docs/sphere-os/castamgpts/sphere-os-3Batares.md
+    new: docs/legacy/q3-sphereos/incidents/betares-rescue.md
+    role: legacy-incident-narrative
+    layer: B
+  - old: docs/sphere-os/castamgpts/privacy-policy.md
+    new: docs/legacy/q3-sphereos/policies/privacy-policy-2025-06-03.md
+    role: dated-policy-snapshot
+    layer: A
+  - old: logos/黙示録001.md
+    new: sources/logos/黙示録001.md
+    role: immutable-primary-source
+    layer: B
+  - old: logos/黙示録001_restructured.md
+    new: docs/legacy/q3-sphereos/logos/黙示録001-restructured.md
+    role: derived-public-guide
+    layer: B
+  - old: generate_*.py and analyze_posts.py
+    new: pipeline/legacy/generators/
+    role: disabled-legacy-generator
+    layer: A
+  - old: analysis_output.json and GENERATION_REPORT.md
+    new: pipeline/legacy/artifacts/
+    role: legacy-generation-evidence
+    layer: A
+  - old: ZeroRoomLab-manifest note anchors
+    new: pipeline/transfer-queue.json
+    role: review-first-transfer-queue
+    layer: A
+  - old: blog/*.md
+    new: blog/*.md
+    role: stable-chronology
+    layer: B
+  - old: docs/projects/**
+    new: docs/projects/**
+    role: project-record
+    layer: A

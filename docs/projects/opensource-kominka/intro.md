@@ -628,13 +628,13 @@ sidebar_position: 1
 ## 関連プロジェクト
 
 - [Dr.シリコンシリーズ](../dr-silicon/intro.md)
-- [縄文vs弥生](../../concepts/jomon-vs-yayoi.md)
-- [サバイバル実践](../../practice/survival/)
-- [伝統工芸](../../practice/traditional-craft/)
+- [縄文vs弥生](/docs/philosophy/civilization/jomon-vs-yayoi)
+- [サバイバル実践](/docs/practice/survival/)
+- [伝統工芸](/docs/practice/traditional-craft/)
 
 ## 関連ブログ記事
 
-- [blog/2026-02-21-opensource-kominka-manifesto.md](../../blog/2026-02-21-opensource-kominka-manifesto.md)
+- [blog/2026-02-21-opensource-kominka-manifesto.md](/blog/opensource-kominka-manifesto)
 
 ---
 

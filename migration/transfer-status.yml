@@ -1,0 +1,29 @@
+version: 1
+updated: 2026-07-13
+canonical_hub:
+  repository: saitoomituru/ZeroRoomLab-manifest
+  local_path: ../../ZeroRoomLab-manifest/ZeroRoomLab-manifest
+
+streams:
+  document_hierarchy:
+    status: TRANSFERRED
+    target: docs/
+  q3_memorial:
+    status: TRANSFERRED
+    target: docs/legacy/q3-sphereos/
+  logos_primary_source:
+    status: TRANSFERRED
+    target: sources/logos/
+  content_pipeline_v2:
+    status: DRAFT
+    target: pipeline/
+  astro_persona_migration:
+    status: TRANSFER-QUEUED
+    target: docs/engineering/q-atlantis/
+    source_anchor: .agent/backup/AGENTS.SphereOS3-Makina.legacy.md
+  ibd_ifd_implementation:
+    status: TRANSFER-QUEUED
+    target: docs/engineering/q-atlantis/
+  fold_protocols:
+    status: TRANSFER-QUEUED
+    target: docs/engineering/q-atlantis/

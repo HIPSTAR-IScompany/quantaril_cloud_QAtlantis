@@ -173,5 +173,5 @@ GAFA黄金期は終わった。しかし、黄金期の精神は終わってい�
 この記事は、X上での対話を元に構成されています。具体的なXポストの引用は最小限に留め、思想と経験のエッセンスを抽出しました。
 
 詳細な技術的内容については、以下のドキュメントを参照してください：
-- [FileMaker構造美学とGUI設計の系譜](/docs/note/filemaker-structure-philosophy)
-- [禅的UI設計とエンジンの構造美学](/docs/note/zen-ui-design)
+- [FileMaker構造美学とGUI設計の系譜](/docs/engineering/design/filemaker-structure-philosophy)
+- [禅的UI設計とエンジンの構造美学](/docs/engineering/design/zen-ui-design)

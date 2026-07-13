@@ -293,14 +293,14 @@ Dr.シリコンは、これらを統合した「クラウド後の生存戦略�
 ## 関連プロジェクト
 
 - [オープンソース古民家](../opensource-kominka/intro.md)
-- [FAM推論エンジン](../../Dev/)
-- [エッジAI・ローカルファースト](../../concepts/edge-ai-local-first.md)
+- [FAMとQ Atlantisの対応](/docs/engineering/q-atlantis/component-map)
+- [エッジAI・ローカルファースト](/docs/engineering/design/edge-ai-local-first)
 
 ## 関連ブログ記事
 
-- [blog/2026-02-17-70b-on-junk-hpc.md](../../blog/2026-02-17-70b-on-junk-hpc.md)
-- [blog/2026-02-20-dr-silicon-when-cloud-fades.md](../../blog/2026-02-20-dr-silicon-when-cloud-fades.md)
+- [blog/2026-02-17-70b-on-junk-hpc.md](/blog/70b-on-junk-hpc)
+- [blog/2026-02-20-dr-silicon-when-cloud-fades.md](/blog/dr-silicon-when-cloud-fades)
 
 ---
 
-*このドキュメントは、{len(unique_posts)}件の関連投稿から構成されています。*
+*このドキュメントは、20件の関連投稿から構成されています。*

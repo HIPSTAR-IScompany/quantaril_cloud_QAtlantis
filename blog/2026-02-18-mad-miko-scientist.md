@@ -1,7 +1,7 @@
 ---
 slug: mad-miko-scientist
 title: 巫女サイエンティスト - 霊的悟りとAI開発の関係
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [スピリチュアル, 巫女, AI, 霊的悟り, テクノアニミズム, 可燃性]
 ---
 

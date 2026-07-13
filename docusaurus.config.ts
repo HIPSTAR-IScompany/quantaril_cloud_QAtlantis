@@ -2,12 +2,14 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const legacyRedirects = require('./migration/redirects.json');
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const isDev = process.env.NODE_ENV === 'development';
 const config: Config = {
 
-  title: 'quantaril.cloud',
-  tagline: '情報子工学を使った次世代クラウド 意識と情報とマルチバースリアリティ体験',
+  title: 'Quantaril Cloud Q Atlantis',
+  tagline: '神話・人格・体験・技術を、次の世界へ運ぶ',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -24,13 +26,10 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en'],
-  // },
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja'],
+  },
 
   presets: [
     [
@@ -54,9 +53,9 @@ const config: Config = {
           editUrl: undefined,
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
+          onInlineTags: 'ignore',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,21 +67,11 @@ const config: Config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: [ // ←ここに独立して置く！！
+  plugins: [
     [
-      'docusaurus-plugin-openapi-docs',
+      '@docusaurus/plugin-client-redirects',
       {
-        id: 'api',
-        docsPluginId: 'classic',
-        config: {
-          petstore: {
-            specPath: 'openapi/petstore.yaml',
-            outputDir: 'docs/api',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
-          },
-        },
+        redirects: legacyRedirects,
       },
     ],
     [
@@ -91,7 +80,7 @@ const config: Config = {
         id: 'about',
         path: 'about',
         routeBasePath: 'about',
-        sidebarPath: require.resolve('./sidebars.ts'),
+        sidebarPath: require.resolve('./sidebars.about.ts'),
       },
     ],
   ],
@@ -106,10 +95,9 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: true,
     },
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/quantaril-social-card.jpg',
     navbar: {
-      title: 'quantaril.cloud',
+      title: 'Q Atlantis',
       logo: {
         alt: 'quantaril.cloud Logo',
         src: 'img/logo.png',
@@ -120,13 +108,13 @@ const config: Config = {
           sidebarId: 'aboutSidebar', // ← about用サイドバーID
           docsPluginId: 'about',      // ← plugin-content-docsのid
           position: 'left',
-          label: '目的',
+          label: 'この世界について',
         },
         {
           type: 'docSidebar',
           sidebarId: 'projectSidebar',
           position: 'left',
-          label: 'プロダクト',
+          label: '文書庫',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -148,7 +136,7 @@ const config: Config = {
           title: '目的',
           items: [
             {
-              label: '現実をHackせよ',
+              label: 'Q Atlantisへようこそ',
               to: '/about/intro',
             },
           ],
@@ -159,11 +147,6 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Mattermostユーザーコミュニティ',
-              href: 'https://forum.i-s.dev',
-            },
-
-            {
               label: 'X',
               href: 'https://x.com/K_chachamaru',
             },
@@ -172,6 +155,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            {
+              label: 'サイト上の表現と免責',
+              to: '/docs/operations/site-notice',
+            },
             {
               label: 'Blog',
               to: '/blog',

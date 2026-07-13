@@ -37,7 +37,15 @@
 
 .buttons {
   display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
+.heroPromise {
+  margin: 1.25rem auto 1.5rem;
+  max-width: 46rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}

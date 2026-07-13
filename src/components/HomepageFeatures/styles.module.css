@@ -6,6 +6,16 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
+}
+
+.featureCard {
+  margin-bottom: 3rem;
+}
+
+.featureLink {
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.5rem;
 }

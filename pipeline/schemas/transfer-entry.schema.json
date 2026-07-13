@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://quantaril.cloud/schemas/transfer-entry.schema.json",
+  "title": "Q Atlantis content transfer entry",
+  "type": "object",
+  "required": ["id", "title", "source", "target", "status", "layer", "shelf", "mode"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "required": ["kind", "path"],
+      "properties": {
+        "kind": {"enum": ["local-file", "remote-reference"]},
+        "path": {"type": "string", "minLength": 1},
+        "revision": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "target": {"type": "string", "pattern": "^(docs|blog|about)/"},
+    "status": {"enum": ["DRAFT", "REVIEW", "CANONICAL", "TRANSFER-QUEUED", "TRANSFERRED", "UNKNOWN"]},
+    "layer": {"enum": ["A", "B", "C"]},
+    "shelf": {"type": "string", "minLength": 1},
+    "mode": {"enum": ["copy", "extract", "rewrite", "index-only"]}
+  },
+  "additionalProperties": false
+}

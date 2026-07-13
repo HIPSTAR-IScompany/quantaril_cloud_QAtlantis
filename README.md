@@ -473,10 +473,11 @@ Forkや再利用は、
 
 ### 文書体系とAtlantis移行
 
-- [Transfer notes](docs/manifest-transfer-notes.md) — ZeroRoomLab-manifestから受け取った構造・運用方針
-- `docs/` — 正規化した概念、技術、プロジェクト文書
+- [Transfer notes](docs/operations/migration/manifest-transfer-notes.md) — ZeroRoomLab-manifestから受け取った構造・運用方針
+- `docs/` — 世界観、実践、哲学、研究、工学、プロジェクト、旧世代、運用に分けた公開文書
 - `blog/` — ナラティブ、時系列、公開記事
-- `logos/` — 未蒸留の実践・対話記録
+- `sources/` — 黙示録、燃料、外部取得物などの未加工原典
+- `pipeline/` — ノートから公開文書を作るステージング型の生成導線
 - `about/` — このworldの表紙と入口
 
 詳細な仕様や運用方針は正本への参照で接続し、同じ内容を複数文書へハードコピーしません。このREADMEは、Q3の精霊流し、Q Atlantisの再鍛造、段階的な再配布を案内するサイト全体の表紙です。

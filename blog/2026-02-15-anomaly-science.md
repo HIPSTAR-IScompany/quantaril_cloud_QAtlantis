@@ -1,7 +1,7 @@
 ---
 slug: anomaly-science
 title: 異常値の科学 - 切り捨てられたデータを拾う
-authors: [k_chachamaru]
+authors: [mituru]
 tags: [異常値, 科学, 統計, 可燃性]
 ---
 
