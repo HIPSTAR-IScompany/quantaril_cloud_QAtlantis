@@ -1,47 +1,124 @@
-name: Build & Deploy to VPS (quantaril.cloud)
+name: Build and Deploy Q Atlantis (Sakura shared hosting)
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
+  workflow_dispatch: {}
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js 18
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20' # package.json engines: ">=18.0" を満たすLTS
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Docusaurus
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build (Docusaurus, ja locale)
         run: npm run build
         env:
           NODE_ENV: production
 
-      - name: Deploy build to VPS via rsync
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -avzr --delete --exclude='.git'
-          path: build/
-          remote_path: /home/ubuntu/quantaril/build/
-          remote_host: ${{ secrets.VPS_HOST }}
-          remote_user: ${{ secrets.VPS_USER }}
-          remote_key: ${{ secrets.HAGE_ED }}
+      - name: Verify build output
+        run: |
+          test -d build || (echo "build directory missing" && exit 1)
+          test -f build/index.html || (echo "index.html missing" && exit 1)
 
-      - name: Reload nginx on VPS
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Content pipeline check (transfer-queue)
+        run: npm run content:check
+
+      - name: Content ledger check (migration coverage)
+        run: npm run content:check-ledger
+
+      - name: Redirects check (migration/redirects.json vs build output)
+        run: npm run content:check-redirects
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.HAGE_ED }}
-          script: sudo systemctl reload nginx
+          name: site-build
+          path: build/
+          retention-days: 7
+
+  # ----------------------------------------------------------------------
+  # deploy: さくら共有鯖(普通プラン)向け。Secrets未投入のためコメントアウト。
+  #
+  # 設計方針:
+  #   - 共有鯖側ではビルドや任意コマンド実行を行わない(迷惑テナントムーブになるため)
+  #   - GitHub Actions側でビルド済みの build/ を、SFTP または SCP でファイル転送するのみ
+  #   - sudo/systemctl 等、root権限を前提にしたステップは置かない
+  #     (旧VPS構成にあった nginx reload は、共有ホスティングでは実行できないため廃止)
+  #
+  # みつるさんが行うこと:
+  #   1. 以下のSecretsをリポジトリに登録する
+  #        SAKURA_SFTP_HOST     さくら共有鯖のホスト名
+  #        SAKURA_SFTP_USER     SFTP/SSHログインユーザー名
+  #        SAKURA_SFTP_KEY      秘密鍵(鍵認証の場合)
+  #        SAKURA_REMOTE_PATH   公開ディレクトリの絶対/相対パス
+  #   2. 案A〜Dのうち契約プランに合う1つのコメントを外す
+  #   3. 旧Secrets(HAGE_ED, VPS_HOST, VPS_USER)は死亡済みオーケストレーターヘッドサーバー
+  #      向けの残骸なので、必要なくなったタイミングで削除する(このSecrets管理自体は
+  #      Claude/Codexの対象外、みつるさんの領域)
+  # ----------------------------------------------------------------------
+  #
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   if: github.ref == 'refs/heads/main'
+  #   steps:
+  #     - uses: actions/download-artifact@v4
+  #       with:
+  #         name: site-build
+  #         path: build/
+  #
+  #     # --- 案A: SFTP (鍵認証、ファイル転送のみ・シェルコマンド実行なし) ---
+  #     - name: Deploy via SFTP
+  #       uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+  #       with:
+  #         server: ${{ secrets.SAKURA_SFTP_HOST }}
+  #         username: ${{ secrets.SAKURA_SFTP_USER }}
+  #         ssh_private_key: ${{ secrets.SAKURA_SFTP_KEY }}
+  #         local_path: 'build/*'
+  #         remote_path: ${{ secrets.SAKURA_REMOTE_PATH }}
+  #         sftp_only: true
+  #
+  #     # --- 案B: SCP (鍵認証、ファイルコピーのみ) ---
+  #     # - name: Deploy via SCP
+  #     #   uses: appleboy/scp-action@v0.1.7
+  #     #   with:
+  #     #     host: ${{ secrets.SAKURA_SFTP_HOST }}
+  #     #     username: ${{ secrets.SAKURA_SFTP_USER }}
+  #     #     key: ${{ secrets.SAKURA_SFTP_KEY }}
+  #     #     source: "build/*"
+  #     #     target: ${{ secrets.SAKURA_REMOTE_PATH }}
+  #     #     strip_components: 1
+  #
+  #     # --- 案C: rsync over SSH (鍵認証、差分転送+不要ファイル削除。sudoは使わない) ---
+  #     # - name: Deploy via rsync
+  #     #   uses: burnett01/rsync-deployments@7.0.1
+  #     #   with:
+  #     #     switches: -avzr --delete
+  #     #     path: build/
+  #     #     remote_path: ${{ secrets.SAKURA_REMOTE_PATH }}
+  #     #     remote_host: ${{ secrets.SAKURA_SFTP_HOST }}
+  #     #     remote_user: ${{ secrets.SAKURA_SFTP_USER }}
+  #     #     remote_key: ${{ secrets.SAKURA_SFTP_KEY }}
+  #     #     remote_port: 22
+  #
+  #     # --- 案D: パスワード認証FTP (鍵認証に対応しないプランの場合のフォールバック) ---
+  #     # - name: Deploy via FTP
+  #     #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+  #     #   with:
+  #     #     server: ${{ secrets.SAKURA_FTP_HOST }}
+  #     #     username: ${{ secrets.SAKURA_FTP_USER }}
+  #     #     password: ${{ secrets.SAKURA_FTP_PASSWORD }}
+  #     #     local-dir: build/
+  #     #     server-dir: ${{ secrets.SAKURA_REMOTE_PATH }}

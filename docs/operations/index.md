@@ -11,5 +11,6 @@ description: 原典、正本、生成、転送、URL互換、状態表示を管�
 - [ZeroRoomLab-manifest転送メモ](./migration/manifest-transfer-notes.md)
 - [ノートから公開文書へのパイプライン](./content-pipeline/index.md)
 - [来歴と正本](./provenance/index.md)
+- [既知のnpm脆弱性](./known-vulnerabilities.md)
 
 機械可読な移行記録は、リポジトリ直下の`migration/`にあります。
