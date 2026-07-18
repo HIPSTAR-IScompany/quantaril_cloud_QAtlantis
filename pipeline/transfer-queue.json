@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-13",
+  "updated": "2026-07-18",
   "entries": [
     {
       "id": "atlantis-document-hub",
@@ -100,6 +100,20 @@
       "status": "TRANSFER-QUEUED",
       "layer": "C",
       "shelf": "research",
+      "mode": "extract"
+    },
+    {
+      "id": "context-dimension-atlantis-profile",
+      "title": "Context DimensionとAtlantis World Builder適用差分",
+      "source": {
+        "kind": "remote-reference",
+        "path": "https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/9d40e4211320c711468ed077e5670cd7e29ab7ee/docs/theory/sphere-context-dimension-os.ja.md",
+        "revision": "9d40e4211320c711468ed077e5670cd7e29ab7ee"
+      },
+      "target": "docs/engineering/q-atlantis/context-dimension-world-builder.md",
+      "status": "TRANSFERRED",
+      "layer": "A",
+      "shelf": "engineering",
       "mode": "extract"
     }
   ]

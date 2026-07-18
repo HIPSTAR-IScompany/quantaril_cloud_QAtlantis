@@ -5,7 +5,7 @@ title: ZeroRoomLab-manifestからの転送メモ
 # ZeroRoomLab-manifestからの転送メモ
 
 作成日: 2026-07-13  
-更新日: 2026-07-13
+更新日: 2026-07-18
 
 ## 受け取った方針
 
@@ -21,6 +21,16 @@ title: ZeroRoomLab-manifestからの転送メモ
 - [ZeroRoomLab-manifest](https://github.com/saitoomituru/ZeroRoomLab-manifest)
 
 ローカル開発時の正本候補は、兄弟リポジトリ`ZeroRoomLab-manifest/note/`および`docs/operations/`にあります。公開サイトからローカルファイルへリンクしないため、Web上では正本リポジトリの入口を案内します。
+
+## 2026-07-18 Context Dimension受領票
+
+次のManifest履歴を受領しました。
+
+- `6006dcd`: Context Dimension、D Fold、OAEの横断正本候補
+- `9d40e42`: Context SDK契約、Context定規・因果・OAE横断監査規約
+- `27bac24`: 原典ノートとリポジトリ波及履歴
+
+Q Atlantisは共通本文を複製せず、[Context DimensionとAtlantis World Builder](../../engineering/q-atlantis/context-dimension-world-builder.md)へWorld／Object／Action Fold、World causality、MAGI、World Render／Flavor SDKの適用差分だけを抽出しました。受領はruntime実装完了を意味しません。
 
 ## このサイトの責務
 
