@@ -14,3 +14,5 @@ Q Atlantisが何を作れるかだけでなく、誰のために、どの境界�
 - [縄文vs弥生](./civilization/jomon-vs-yayoi.md)
 
 ここに置く思想は、OSがユーザーへ強制する唯一の教義ではありません。異なる思想とworld flavorが分岐・共存・退出できることを、工学側の境界設計へ要求します。
+
+霊的次元を技術階層へ矮小化せずContext Dimensionとして扱う横断正本候補は、Manifestの[霊的言霊の次元とContext Dimension Fold](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/philosophy/spiritual-context-dimension-and-fold.ja.md)を参照してください。Q Atlantis側では、その意味をWorld BuilderとFlavor SDKへ適用し、本文を複製しません。
