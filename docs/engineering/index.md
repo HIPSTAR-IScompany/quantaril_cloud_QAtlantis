@@ -19,4 +19,11 @@ description: 世界と人格を運ぶための保存、実行、境界、復旧�
 - [FileMaker構造美学とGUI設計の系譜](./design/filemaker-structure-philosophy.md)
 - [禅的UI設計とエンジンの構造美学](./design/zen-ui-design.md)
 
-現在の設計正本と詳細仕様は[ZeroRoomLab-manifest](https://github.com/saitoomituru/ZeroRoomLab-manifest)を参照します。このサイトでは、公開案内、Q3からの互換性、実装状態、配布物との接続を担当します。
+## 情報子工学と人間工学Bridge
+
+- [フルスタックエンジニアのための情報子工学入門](./infoton-engineering-full-stack-guide.md)
+- [bug・ペイン・複合ペインとPain Scouter](./pain-routing-and-pain-scouter.md)
+
+横断原則と正本routerは[ZeroRoomLab-manifest](https://github.com/saitoomituru/ZeroRoomLab-manifest)、Sphere固有の
+意味・World・AIM・OAE・Fold契約と実装状態は[SphereOS Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis)
+を参照します。このサイトでは、公開案内、棚別Presentation、Q3からの互換性、実装状態、配布物との接続を担当します。

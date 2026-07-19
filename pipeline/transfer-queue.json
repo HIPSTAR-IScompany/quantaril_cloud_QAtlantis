@@ -143,6 +143,34 @@
       "layers": ["A", "B", "C"],
       "shelf": "engineering",
       "mode": "extract"
+    },
+    {
+      "id": "infoton-engineering-full-stack-guide",
+      "title": "フルスタックエンジニアのための情報子工学入門",
+      "source": {
+        "kind": "local-file",
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/docs/theory/infoton-engineering.ja.md",
+        "revision": "2fd5f14"
+      },
+      "target": "docs/engineering/infoton-engineering-full-stack-guide.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "pain-routing-and-pain-scouter",
+      "title": "bug・ペイン・複合ペインとPain Scouter",
+      "source": {
+        "kind": "local-file",
+        "path": "../../pain-scouter-assessment/pain-scouter-assessment/pain-scouter-assessment/SKILL.md",
+        "revision": "b37e547"
+      },
+      "target": "docs/engineering/pain-routing-and-pain-scouter.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
     }
   ]
 }

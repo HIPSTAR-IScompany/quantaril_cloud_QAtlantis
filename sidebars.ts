@@ -86,6 +86,8 @@ const sidebars: SidebarsConfig = {
         'engineering/design/edge-ai-local-first',
         'engineering/design/filemaker-structure-philosophy',
         'engineering/design/zen-ui-design',
+        'engineering/infoton-engineering-full-stack-guide',
+        'engineering/pain-routing-and-pain-scouter',
       ],
     },
     {
