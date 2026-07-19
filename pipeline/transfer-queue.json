@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-18",
+  "updated": "2026-07-20",
   "entries": [
     {
       "id": "atlantis-document-hub",
@@ -113,6 +113,34 @@
       "target": "docs/engineering/q-atlantis/context-dimension-world-builder.md",
       "status": "TRANSFERRED",
       "layer": "A",
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "cross-shelf-meaning-bridge",
+      "title": "スピ・神学・哲学・ゲーマー・工学棚の相互翻訳とQ Atlantis配信",
+      "source": {
+        "kind": "local-file",
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260720-0843__スピ神学哲学ゲーマー工学棚の相互翻訳とQ_Atlantis配信ブレスト.ja.md",
+        "revision": "0c87af3"
+      },
+      "target": "docs/operations/cross-shelf-publication-register.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "operations",
+      "mode": "extract"
+    },
+    {
+      "id": "atlantis-aim-fold-human-loop-bridge",
+      "title": "AIM因果同期・Fold深度・Human-is-the-loop・暫定Meaning Bridge",
+      "source": {
+        "kind": "local-file",
+        "path": "../../Sphere-aae/SphereOS-Atlantis/note/20260720-0846__AIM因果同期_Fold深度_Human_is_the_loop_暫定Meaning_Bridge.ja.md",
+        "revision": "1a86478"
+      },
+      "target": "docs/engineering/q-atlantis/aim-fold-human-loop.md",
+      "status": "TRANSFER-QUEUED",
+      "layers": ["A", "B", "C"],
       "shelf": "engineering",
       "mode": "extract"
     }

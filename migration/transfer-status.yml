@@ -1,5 +1,5 @@
 version: 1
-updated: 2026-07-18
+updated: 2026-07-20
 canonical_hub:
   repository: saitoomituru/ZeroRoomLab-manifest
   local_path: ../../ZeroRoomLab-manifest/ZeroRoomLab-manifest
@@ -31,4 +31,15 @@ streams:
     status: TRANSFERRED
     target: docs/engineering/q-atlantis/context-dimension-world-builder.md
     source_revision: 9d40e4211320c711468ed077e5670cd7e29ab7ee
+    implementation_status: NOT_IMPLEMENTED
+  cross_shelf_publication_register:
+    status: TRANSFERRED
+    target: docs/operations/cross-shelf-publication-register.md
+    source_revision: 0c87af3
+    content_status: ALPHA
+  aim_fold_human_loop_bridge:
+    status: TRANSFER-QUEUED
+    target: docs/engineering/q-atlantis/aim-fold-human-loop.md
+    source_revision: 1a86478
+    content_status: ALPHA-SPEC-CANDIDATE
     implementation_status: NOT_IMPLEMENTED

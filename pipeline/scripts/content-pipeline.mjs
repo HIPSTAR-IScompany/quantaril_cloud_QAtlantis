@@ -27,6 +27,25 @@ function resolveSource(sourcePath) {
     : path.resolve(repositoryRoot, sourcePath);
 }
 
+function resolveLayers(entry, id) {
+  if (entry.layer !== undefined && entry.layers !== undefined) {
+    fail(`${id}: layerとlayersは同時に指定できません`);
+  }
+
+  const layers = entry.layers ?? (entry.layer === undefined ? [] : [entry.layer]);
+  if (!Array.isArray(layers) || layers.length === 0) {
+    fail(`${id}: layerまたはlayersが必要です`);
+  }
+
+  const uniqueLayers = new Set(layers);
+  if (uniqueLayers.size !== layers.length) fail(`${id}: layersが重複しています`);
+  for (const layer of layers) {
+    if (!allowedLayers.has(layer)) fail(`${id}: layerが不正です: ${layer}`);
+  }
+
+  return layers;
+}
+
 async function loadRegistry() {
   const registry = JSON.parse(await readFile(registryPath, 'utf8'));
   if (registry.version !== 1 || !Array.isArray(registry.entries)) {
@@ -50,7 +69,7 @@ async function validateRegistry(registry) {
     ids.add(entry.id);
 
     if (!allowedStatuses.has(entry.status)) fail(`${id}: statusが不正です`);
-    if (!allowedLayers.has(entry.layer)) fail(`${id}: layerが不正です`);
+    resolveLayers(entry, id);
     if (!allowedModes.has(entry.mode)) fail(`${id}: modeが不正です`);
     if (!entry.source || !allowedSourceKinds.has(entry.source.kind)) fail(`${id}: source.kindが不正です`);
     requireText(entry.source.path, 'source.path', id);
@@ -75,7 +94,7 @@ async function validateRegistry(registry) {
 
 function printList(entries) {
   for (const entry of entries) {
-    console.log(`${entry.id}\t${entry.status}\tLayer ${entry.layer}\t${entry.mode}\t${entry.target}`);
+    console.log(`${entry.id}\t${entry.status}\tLayer ${resolveLayers(entry, entry.id).join('/')}\t${entry.mode}\t${entry.target}`);
   }
 }
 

@@ -142,6 +142,7 @@ const sidebars: SidebarsConfig = {
         'operations/migration/index',
         'operations/migration/manifest-transfer-notes',
         'operations/content-pipeline/index',
+        'operations/cross-shelf-publication-register',
         'operations/provenance/index',
         'operations/site-notice',
       ],
