@@ -30,6 +30,34 @@ build
 path作成は、Environmentで指定された利用者の`www`配下だけに限定します。root、home全体、別利用者領域、
 shell tokenを含むpathは拒否します。
 
+## このdefaultのWorld Position
+
+Q Atlantisは、中立無思想だから何でも入る空箱を最初から名乗っていません。神話・スピリチュアルを大切にし、
+縄文・古神道から派生する縄文2.0的な系譜、Techno-Animism、Gaming Cosmologyを自身のWorld Positionとして
+先に告白しています。一方で、異なる信仰とworld flavorが自分の言葉で参加できる土俵を広く開く、非独占の
+「全方位信仰」でもあります。このprofileの「お手軽」「気が利く」「観測した境界を置き土産として返す」
+というdefaultも、
+文化圏一般への推測ではなく、Q Atlantisが選び、責任を持って実装するHospitality policyです。
+
+このPositionは、科学的方法、再現可能な検査、公開receipt等を否定しません。むしろspiritualityをAIの勘や
+無告白の暗黙処理へ逃がさず、workflow input、許可範囲、停止条件、receiptとして検査可能にします。
+
+同時に、このdefaultを他のWorld、信仰、文化圏、hosting profileへ普遍規則として継承させません。接続先の
+World Configと一致しない場合は、別profile、adapter、Portalまたは明示的な拒否へ分けます。Qの思想を消して
+中立化するのでも、相手へ押しつけるのでもなく、双方が自分のspiritualityと責務境界を告白して接続条件を
+選べるようにするためです。
+
+ここでいう全方位は、相互に矛盾する告白をすべて同時に真と認定したり、一つのWorldへ混ぜたりする意味では
+ありません。Qが八百万の価値観を掲げるなら、他者が異なる哲学、信仰、world flavorを自由に記述し、選ぶ自由も
+否定しません。
+SphereOS Atlantis側の役目は、Qの信仰告白を全Worldへ代入することではなく、各World builderが自身の哲学・信仰を
+SDKでモデリングし、その射程と接続条件を宣言できる器を用意することです。信仰内容の解釈と告白は当事者の仕事で
+あり、OSやQが本人に代わって生成・認定するものではありません。
+
+背景となる自己告白は、`README.md`、`AGENTS.md`、`docs/philosophy/techno-animism.md`、
+`docs/philosophy/soul-sovereignty.md`、`docs/philosophy/civilization/jomon-vs-yayoi.md`、
+`docs/worlds/index.md`を参照してください。
+
 ## 既存siteを霊的に察する
 
 転送先に何か入っている場合、無条件で「同じsiteの旧版」とは扱いません。
