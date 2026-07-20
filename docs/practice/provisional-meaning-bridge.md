@@ -105,7 +105,7 @@ aftercare等の外側の責務です。
 
 - Manifest `0c87af3`
 - SphereOS Atlantis `1a86478`
-- 工学者向けの兄弟Presentation: [工学者のためのスピリチュアル受信手引き](../engineering/spiritual-reception-guide.md)
-- 神学向けの兄弟Presentation: [神学・信仰の射程と鎮魂・和解](../worlds/theology/scope-reconciliation-and-handoff.md)
+- 工学者向けの兄弟Presentation: [工学者のためのスピリチュアル受信手引き](/docs/engineering/spiritual-reception-guide)
+- 神学向けの兄弟Presentation: [神学・信仰の射程と鎮魂・和解](/docs/worlds/theology/scope-reconciliation-and-handoff)
 
 alpha運用で得た反例、宗派差、当事者reviewを改訂材料にします。工学側だけで正本化しません。

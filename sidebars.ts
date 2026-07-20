@@ -9,6 +9,19 @@ const sidebars: SidebarsConfig = {
     'start/intro',
     {
       type: 'category',
+      label: '読者・参加者別の入口',
+      link: {type: 'doc', id: 'start/entrances/index'},
+      items: [
+        'start/entrances/spiritual-practitioner',
+        'start/entrances/theologian',
+        'start/entrances/philosopher',
+        'start/entrances/gamer-playtester',
+        'start/entrances/engineer',
+        'start/entrances/infoton-engineer',
+      ],
+    },
+    {
+      type: 'category',
       label: '神話・世界観',
       link: {type: 'doc', id: 'worlds/index'},
       items: [
