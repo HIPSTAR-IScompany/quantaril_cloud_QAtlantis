@@ -22,7 +22,7 @@ title: 実装・移行ステータス
 | Atlantis | `SPEC / REFORGING` | 世界、隔離、復旧、権限の設計 |
 | Sphere Context Dimension OS共通契約 | `REVIEW / CANONICAL-CANDIDATE` | Manifest正本候補へ参照接続 |
 | Atlantis World Builder profile | `DRAFT / SPEC / NOT IMPLEMENTED` | World Registry、D Fold、Access Map、OAEの適用境界を定義 |
-| Fold7G / Trion Bond | `DRAFT / RESEARCH / RUNTIME NOT IMPLEMENTED` | G/D/Agency/Unfold契約を検討 |
+| Fold7G / Trion Bond | `DRAFT / RESEARCH / RUNTIME NOT IMPLEMENTED` | G/D/Agency/DeFold契約を検討 |
 | Fold8G | `UNKNOWN / CONTRACT NOT EXTRACTED` | 旧Sourceから責務差分を抽出・反証する |
 | MAGI 3D audit Fold profile | `DRAFT / sidecar設計` | 三Positionを多数決にせずInterpretation OAEへ接続 |
 | cloudからedgeへのmodule群 | `DESIGN-UNDER-REVIEW / RESOURCE-WAIT` | hardware、費用、実装担当を募る |

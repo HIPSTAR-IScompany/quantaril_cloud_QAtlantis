@@ -136,6 +136,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'legacy/q3-sphereos/architecture/technical-overview',
             'legacy/q3-sphereos/architecture/science-side-notes',
+            'legacy/q3-sphereos/architecture/non-destructive-operation-defold-crosswalk',
           ],
         },
         {

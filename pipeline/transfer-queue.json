@@ -173,12 +173,12 @@
       "mode": "extract"
     },
     {
-      "id": "atlantis-fold-unfold-agency-drift",
-      "title": "Fold深度・減圧Unfold・Agency driftと棚別デバッグ研究ノート",
+      "id": "atlantis-fold-defold-agency-drift",
+      "title": "Fold深度・減圧DeFold・Agency driftと棚別デバッグ研究ノート",
       "source": {
         "kind": "local-file",
-        "path": "../../Sphere-aae/SphereOS-Atlantis/note/20260720-1518__Fold深度_減圧Unfold_Agencyドリフトと棚別デバッグ研究ノート.ja.md",
-        "revision": "1e9c3c3"
+        "path": "../../Sphere-aae/SphereOS-Atlantis/note/20260720-1518__Fold深度_減圧DeFold_Agencyドリフトと棚別デバッグ研究ノート.ja.md",
+        "revision": "b03b40b"
       },
       "target": "docs/engineering/q-atlantis/fold7g-fold8g-research-map.md",
       "status": "TRANSFERRED",
@@ -187,12 +187,12 @@
       "mode": "extract"
     },
     {
-      "id": "manifest-fold-unfold-cross-shelf-receipt",
-      "title": "Fold深度事故・減圧Unfoldと棚別デバッグ横断受領票",
+      "id": "manifest-fold-defold-cross-shelf-receipt",
+      "title": "Fold深度事故・減圧DeFoldと棚別デバッグ横断受領票",
       "source": {
         "kind": "local-file",
-        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260720-1518__Fold深度事故_減圧Unfoldと棚別デバッグ横断受領票.ja.md",
-        "revision": "3ed558d"
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260720-1518__Fold深度事故_減圧DeFoldと棚別デバッグ横断受領票.ja.md",
+        "revision": "b73cdf8"
       },
       "target": "docs/operations/provenance/source-mining-2026-07-20.md",
       "status": "TRANSFERRED",

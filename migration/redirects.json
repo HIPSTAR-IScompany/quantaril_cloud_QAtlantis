@@ -32,5 +32,6 @@
   {"from": "/docs/sphere-os/castamgpts/sphere-os-3", "to": "/docs/legacy/q3-sphereos/personas/sphere-os-3"},
   {"from": "/docs/sphere-os/castamgpts/sphere-os-3Batares", "to": "/docs/legacy/q3-sphereos/incidents/betares-rescue"},
   {"from": "/docs/sphere-os/castamgpts/privacy-policy", "to": "/docs/legacy/q3-sphereos/policies/privacy-policy-2025-06-03"},
-  {"from": "/docs/manifest-transfer-notes", "to": "/docs/operations/migration/manifest-transfer-notes"}
+  {"from": "/docs/manifest-transfer-notes", "to": "/docs/operations/migration/manifest-transfer-notes"},
+  {"from": "/dev", "to": "/"}
 ]

@@ -90,7 +90,7 @@ description: 信仰上の解釈を保持しながら、他宗派・工学・医�
 - 別宗派、別World、無宗教へ戻るPortalがあるか
 - 終端後に鎮魂、和解、記録、aftercareが必要か
 
-これは信仰がsystem authorityを奪うことではありません。Controlled Unfoldへ、人間の意味と関係の
+これは信仰がsystem authorityを奪うことではありません。Controlled DeFoldへ、人間の意味と関係の
 減圧条件を渡す仕事です。
 
 ## まつりと「後の祭り」
