@@ -11,6 +11,22 @@ Q Atlantisの`Sakura Matchbox` profileは、さくらの共有ホスティング
 GitHub-hosted runnerで静的siteをbuildし、共有hostへ転送し、公開URLから同じdeployment receiptを取得できる
 ところまでを一つのデプロイ体験として扱います。
 
+## branchと発火境界
+
+```text
+push dev          -> build / typecheck / ledger / redirects / artifact
+pull request main -> build / typecheck / ledger / redirects / artifact
+push main         -> 同じbuild gate -> Sakura production deploy -> 公開receipt観測
+workflow_dispatch -> 選択branchをbuild。mainだけproduction deploy可能
+```
+
+日常作業は`dev`へ細かくpushし、GitHub-hosted runnerでbuild可能性を確認します。`dev`はSSH secretへ触れず、
+共有hostへ転送しません。本番は`main`へmergeされたcommitだけが発火します。preview環境は今回のMVPに含めず、
+ローカル`npm run build`または`npm run start`を使います。
+
+将来参加者が増えた場合は、GitHubのbranch rule、required check、merge権限、Environment reviewerで発火権限を
+絞れます。現在は疎結合なDocusaurus CI/CDとして、fork側でも同じbuild commandを再利用できます。
+
 ## お手軽の意味
 
 ここでいう「お手軽」は、入力項目が少ないことだけではありません。デプロイ責務の内側にある不足を検出し、
@@ -120,3 +136,6 @@ DNS、TLS証明書、さくら管理画面のdomain mapping、`.htaccess`をwork
 2026-07-20のmaintainer端末からの限定観測では、password認証を無効化した公開鍵SSH、SFTP往復、SCP往復、
 bytes一致、probe削除まで成功しました。これはGitHub-hosted runnerからの成功やproduction公開を保証しません。
 Actionsのrun receiptを公開URLから取得できた時点で、別の`PUBLICATION_OBSERVED`を記録します。
+
+2026-07-20に`dev`をbuild-only、`main`をproduction deployとして分離するworkflow更新を追加しました。
+GitHub-hosted runner上の結果は、対象commitのActions runで確認し、この段落をreceiptに合わせて更新します。

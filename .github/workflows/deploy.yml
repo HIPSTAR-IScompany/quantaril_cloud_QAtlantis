@@ -2,6 +2,8 @@ name: Build and Deploy Q Atlantis (Sakura shared hosting)
 
 on:
   push:
+    branches: [main, dev]
+  pull_request:
     branches: [main]
   workflow_dispatch:
     inputs:
@@ -63,7 +65,7 @@ jobs:
     name: Deploy and observe publication
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     concurrency:
       group: q-atlantis-sakura-matchbox-production
       cancel-in-progress: false
