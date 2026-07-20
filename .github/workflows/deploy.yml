@@ -3,7 +3,13 @@ name: Build and Deploy Q Atlantis (Sakura shared hosting)
 on:
   push:
     branches: [main]
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      adopt_existing_directory:
+        description: 'receiptのない既存ディレクトリをQ Atlantis配置先として明示的に引き取る'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -12,9 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20' # package.json engines: ">=18.0" を満たすLTS
           cache: 'npm'
@@ -47,7 +53,7 @@ jobs:
         run: npm run content:check-redirects
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-build
           path: build/
@@ -69,10 +75,11 @@ jobs:
       SAKURA_USER: ${{ vars.SAKURA_USER }}
       SAKURA_DEPLOY_PATH: ${{ vars.SAKURA_DEPLOY_PATH }}
       PUBLICATION_URL: https://quantaril.cloud
+      ADOPT_EXISTING_DIRECTORY: ${{ inputs.adopt_existing_directory || false }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: site-build
           path: build/
@@ -169,6 +176,56 @@ jobs:
             echo "DEPLOY_PATH_PERMISSION_DENIED: could not create or write ${SAKURA_DEPLOY_PATH}" >&2
             exit 1
           fi
+
+      - name: Confirm target identity before overwrite
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh_options=(
+            -i "$SSH_KEY_PATH"
+            -o IdentitiesOnly=yes
+            -o BatchMode=yes
+            -o PreferredAuthentications=publickey
+            -o PasswordAuthentication=no
+            -o KbdInteractiveAuthentication=no
+            -o StrictHostKeyChecking=yes
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_PATH"
+            -o ConnectTimeout=15
+          )
+          remote_receipt="$SAKURA_DEPLOY_PATH/.well-known/q-atlantis-deployment.json"
+          existing_receipt="$RUNNER_TEMP/q-atlantis-existing-deployment.json"
+
+          if ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" "test -f '$remote_receipt'"; then
+            scp "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST:$remote_receipt" "$existing_receipt"
+            EXISTING_RECEIPT="$existing_receipt" node --input-type=module -e '
+              import fs from "node:fs";
+              const receipt = JSON.parse(fs.readFileSync(process.env.EXISTING_RECEIPT, "utf8"));
+              if (receipt.schema !== "q-atlantis-publication-receipt/1") {
+                console.error("DEPLOY_TARGET_IDENTITY_CONFLICT: receipt schema differs");
+                process.exit(1);
+              }
+              if (receipt.repository !== process.env.GITHUB_REPOSITORY) {
+                console.error("DEPLOY_TARGET_IDENTITY_CONFLICT: receipt repository differs");
+                process.exit(1);
+              }
+              console.log(`DEPLOY_TARGET_MATCHED: previous commit ${receipt.commit ?? "unknown"}`);
+            '
+            exit 0
+          fi
+
+          if ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" \
+            "find '$SAKURA_DEPLOY_PATH' -mindepth 1 -maxdepth 1 -print -quit | grep -q ."; then
+            if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$ADOPT_EXISTING_DIRECTORY" == "true" ]]; then
+              echo "DEPLOY_TARGET_ADOPTED: explicit -y equivalent accepted this directory"
+              exit 0
+            fi
+
+            echo "DEPLOY_TARGET_IDENTITY_UNKNOWN: directory is non-empty but has no Q Atlantis receipt" >&2
+            echo "Inspect it, then rerun workflow_dispatch with adopt_existing_directory=true to accept overwrite." >&2
+            exit 1
+          fi
+
+          echo "DEPLOY_TARGET_EMPTY: safe first installation"
 
       - name: Upload static site over SCP/SFTP transport
         shell: bash
