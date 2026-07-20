@@ -166,6 +166,7 @@ const sidebars: SidebarsConfig = {
         'operations/cross-shelf-publication-register',
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
+        'operations/provenance/source-mining-2026-07-20',
         'operations/site-notice',
       ],
     },
