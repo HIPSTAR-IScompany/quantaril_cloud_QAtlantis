@@ -21,6 +21,7 @@ description: 世界と人格を運ぶための保存、実行、境界、復旧�
 
 ## 情報子工学と人間工学Bridge
 
+- [工学者のためのスピリチュアル受信手引き](./spiritual-reception-guide.md)
 - [フルスタックエンジニアのための情報子工学入門](./infoton-engineering-full-stack-guide.md)
 - [bug・ペイン・複合ペインとPain Scouter](./pain-routing-and-pain-scouter.md)
 

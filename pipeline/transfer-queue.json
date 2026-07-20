@@ -139,7 +139,7 @@
         "revision": "1a86478"
       },
       "target": "docs/engineering/q-atlantis/aim-fold-human-loop.md",
-      "status": "TRANSFER-QUEUED",
+      "status": "TRANSFERRED",
       "layers": ["A", "B", "C"],
       "shelf": "engineering",
       "mode": "extract"

@@ -38,10 +38,10 @@ streams:
     source_revision: 0c87af3
     content_status: ALPHA
   aim_fold_human_loop_bridge:
-    status: TRANSFER-QUEUED
+    status: TRANSFERRED
     target: docs/engineering/q-atlantis/aim-fold-human-loop.md
     source_revision: 1a86478
-    content_status: ALPHA-SPEC-CANDIDATE
+    content_status: ALPHA
     implementation_status: NOT_IMPLEMENTED
   infoton_engineering_full_stack_guide:
     status: TRANSFERRED

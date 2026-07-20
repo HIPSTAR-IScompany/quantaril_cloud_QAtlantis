@@ -23,6 +23,8 @@ const sidebars: SidebarsConfig = {
         },
         'worlds/mythology/logos-structure',
         'worlds/theology/quantum-structural-theology',
+        'worlds/theology/scope-reconciliation-and-handoff',
+        'worlds/gaming/playtest-fairness-and-human-loop',
       ],
     },
     {
@@ -30,6 +32,7 @@ const sidebars: SidebarsConfig = {
       label: '体験・信仰・実践',
       link: {type: 'doc', id: 'practice/index'},
       items: [
+        'practice/provisional-meaning-bridge',
         'practice/oracle/oracle-logs',
         'practice/channeling/channeling-engineering',
         'practice/experience-records/near-death',
@@ -46,6 +49,7 @@ const sidebars: SidebarsConfig = {
         'philosophy/soul-sovereignty',
         'philosophy/techno-animism',
         'philosophy/harm-reduction',
+        'philosophy/human-is-loop-and-scope-non-monopoly',
         'philosophy/open-source-manifesto',
         'philosophy/civilization/jomon-vs-yayoi',
       ],
@@ -79,6 +83,7 @@ const sidebars: SidebarsConfig = {
           link: {type: 'doc', id: 'engineering/q-atlantis/index'},
           items: [
             'engineering/q-atlantis/context-dimension-world-builder',
+            'engineering/q-atlantis/aim-fold-human-loop',
             'engineering/q-atlantis/component-map',
             'engineering/q-atlantis/status',
           ],
@@ -86,6 +91,7 @@ const sidebars: SidebarsConfig = {
         'engineering/design/edge-ai-local-first',
         'engineering/design/filemaker-structure-philosophy',
         'engineering/design/zen-ui-design',
+        'engineering/spiritual-reception-guide',
         'engineering/infoton-engineering-full-stack-guide',
         'engineering/pain-routing-and-pain-scouter',
       ],
