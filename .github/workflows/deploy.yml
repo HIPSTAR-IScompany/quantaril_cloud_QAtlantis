@@ -214,7 +214,7 @@ jobs:
           fi
 
           if ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" \
-            "find '$SAKURA_DEPLOY_PATH' -mindepth 1 -maxdepth 1 -print -quit | grep -q ."; then
+            "ls -A '$SAKURA_DEPLOY_PATH' | grep -q ."; then
             if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$ADOPT_EXISTING_DIRECTORY" == "true" ]]; then
               echo "DEPLOY_TARGET_ADOPTED: explicit -y equivalent accepted this directory"
               exit 0
