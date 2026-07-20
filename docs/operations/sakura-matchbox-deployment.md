@@ -100,14 +100,14 @@ Environment名は`sakura-matchbox-production`です。
 | 種別 | 名前 | 責務 |
 |---|---|---|
 | Environment secret | `HAGE_ED` | SSH秘密鍵。値をlog、文書、artifactへ出さない |
-| Environment secret | `SAKURA_SSH_KEY_PASSPHRASE` | `HAGE_ED`自体が暗号化されている場合だけ、その鍵をrunner内の`ssh-agent`へunlockする。任意 |
+| Environment secret | `HAGE_ED_PASSPHRASE` | `HAGE_ED`自体が暗号化されている場合だけ、その鍵をrunner内の`ssh-agent`へunlockする。任意 |
 | Environment variable | `SAKURA_HOST` | 初期domain等のSSH host |
 | Environment variable | `SAKURA_USER` | SSH初期account |
 | Environment variable | `SAKURA_DEPLOY_PATH` | `www`またはその子に限定した配置先 |
 
 server accountのpasswordはworkflowの入力にしません。公開鍵認証だけを要求し、password認証と
 keyboard-interactive認証を明示的に無効化します。ただし、秘密鍵ファイル自体のpassphraseはserver passwordと
-別物です。暗号化鍵を使う場合は`SAKURA_SSH_KEY_PASSPHRASE`を別secretとして供給し、runner内の`ssh-agent`だけで
+別物です。暗号化鍵を使う場合は`HAGE_ED_PASSPHRASE`を別secretとして供給し、runner内の`ssh-agent`だけで
 unlockします。値はrepository、log、artifactへ保存しません。
 
 保管場所と脅威境界の判断は[SSH鍵passphrase保管判断](./provenance/ssh-key-passphrase-storage-2026-07-20.md)に

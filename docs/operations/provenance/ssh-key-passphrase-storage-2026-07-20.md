@@ -14,14 +14,14 @@ description: Sakura production用SSH秘密鍵のpassphraseをGitHub Actionsへ�
 
 暗号化済み`HAGE_ED`を維持する場合、passphraseはGitHub repositoryの
 `sakura-matchbox-production` Environmentへ、Environment secret
-`SAKURA_SSH_KEY_PASSPHRASE`としてmaintainer本人が登録します。
+`HAGE_ED_PASSPHRASE`としてmaintainer本人が登録します。
 
 ```text
 Repository Settings
   -> Environments
   -> sakura-matchbox-production
   -> Environment secrets
-  -> SAKURA_SSH_KEY_PASSPHRASE
+  -> HAGE_ED_PASSPHRASE
 ```
 
 Repository variable、Environment variable、`.env`、`.ssh/config`のcommit、workflow_dispatch input、Issue本文へは
@@ -50,7 +50,7 @@ workflow変更のreview、`main`制限、Environment保護、Action revision、d
 
 現在の少人数alphaでは、次を順に採用します。
 
-1. `SAKURA_SSH_KEY_PASSPHRASE`をEnvironment secretとして登録する。
+1. `HAGE_ED_PASSPHRASE`をEnvironment secretとして登録する。
 2. Deployment branches and tagsをselected branch `main`だけへ限定する。
 3. team reviewerを置ける人数になったらrequired reviewerを有効にする。
 4. 管理者bypassは緊急復旧手順が固まった後に無効化を検討する。

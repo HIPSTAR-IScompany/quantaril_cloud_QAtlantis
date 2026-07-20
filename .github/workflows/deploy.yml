@@ -119,7 +119,7 @@ jobs:
         shell: bash
         env:
           SSH_PRIVATE_KEY: ${{ secrets.HAGE_ED }}
-          SSH_KEY_PASSPHRASE: ${{ secrets.SAKURA_SSH_KEY_PASSPHRASE }}
+          SSH_KEY_PASSPHRASE: ${{ secrets.HAGE_ED_PASSPHRASE }}
         run: |
           set -euo pipefail
           if [[ -z "${SSH_PRIVATE_KEY:-}" ]]; then
@@ -146,9 +146,9 @@ jobs:
             SSH_ASKPASS="$ssh_askpass_path" SSH_ASKPASS_REQUIRE=force DISPLAY=q-atlantis:0 \
             ssh-add "$ssh_key_path" < /dev/null; then
             if [[ -z "${SSH_KEY_PASSPHRASE:-}" ]]; then
-              echo "DEPLOY_KEY_PASSPHRASE_REQUIRED: HAGE_ED is encrypted; configure SAKURA_SSH_KEY_PASSPHRASE or replace it with a deployment-only unencrypted key" >&2
+              echo "DEPLOY_KEY_PASSPHRASE_REQUIRED: HAGE_ED is encrypted; configure HAGE_ED_PASSPHRASE or replace it with a deployment-only unencrypted key" >&2
             else
-              echo "DEPLOY_KEY_UNLOCK_FAILED: SAKURA_SSH_KEY_PASSPHRASE did not unlock HAGE_ED" >&2
+              echo "DEPLOY_KEY_UNLOCK_FAILED: HAGE_ED_PASSPHRASE did not unlock HAGE_ED" >&2
             fi
             exit 1
           fi

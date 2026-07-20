@@ -39,7 +39,7 @@ workflowは次の二方式を受け付けます。
 
 1. deployment専用のpassphraseなし秘密鍵を`HAGE_ED`へ置く。
 2. 暗号化された`HAGE_ED`を維持し、Environment secret
-   `SAKURA_SSH_KEY_PASSPHRASE`を追加してrunner内の`ssh-agent`でunlockする。
+   `HAGE_ED_PASSPHRASE`を追加してrunner内の`ssh-agent`でunlockする。
 
 鍵とpassphraseの値は、Note、commit、log、artifactへ記録しません。設定後に`dev`の修正を`main`へ統合し、
 新しいrunで接続以降を観測します。今回の失敗runを再解釈して成功扱いにはしません。
