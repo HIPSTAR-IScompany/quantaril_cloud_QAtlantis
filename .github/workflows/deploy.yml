@@ -119,6 +119,7 @@ jobs:
         shell: bash
         env:
           SSH_PRIVATE_KEY: ${{ secrets.HAGE_ED }}
+          SSH_KEY_PASSPHRASE: ${{ secrets.SAKURA_SSH_KEY_PASSPHRASE }}
         run: |
           set -euo pipefail
           if [[ -z "${SSH_PRIVATE_KEY:-}" ]]; then
@@ -128,13 +129,34 @@ jobs:
           ssh_dir="$RUNNER_TEMP/q-atlantis-ssh"
           ssh_key_path="$ssh_dir/id_key"
           ssh_known_hosts_path="$ssh_dir/known_hosts"
+          ssh_askpass_path="$ssh_dir/askpass.sh"
+          ssh_passphrase_path="$ssh_dir/passphrase"
           install -d -m 700 "$ssh_dir"
           printf '%s\n' "$SSH_PRIVATE_KEY" > "$ssh_key_path"
           chmod 600 "$ssh_key_path"
-          ssh-keygen -y -f "$ssh_key_path" > /dev/null
           install -m 600 .github/known_hosts/sakura-matchbox-production "$ssh_known_hosts_path"
+
+          printf '%s' "${SSH_KEY_PASSPHRASE:-}" > "$ssh_passphrase_path"
+          chmod 600 "$ssh_passphrase_path"
+          printf '%s\n' '#!/usr/bin/env bash' 'exec cat "$SSH_PASSPHRASE_PATH"' > "$ssh_askpass_path"
+          chmod 700 "$ssh_askpass_path"
+
+          eval "$(ssh-agent -s)" > /dev/null
+          if ! SSH_PASSPHRASE_PATH="$ssh_passphrase_path" \
+            SSH_ASKPASS="$ssh_askpass_path" SSH_ASKPASS_REQUIRE=force DISPLAY=q-atlantis:0 \
+            ssh-add "$ssh_key_path" < /dev/null; then
+            if [[ -z "${SSH_KEY_PASSPHRASE:-}" ]]; then
+              echo "DEPLOY_KEY_PASSPHRASE_REQUIRED: HAGE_ED is encrypted; configure SAKURA_SSH_KEY_PASSPHRASE or replace it with a deployment-only unencrypted key" >&2
+            else
+              echo "DEPLOY_KEY_UNLOCK_FAILED: SAKURA_SSH_KEY_PASSPHRASE did not unlock HAGE_ED" >&2
+            fi
+            exit 1
+          fi
+
           echo "SSH_KEY_PATH=$ssh_key_path" >> "$GITHUB_ENV"
           echo "SSH_KNOWN_HOSTS_PATH=$ssh_known_hosts_path" >> "$GITHUB_ENV"
+          echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          echo "SSH_AGENT_PID=$SSH_AGENT_PID" >> "$GITHUB_ENV"
 
       - name: Create publication receipt
         shell: bash

@@ -22,7 +22,8 @@ workflow_dispatch -> 選択branchをbuild。mainだけproduction deploy可能
 
 日常作業は`dev`へ細かくpushし、GitHub-hosted runnerでbuild可能性を確認します。`dev`はSSH secretへ触れず、
 共有hostへ転送しません。本番は`main`へmergeされたcommitだけが発火します。preview環境は今回のMVPに含めず、
-ローカル`npm run build`または`npm run start`を使います。
+ローカル`npm run build`または`npm run start`を使います。local previewの正規入口は
+`http://127.0.0.1:3000/`です。productionと同じdocument rootで検査し、`/dev/`を仮想base URLとして使いません。
 
 将来参加者が増えた場合は、GitHubのbranch rule、required check、merge権限、Environment reviewerで発火権限を
 絞れます。現在は疎結合なDocusaurus CI/CDとして、fork側でも同じbuild commandを再利用できます。
@@ -99,12 +100,18 @@ Environment名は`sakura-matchbox-production`です。
 | 種別 | 名前 | 責務 |
 |---|---|---|
 | Environment secret | `HAGE_ED` | SSH秘密鍵。値をlog、文書、artifactへ出さない |
+| Environment secret | `SAKURA_SSH_KEY_PASSPHRASE` | `HAGE_ED`自体が暗号化されている場合だけ、その鍵をrunner内の`ssh-agent`へunlockする。任意 |
 | Environment variable | `SAKURA_HOST` | 初期domain等のSSH host |
 | Environment variable | `SAKURA_USER` | SSH初期account |
 | Environment variable | `SAKURA_DEPLOY_PATH` | `www`またはその子に限定した配置先 |
 
-パスワードはworkflowの必須入力ではありません。公開鍵認証だけを要求し、password認証と
-keyboard-interactive認証を明示的に無効化します。
+server accountのpasswordはworkflowの入力にしません。公開鍵認証だけを要求し、password認証と
+keyboard-interactive認証を明示的に無効化します。ただし、秘密鍵ファイル自体のpassphraseはserver passwordと
+別物です。暗号化鍵を使う場合は`SAKURA_SSH_KEY_PASSPHRASE`を別secretとして供給し、runner内の`ssh-agent`だけで
+unlockします。値はrepository、log、artifactへ保存しません。
+
+保管場所と脅威境界の判断は[SSH鍵passphrase保管判断](./provenance/ssh-key-passphrase-storage-2026-07-20.md)に
+分離します。
 
 ## host key
 
@@ -118,6 +125,8 @@ keyboard-interactive認証を明示的に無効化します。
 |---|---|
 | `PUBLICATION_OBSERVED` | 今回のrun receiptを公開URLから取得できた |
 | `DEPLOY_SECRET_MISSING` | 鍵secretがjobへ供給されていない |
+| `DEPLOY_KEY_PASSPHRASE_REQUIRED` | SSH秘密鍵自体が暗号化されているが、unlock用secretがない |
+| `DEPLOY_KEY_UNLOCK_FAILED` | 指定passphraseでSSH秘密鍵をunlockできない |
 | `DEPLOY_PATH_OUT_OF_SCOPE` | 指定pathが許可された`www`配下ではない |
 | `DEPLOY_PATH_PERMISSION_DENIED` | pathを作成または書込みできない |
 | `DEPLOY_TARGET_IDENTITY_UNKNOWN` | 既存fileはあるがQ Atlantisのreceiptがなく、上書き判断ができない |
@@ -153,3 +162,9 @@ production deploy: skipped
 [Actions run 29723546333](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/actions/runs/29723546333)で、
 `dev`のbuild gateが成功し、Sakura production deployがskipされたことを確認しました。`main`側のSSH転送と
 `PUBLICATION_OBSERVED`は、最終mergeで別receiptとして確認します。
+
+最初の`main` production run `29724337535`はbuildに成功しましたが、転送前のSSH identity installで停止しました。
+`HAGE_ED`がpassphrase付き秘密鍵である一方、headless runnerへ鍵passphraseが供給されていなかったためです。
+server password認証の成否、deploy path、SCP、公開URL観測にはまだ到達していません。公開URLはHTTP 404であり、
+`PUBLICATION_OBSERVED`ではありません。詳細は[本番deploy失敗receipt](./provenance/deploy-failure-2026-07-20.md)へ
+分離しています。

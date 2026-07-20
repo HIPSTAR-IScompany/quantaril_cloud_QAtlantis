@@ -171,6 +171,8 @@ const sidebars: SidebarsConfig = {
         'operations/provenance/index',
         'operations/provenance/source-mining-2026-07-20',
         'operations/provenance/publication-magi-audit-2026-07-20',
+        'operations/provenance/deploy-failure-2026-07-20',
+        'operations/provenance/ssh-key-passphrase-storage-2026-07-20',
         'operations/site-notice',
       ],
     },
