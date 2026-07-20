@@ -170,6 +170,7 @@ const sidebars: SidebarsConfig = {
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
         'operations/provenance/source-mining-2026-07-20',
+        'operations/provenance/publication-magi-audit-2026-07-20',
         'operations/site-notice',
       ],
     },
