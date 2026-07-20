@@ -5,7 +5,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 const legacyRedirects = require('./migration/redirects.json');
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-const isDev = process.env.NODE_ENV === 'development';
 const config: Config = {
 
   title: 'Quantaril Cloud Q Atlantis',
@@ -16,7 +15,10 @@ const config: Config = {
   url: 'https://quantaril.cloud',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: isDev ? '/dev/' : '/',
+  // Productionとlocal previewはどちらもdocument rootで配信する。
+  // NODE_ENVでbaseUrlを変えると、production buildを`docusaurus serve`した際に
+  // HTMLは`/assets/...`、serve側だけ`/dev/`という二重定規になりCSS/JSが壊れる。
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
