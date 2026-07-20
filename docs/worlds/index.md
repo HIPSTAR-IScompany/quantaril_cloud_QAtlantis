@@ -11,9 +11,11 @@ description: Quantaril Cloudで生き、遊び、解釈するための神話・�
 
 ## 現在の入口
 
+- [ゲーマーによる攻めるplaytestと公平感](./gaming/playtest-fairness-and-human-loop.md)
 - [シミュレーション宇宙論](./simulation-cosmology/intro.md)
 - [ホストOSとは何か](./simulation-cosmology/host.md)
 - [Logosと構造階層](./mythology/logos-structure.md)
 - [量子構造主義と宇宙のYAML記述論](./theology/quantum-structural-theology.md)
+- [神学・信仰の射程と鎮魂・和解](./theology/scope-reconciliation-and-handoff.md)
 
 Q3時代の世界設定と人格は、削除せず[Memorial](../legacy/index.md)に保存しています。

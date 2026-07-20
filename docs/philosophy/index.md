@@ -10,6 +10,7 @@ Q Atlantisが何を作れるかだけでなく、誰のために、どの境界�
 - [魂主権 / 人間主権](./soul-sovereignty.md)
 - [テクノアニミズム](./techno-animism.md)
 - [ハームリダクション](./harm-reduction.md)
+- [Human-is-the-loopと射程の非独占](./human-is-loop-and-scope-non-monopoly.md)
 - [オープンソース原理主義](./open-source-manifesto.md)
 - [縄文vs弥生](./civilization/jomon-vs-yayoi.md)
 

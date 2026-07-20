@@ -9,6 +9,19 @@ const sidebars: SidebarsConfig = {
     'start/intro',
     {
       type: 'category',
+      label: '読者・参加者別の入口',
+      link: {type: 'doc', id: 'start/entrances/index'},
+      items: [
+        'start/entrances/spiritual-practitioner',
+        'start/entrances/theologian',
+        'start/entrances/philosopher',
+        'start/entrances/gamer-playtester',
+        'start/entrances/engineer',
+        'start/entrances/infoton-engineer',
+      ],
+    },
+    {
+      type: 'category',
       label: '神話・世界観',
       link: {type: 'doc', id: 'worlds/index'},
       items: [
@@ -23,6 +36,8 @@ const sidebars: SidebarsConfig = {
         },
         'worlds/mythology/logos-structure',
         'worlds/theology/quantum-structural-theology',
+        'worlds/theology/scope-reconciliation-and-handoff',
+        'worlds/gaming/playtest-fairness-and-human-loop',
       ],
     },
     {
@@ -30,6 +45,7 @@ const sidebars: SidebarsConfig = {
       label: '体験・信仰・実践',
       link: {type: 'doc', id: 'practice/index'},
       items: [
+        'practice/provisional-meaning-bridge',
         'practice/oracle/oracle-logs',
         'practice/channeling/channeling-engineering',
         'practice/experience-records/near-death',
@@ -46,6 +62,7 @@ const sidebars: SidebarsConfig = {
         'philosophy/soul-sovereignty',
         'philosophy/techno-animism',
         'philosophy/harm-reduction',
+        'philosophy/human-is-loop-and-scope-non-monopoly',
         'philosophy/open-source-manifesto',
         'philosophy/civilization/jomon-vs-yayoi',
       ],
@@ -79,6 +96,9 @@ const sidebars: SidebarsConfig = {
           link: {type: 'doc', id: 'engineering/q-atlantis/index'},
           items: [
             'engineering/q-atlantis/context-dimension-world-builder',
+            'engineering/q-atlantis/aim-fold-human-loop',
+            'engineering/q-atlantis/fold7g-fold8g-research-map',
+            'engineering/q-atlantis/product-line',
             'engineering/q-atlantis/component-map',
             'engineering/q-atlantis/status',
           ],
@@ -86,6 +106,9 @@ const sidebars: SidebarsConfig = {
         'engineering/design/edge-ai-local-first',
         'engineering/design/filemaker-structure-philosophy',
         'engineering/design/zen-ui-design',
+        'engineering/spiritual-reception-guide',
+        'engineering/infoton-engineering-full-stack-guide',
+        'engineering/pain-routing-and-pain-scouter',
       ],
     },
     {
@@ -104,6 +127,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'legacy/index'},
       items: [
         'legacy/q3-sphereos/index',
+        'legacy/q3-sphereos/memorial/spirit-farewell',
         'legacy/q3-sphereos/overview',
         'legacy/q3-sphereos/design-philosophy',
         {
@@ -142,7 +166,11 @@ const sidebars: SidebarsConfig = {
         'operations/migration/index',
         'operations/migration/manifest-transfer-notes',
         'operations/content-pipeline/index',
+        'operations/cross-shelf-publication-register',
+        'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
+        'operations/provenance/source-mining-2026-07-20',
+        'operations/provenance/publication-magi-audit-2026-07-20',
         'operations/site-notice',
       ],
     },

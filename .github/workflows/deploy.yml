@@ -2,16 +2,27 @@ name: Build and Deploy Q Atlantis (Sakura shared hosting)
 
 on:
   push:
+    branches: [main, dev]
+  pull_request:
     branches: [main]
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      adopt_existing_directory:
+        description: 'receiptのない既存ディレクトリをQ Atlantis配置先として明示的に引き取る'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20' # package.json engines: ">=18.0" を満たすLTS
           cache: 'npm'
@@ -44,83 +55,246 @@ jobs:
         run: npm run content:check-redirects
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-build
           path: build/
           retention-days: 7
 
-  # ----------------------------------------------------------------------
-  # deploy: さくら共有鯖(普通プラン)向け。Secrets未投入のためコメントアウト。
-  #
-  # 設計方針:
-  #   - 共有鯖側ではビルドや任意コマンド実行を行わない(迷惑テナントムーブになるため)
-  #   - GitHub Actions側でビルド済みの build/ を、SFTP または SCP でファイル転送するのみ
-  #   - sudo/systemctl 等、root権限を前提にしたステップは置かない
-  #     (旧VPS構成にあった nginx reload は、共有ホスティングでは実行できないため廃止)
-  #
-  # みつるさんが行うこと:
-  #   1. 以下のSecretsをリポジトリに登録する
-  #        SAKURA_SFTP_HOST     さくら共有鯖のホスト名
-  #        SAKURA_SFTP_USER     SFTP/SSHログインユーザー名
-  #        SAKURA_SFTP_KEY      秘密鍵(鍵認証の場合)
-  #        SAKURA_REMOTE_PATH   公開ディレクトリの絶対/相対パス
-  #   2. 案A〜Dのうち契約プランに合う1つのコメントを外す
-  #   3. 旧Secrets(HAGE_ED, VPS_HOST, VPS_USER)は死亡済みオーケストレーターヘッドサーバー
-  #      向けの残骸なので、必要なくなったタイミングで削除する(このSecrets管理自体は
-  #      Claude/Codexの対象外、みつるさんの領域)
-  # ----------------------------------------------------------------------
-  #
-  # deploy:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   if: github.ref == 'refs/heads/main'
-  #   steps:
-  #     - uses: actions/download-artifact@v4
-  #       with:
-  #         name: site-build
-  #         path: build/
-  #
-  #     # --- 案A: SFTP (鍵認証、ファイル転送のみ・シェルコマンド実行なし) ---
-  #     - name: Deploy via SFTP
-  #       uses: wlixcc/SFTP-Deploy-Action@v1.2.6
-  #       with:
-  #         server: ${{ secrets.SAKURA_SFTP_HOST }}
-  #         username: ${{ secrets.SAKURA_SFTP_USER }}
-  #         ssh_private_key: ${{ secrets.SAKURA_SFTP_KEY }}
-  #         local_path: 'build/*'
-  #         remote_path: ${{ secrets.SAKURA_REMOTE_PATH }}
-  #         sftp_only: true
-  #
-  #     # --- 案B: SCP (鍵認証、ファイルコピーのみ) ---
-  #     # - name: Deploy via SCP
-  #     #   uses: appleboy/scp-action@v0.1.7
-  #     #   with:
-  #     #     host: ${{ secrets.SAKURA_SFTP_HOST }}
-  #     #     username: ${{ secrets.SAKURA_SFTP_USER }}
-  #     #     key: ${{ secrets.SAKURA_SFTP_KEY }}
-  #     #     source: "build/*"
-  #     #     target: ${{ secrets.SAKURA_REMOTE_PATH }}
-  #     #     strip_components: 1
-  #
-  #     # --- 案C: rsync over SSH (鍵認証、差分転送+不要ファイル削除。sudoは使わない) ---
-  #     # - name: Deploy via rsync
-  #     #   uses: burnett01/rsync-deployments@7.0.1
-  #     #   with:
-  #     #     switches: -avzr --delete
-  #     #     path: build/
-  #     #     remote_path: ${{ secrets.SAKURA_REMOTE_PATH }}
-  #     #     remote_host: ${{ secrets.SAKURA_SFTP_HOST }}
-  #     #     remote_user: ${{ secrets.SAKURA_SFTP_USER }}
-  #     #     remote_key: ${{ secrets.SAKURA_SFTP_KEY }}
-  #     #     remote_port: 22
-  #
-  #     # --- 案D: パスワード認証FTP (鍵認証に対応しないプランの場合のフォールバック) ---
-  #     # - name: Deploy via FTP
-  #     #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-  #     #   with:
-  #     #     server: ${{ secrets.SAKURA_FTP_HOST }}
-  #     #     username: ${{ secrets.SAKURA_FTP_USER }}
-  #     #     password: ${{ secrets.SAKURA_FTP_PASSWORD }}
-  #     #     local-dir: build/
-  #     #     server-dir: ${{ secrets.SAKURA_REMOTE_PATH }}
+  deploy:
+    name: Deploy and observe publication
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    concurrency:
+      group: q-atlantis-sakura-matchbox-production
+      cancel-in-progress: false
+    environment:
+      name: sakura-matchbox-production
+      url: https://quantaril.cloud
+    env:
+      SAKURA_HOST: ${{ vars.SAKURA_HOST }}
+      SAKURA_USER: ${{ vars.SAKURA_USER }}
+      SAKURA_DEPLOY_PATH: ${{ vars.SAKURA_DEPLOY_PATH }}
+      PUBLICATION_URL: https://quantaril.cloud
+      ADOPT_EXISTING_DIRECTORY: ${{ inputs.adopt_existing_directory || false }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: site-build
+          path: build/
+
+      - name: Validate deployment contract
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ ! "$SAKURA_HOST" =~ ^[A-Za-z0-9.-]+$ ]]; then
+            echo "DEPLOY_HOST_INVALID" >&2
+            exit 1
+          fi
+
+          if [[ ! "$SAKURA_USER" =~ ^[A-Za-z0-9._-]+$ ]]; then
+            echo "DEPLOY_USER_INVALID" >&2
+            exit 1
+          fi
+
+          expected_root="/home/${SAKURA_USER}/www"
+          case "$SAKURA_DEPLOY_PATH" in
+            "$expected_root"|"$expected_root"/*) ;;
+            *)
+              echo "DEPLOY_PATH_OUT_OF_SCOPE: expected ${expected_root} or its child" >&2
+              exit 1
+              ;;
+          esac
+
+          if [[ ! "$SAKURA_DEPLOY_PATH" =~ ^/[A-Za-z0-9._/-]+$ ]]; then
+            echo "DEPLOY_PATH_INVALID" >&2
+            exit 1
+          fi
+
+      - name: Install pinned SSH identity
+        shell: bash
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.HAGE_ED }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${SSH_PRIVATE_KEY:-}" ]]; then
+            echo "DEPLOY_SECRET_MISSING: HAGE_ED is not available" >&2
+            exit 1
+          fi
+          ssh_dir="$RUNNER_TEMP/q-atlantis-ssh"
+          ssh_key_path="$ssh_dir/id_key"
+          ssh_known_hosts_path="$ssh_dir/known_hosts"
+          install -d -m 700 "$ssh_dir"
+          printf '%s\n' "$SSH_PRIVATE_KEY" > "$ssh_key_path"
+          chmod 600 "$ssh_key_path"
+          ssh-keygen -y -f "$ssh_key_path" > /dev/null
+          install -m 600 .github/known_hosts/sakura-matchbox-production "$ssh_known_hosts_path"
+          echo "SSH_KEY_PATH=$ssh_key_path" >> "$GITHUB_ENV"
+          echo "SSH_KNOWN_HOSTS_PATH=$ssh_known_hosts_path" >> "$GITHUB_ENV"
+
+      - name: Create publication receipt
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/.well-known
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const receipt = {
+              schema: "q-atlantis-publication-receipt/1",
+              repository: process.env.GITHUB_REPOSITORY,
+              commit: process.env.GITHUB_SHA,
+              run_id: process.env.GITHUB_RUN_ID,
+              run_attempt: process.env.GITHUB_RUN_ATTEMPT
+            };
+            fs.writeFileSync(
+              "build/.well-known/q-atlantis-deployment.json",
+              `${JSON.stringify(receipt, null, 2)}\n`,
+              "utf8"
+            );
+          '
+
+      - name: Ensure deployment directory exists and is writable
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh_options=(
+            -i "$SSH_KEY_PATH"
+            -o IdentitiesOnly=yes
+            -o BatchMode=yes
+            -o PreferredAuthentications=publickey
+            -o PasswordAuthentication=no
+            -o KbdInteractiveAuthentication=no
+            -o StrictHostKeyChecking=yes
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_PATH"
+            -o ConnectTimeout=15
+          )
+
+          if ! ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" \
+            "mkdir -p -- '$SAKURA_DEPLOY_PATH' && test -d '$SAKURA_DEPLOY_PATH' && test -w '$SAKURA_DEPLOY_PATH'"; then
+            echo "DEPLOY_PATH_PERMISSION_DENIED: could not create or write ${SAKURA_DEPLOY_PATH}" >&2
+            exit 1
+          fi
+
+      - name: Confirm target identity before overwrite
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh_options=(
+            -i "$SSH_KEY_PATH"
+            -o IdentitiesOnly=yes
+            -o BatchMode=yes
+            -o PreferredAuthentications=publickey
+            -o PasswordAuthentication=no
+            -o KbdInteractiveAuthentication=no
+            -o StrictHostKeyChecking=yes
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_PATH"
+            -o ConnectTimeout=15
+          )
+          remote_receipt="$SAKURA_DEPLOY_PATH/.well-known/q-atlantis-deployment.json"
+          existing_receipt="$RUNNER_TEMP/q-atlantis-existing-deployment.json"
+
+          if ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" "test -f '$remote_receipt'"; then
+            scp "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST:$remote_receipt" "$existing_receipt"
+            EXISTING_RECEIPT="$existing_receipt" node --input-type=module -e '
+              import fs from "node:fs";
+              const receipt = JSON.parse(fs.readFileSync(process.env.EXISTING_RECEIPT, "utf8"));
+              if (receipt.schema !== "q-atlantis-publication-receipt/1") {
+                console.error("DEPLOY_TARGET_IDENTITY_CONFLICT: receipt schema differs");
+                process.exit(1);
+              }
+              if (receipt.repository !== process.env.GITHUB_REPOSITORY) {
+                console.error("DEPLOY_TARGET_IDENTITY_CONFLICT: receipt repository differs");
+                process.exit(1);
+              }
+              console.log(`DEPLOY_TARGET_MATCHED: previous commit ${receipt.commit ?? "unknown"}`);
+            '
+            exit 0
+          fi
+
+          if ssh "${ssh_options[@]}" "$SAKURA_USER@$SAKURA_HOST" \
+            "ls -A '$SAKURA_DEPLOY_PATH' | grep -q ."; then
+            if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$ADOPT_EXISTING_DIRECTORY" == "true" ]]; then
+              echo "DEPLOY_TARGET_ADOPTED: explicit -y equivalent accepted this directory"
+              exit 0
+            fi
+
+            echo "DEPLOY_TARGET_IDENTITY_UNKNOWN: directory is non-empty but has no Q Atlantis receipt" >&2
+            echo "Inspect it, then rerun workflow_dispatch with adopt_existing_directory=true to accept overwrite." >&2
+            exit 1
+          fi
+
+          echo "DEPLOY_TARGET_EMPTY: safe first installation"
+
+      - name: Upload static site over SCP/SFTP transport
+        shell: bash
+        run: |
+          set -euo pipefail
+          scp_options=(
+            -i "$SSH_KEY_PATH"
+            -o IdentitiesOnly=yes
+            -o BatchMode=yes
+            -o PreferredAuthentications=publickey
+            -o PasswordAuthentication=no
+            -o KbdInteractiveAuthentication=no
+            -o StrictHostKeyChecking=yes
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_PATH"
+            -o ConnectTimeout=15
+          )
+          scp -r -p "${scp_options[@]}" build/. "$SAKURA_USER@$SAKURA_HOST:$SAKURA_DEPLOY_PATH/"
+
+      - name: Observe publication without cache
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected="build/.well-known/q-atlantis-deployment.json"
+          observed="$RUNNER_TEMP/q-atlantis-deployment-observed.json"
+          receipt_url="${PUBLICATION_URL}/.well-known/q-atlantis-deployment.json?run=${GITHUB_RUN_ID}&attempt=${GITHUB_RUN_ATTEMPT}"
+          last_curl_exit=0
+          last_http_code=000
+
+          for attempt in 1 2 3 4 5 6; do
+            set +e
+            last_http_code=$(curl \
+              --silent --show-error --location \
+              --connect-timeout 10 --max-time 30 \
+              --header 'Cache-Control: no-cache, no-store, max-age=0' \
+              --header 'Pragma: no-cache' \
+              --output "$observed" \
+              --write-out '%{http_code}' \
+              "${receipt_url}&probe=${attempt}")
+            last_curl_exit=$?
+            set -e
+
+            if [[ $last_curl_exit -eq 0 && "$last_http_code" == "200" ]] && cmp -s "$expected" "$observed"; then
+              echo "PUBLICATION_OBSERVED: ${PUBLICATION_URL} serves this run receipt"
+              exit 0
+            fi
+
+            if [[ $attempt -lt 6 ]]; then
+              sleep 10
+            fi
+          done
+
+          case "$last_curl_exit" in
+            6)
+              echo "DNS_UNREACHABLE: ${PUBLICATION_URL}" >&2
+              ;;
+            35|60)
+              echo "TLS_UNREACHABLE: ${PUBLICATION_URL}" >&2
+              ;;
+            0)
+              if [[ "$last_http_code" == "404" ]]; then
+                echo "DOCROOT_OR_DEPLOY_PATH_MISMATCH: receipt returned HTTP 404" >&2
+              else
+                echo "PUBLICATION_RECEIPT_MISMATCH: HTTP ${last_http_code}; cache or docroot may point elsewhere" >&2
+              fi
+              ;;
+            *)
+              echo "HTTP_UNREACHABLE: curl exit ${last_curl_exit}, HTTP ${last_http_code}" >&2
+              ;;
+          esac
+          exit 1

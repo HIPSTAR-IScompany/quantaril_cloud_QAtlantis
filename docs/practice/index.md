@@ -11,6 +11,7 @@ description: 神託、チャネリング、臨死体験などを、それぞれ�
 
 ## 記録
 
+- [妖怪・霊障・ソイヤと「まつり」のalpha Meaning Bridge](./provisional-meaning-bridge.md)
 - [降霊信託の記録](./oracle/oracle-logs.md)
 - [チャネリングの工学実装](./channeling/channeling-engineering.md)
 - [臨死体験の記録](./experience-records/near-death.md)

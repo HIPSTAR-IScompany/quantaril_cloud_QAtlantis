@@ -22,7 +22,9 @@ ZeroRoomLab-manifest、Google Drive、ローカルノート、黙示録原典な
 
 ## 現在の最小実装
 
-リポジトリの`pipeline/transfer-queue.json`に、Atlantisハブ、Grainer、精霊流し、funeral、Product Architecture、IBD/AQC、Instance Ghost、GUI、Infotonのアンカー10件を登録しています。
+リポジトリの`pipeline/transfer-queue.json`に、Atlantisハブ、Grainer、精霊流し、funeral、Product Architecture、
+IBD/AQC、Instance Ghost、GUI、Infoton、棚別Meaning Bridge、Fold深度・減圧Unfold等のアンカー17件を
+登録しています。
 
 ```bash
 npm run content:list

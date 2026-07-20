@@ -1,0 +1,8 @@
+# TOFU observation: 2026-07-20, blacksheep11.sakura.ne.jp:22.
+# ECDSA SHA256:nr9+lU29K03r+ddbKqcbLMlipsS0FPww+ymqXEl5Ris
+# ED25519 SHA256:0LT+22t0pjH7kDSk09fOU5lca6THxq4mIa8TBXyahf4
+# Independent provider-side fingerprint verification: UNKNOWN.
+# 2026-07-20にblacksheep11.sakura.ne.jp:22からTOFU観測した公開host key。
+# 独立したfingerprint照合は未実施。key rotation時は接続を失敗させ、再観測とUser確認を行う。
+blacksheep11.sakura.ne.jp ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCVh6YptTQdwCE6JoKKge6YFNIL4gvBYypiiSXhqkAcRcjp3bngwLXstYxh+Co+WwflJoHHU0INOCJkdu2nnrOk=
+blacksheep11.sakura.ne.jp ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDsS0KcGZWvy8u2k44I8QRSxHw16xrBdvOL7PKkN/omJ

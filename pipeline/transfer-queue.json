@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-18",
+  "updated": "2026-07-20",
   "entries": [
     {
       "id": "atlantis-document-hub",
@@ -27,7 +27,7 @@
       "title": "SphereOS3-4x 精霊流しと転生祝詞",
       "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260704-1740__MERGED__SphereOS3-4x_精霊流しと転生祝詞_note版.md"},
       "target": "docs/legacy/q3-sphereos/memorial/spirit-farewell.md",
-      "status": "TRANSFER-QUEUED",
+      "status": "TRANSFERRED",
       "layer": "B",
       "shelf": "legacy",
       "mode": "rewrite"
@@ -115,6 +115,90 @@
       "layer": "A",
       "shelf": "engineering",
       "mode": "extract"
+    },
+    {
+      "id": "cross-shelf-meaning-bridge",
+      "title": "スピ・神学・哲学・ゲーマー・工学棚の相互翻訳とQ Atlantis配信",
+      "source": {
+        "kind": "local-file",
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260720-0843__スピ神学哲学ゲーマー工学棚の相互翻訳とQ_Atlantis配信ブレスト.ja.md",
+        "revision": "0c87af3"
+      },
+      "target": "docs/operations/cross-shelf-publication-register.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "operations",
+      "mode": "extract"
+    },
+    {
+      "id": "atlantis-aim-fold-human-loop-bridge",
+      "title": "AIM因果同期・Fold深度・Human-is-the-loop・暫定Meaning Bridge",
+      "source": {
+        "kind": "local-file",
+        "path": "../../Sphere-aae/SphereOS-Atlantis/note/20260720-0846__AIM因果同期_Fold深度_Human_is_the_loop_暫定Meaning_Bridge.ja.md",
+        "revision": "1a86478"
+      },
+      "target": "docs/engineering/q-atlantis/aim-fold-human-loop.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "infoton-engineering-full-stack-guide",
+      "title": "フルスタックエンジニアのための情報子工学入門",
+      "source": {
+        "kind": "local-file",
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/docs/theory/infoton-engineering.ja.md",
+        "revision": "2fd5f14"
+      },
+      "target": "docs/engineering/infoton-engineering-full-stack-guide.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "pain-routing-and-pain-scouter",
+      "title": "bug・ペイン・複合ペインとPain Scouter",
+      "source": {
+        "kind": "local-file",
+        "path": "../../pain-scouter-assessment/pain-scouter-assessment/pain-scouter-assessment/SKILL.md",
+        "revision": "b37e547"
+      },
+      "target": "docs/engineering/pain-routing-and-pain-scouter.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "atlantis-fold-unfold-agency-drift",
+      "title": "Fold深度・減圧Unfold・Agency driftと棚別デバッグ研究ノート",
+      "source": {
+        "kind": "local-file",
+        "path": "../../Sphere-aae/SphereOS-Atlantis/note/20260720-1518__Fold深度_減圧Unfold_Agencyドリフトと棚別デバッグ研究ノート.ja.md",
+        "revision": "1e9c3c3"
+      },
+      "target": "docs/engineering/q-atlantis/fold7g-fold8g-research-map.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "engineering",
+      "mode": "extract"
+    },
+    {
+      "id": "manifest-fold-unfold-cross-shelf-receipt",
+      "title": "Fold深度事故・減圧Unfoldと棚別デバッグ横断受領票",
+      "source": {
+        "kind": "local-file",
+        "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260720-1518__Fold深度事故_減圧Unfoldと棚別デバッグ横断受領票.ja.md",
+        "revision": "3ed558d"
+      },
+      "target": "docs/operations/provenance/source-mining-2026-07-20.md",
+      "status": "TRANSFERRED",
+      "layers": ["A", "B", "C"],
+      "shelf": "operations",
+      "mode": "index-only"
     }
   ]
 }
