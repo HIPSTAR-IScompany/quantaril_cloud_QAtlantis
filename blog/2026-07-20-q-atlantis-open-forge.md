@@ -39,13 +39,13 @@ Note、review、test、bug fix、branch実装の入口は開いています。Pr
 
 完成を待ってから参加する必要はありません。コードを書かない巫女、神学者、哲学者、ゲーマーも、言霊のズレ、
 クソゲーフラグ、退出不能、意味driftをNote Pull Requestとして持ち込めます。工学者はそれをtest、Portal、
-Exit Contract、Controlled Unfoldへ鍛造できます。
+Exit Contract、Controlled DeFoldへ鍛造できます。
 
 ## Fold7Gと、ざるのFold8G
 
 Fold7Gは未知粒子や次世代電磁無線の完成宣言ではなく、意味、因果、Agencyをnested Foldとして扱う研究系譜です。
 高Gになるほど、事故はブロックノイズではなく「滑らかだが別の意味」の顔で来るかもしれない。だから、止めるだけで
-責任を人間へ投げず、段階的にContextを戻すControlled Unfoldを研究します。
+責任を人間へ投げず、Meaning anchorを保持して低G面へ展開renderingするControlled DeFoldを研究します。
 
 Fold8Gは名前と旧配置だけが残り、独立contractがまだ抜けています。空白を8段目だと捏造せず、抽出、反証、
 退役も含む公開クエストへしました。

@@ -16,7 +16,7 @@ Google Drive上の資料は読み取り専用で参照し、原文の公開可�
 | Source | 採用した範囲 | 投影先 |
 |---|---|---|
 | Atlantis `0.25.1-alpha.1` release candidate | `OPEN / RESOURCE-WAIT`、旧3x/4x残骸保存、runner未着手、edge火力待ち | status、製品系列 |
-| Atlantis Fold深度・減圧Unfold note `1e9c3c3` | L/D/G、Controlled Unfold、Agencyと観測価値、長期Gテスト | 工学、ゲーム、信仰、哲学 |
+| Atlantis Fold深度・減圧DeFold note `b03b40b` | L/D/G、Controlled DeFold、Agencyと観測価値、長期Gテスト | 工学、ゲーム、信仰、哲学 |
 | Manifest横断受領note `3ed558d` | 棚別配信、unknown保全、MAGI Position監査 | 運用、来歴 |
 | Fold 7G Trion Bond Protocol `v0.0.1β` | 意味・因果・規範状態の同期候補、物理無線の非主張 | Fold研究地図 |
 | OS3x/4x調査報告 | 旧実行系の実在証跡、サービス終了、精霊流し、未サルベージ範囲 | Memorial、系譜 |
@@ -41,7 +41,7 @@ Google Drive上の資料は読み取り専用で参照し、原文の公開可�
 ## 現在も残る穴
 
 - Fold8Gの独立した責務、接続条件、失敗状態、Fold7Gとの差分は`unknown`。
-- Fold7G各GのRegistry、D宣言、Controlled Unfoldのmachine schemaは`NOT IMPLEMENTED`。
+- Fold7G各GのRegistry、D宣言、Controlled DeFoldのmachine schemaは`NOT IMPLEMENTED`。
 - 旧3x/4xの全ログ、旧オーケストレーターヘッド構成、未読原典は全量回収済みではない。
 - ASTRO Runner、Atlantis Server、Server Advanced、Docker Kanaloaは製品系列候補で、完成配布物ではない。
 

@@ -22,7 +22,7 @@ Q Atlantisへ参加できます。神学を履修してからでなければcode
 - 未実装、未試験、resource wait、unknownを正直に表示する
 - Sourceの意味を消さず、人間工学projectionを要件へ鍛造する
 - PLIでアーキを検討し、CLI／VS Codeで高強度拘束へ降ろす
-- Stop、Override、Graceful Degradation、Controlled Unfoldを同じfail-safeへ潰さない
+- Stop、Override、Graceful Degradation、Controlled DeFoldを同じfail-safeへ潰さない
 - authorityを持たない観測も捨てず、観測価値と操作権を別々に扱う
 
 「仕様です」でUX reportを閉じず、採用しない理由、World Config、別mode、review待ちを返します。

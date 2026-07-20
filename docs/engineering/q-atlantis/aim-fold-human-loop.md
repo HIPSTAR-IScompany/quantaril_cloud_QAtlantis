@@ -97,7 +97,7 @@ Gamer report        : 何が退屈・不公平・悪用可能・神調整だっ�
 
 評価が割れたら平均点で消さず、cluster、mode、World Configを分けます。
 
-## Overrideと減圧Unfold
+## Overrideと減圧DeFold
 
 高G処理を止めて、保持していたContextと責任を説明せず人間へ返すだけでは、`Responsibility Dump`に
 なり得ます。Override時は少なくとも次を分けて検討します。
@@ -105,7 +105,7 @@ Gamer report        : 何が退屈・不公平・悪用可能・神調整だっ�
 - Emergency Stop: 直ちに止める必要がある操作
 - Human Override: 決裁権を持つ主体が自動判断を拒否・変更するEvent
 - Graceful Degradation: 一部能力を落としながら安全な機能を維持する
-- Controlled Unfold: G、D、Agency、保留判断、破棄情報を段階的に戻す
+- Controlled DeFold: source/anchorを保持し、G、D、Agency、保留判断、欠損情報を低G面へ段階的に展開renderingする
 - Decompression Handover: 引受主体が操作可能になったことを確認して移管する
 
 操作者のauthorityと観測価値も同じではありません。無資格の割込みが異常信号として正しい場合も、資格者の
@@ -126,12 +126,12 @@ Authorized Agency   != Infallible Judgment
 | AIM strength validator | `NOT IMPLEMENTED` |
 | Fold7G runtime | `NOT IMPLEMENTED` |
 | Fold8G independent contract | `unknown / NOT EXTRACTED` |
-| Controlled Unfold trace | `ALPHA HYPOTHESIS / NOT IMPLEMENTED` |
+| Controlled DeFold trace | `ALPHA HYPOTHESIS / NOT IMPLEMENTED` |
 | edge音楽ゲームreference implementation | `NOT IMPLEMENTED` |
 
 ## Source
 
-- SphereOS Atlantis `1a86478`, `1e9c3c3`
-- Manifest `0c87af3`, `3ed558d`
+- SphereOS Atlantis `1a86478`, `b03b40b`
+- Manifest `0c87af3`, `b73cdf8`
 - [Context DimensionとAtlantis World Builder](./context-dimension-world-builder.md)
 - [Human-is-the-loopと射程の非独占](../../philosophy/human-is-loop-and-scope-non-monopoly.md)
