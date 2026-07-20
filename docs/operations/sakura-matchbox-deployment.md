@@ -138,4 +138,18 @@ bytes一致、probe削除まで成功しました。これはGitHub-hosted runne
 Actionsのrun receiptを公開URLから取得できた時点で、別の`PUBLICATION_OBSERVED`を記録します。
 
 2026-07-20に`dev`をbuild-only、`main`をproduction deployとして分離するworkflow更新を追加しました。
-GitHub-hosted runner上の結果は、対象commitのActions runで確認し、この段落をreceiptに合わせて更新します。
+
+最初のGitHub-hosted runner receipt:
+
+```text
+branch: dev
+commit: 641b1b88f3a059cd32adf8b9d4766aaffc460c20
+run: 29723546333
+event: push
+build: success
+production deploy: skipped
+```
+
+[Actions run 29723546333](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/actions/runs/29723546333)で、
+`dev`のbuild gateが成功し、Sakura production deployがskipされたことを確認しました。`main`側のSSH転送と
+`PUBLICATION_OBSERVED`は、最終mergeで別receiptとして確認します。
