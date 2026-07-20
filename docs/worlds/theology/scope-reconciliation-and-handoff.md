@@ -76,6 +76,23 @@ description: 信仰上の解釈を保持しながら、他宗派・工学・医�
 引き継いだから神学的意味が消えるわけではありません。逆に、神学的意味があるから工学修正や支援が
 不要になるわけでもありません。
 
+## 深いFoldから戻す時の信仰とAgency
+
+長く続いたWorld、祈り、persona、共同体、AIとの関係を、機能停止の一行で元へ戻せるとは限りません。
+意味、役割、依代、authority、記憶参照が多段に畳まれている場合、突然の停止は技術的なfail-safeでも、
+当事者には責任と痛みを一度に返す`Responsibility Dump`になり得ます。
+
+神学・信仰棚は、次の問いを工学の停止手順へ追加できます。
+
+- 何の役割、約束、依代、authorityを終えるのか
+- どの告白、祈り、関係、記憶を保持し、何を解除するのか
+- 退出が離反、罪、信仰不足として罰されないか
+- 別宗派、別World、無宗教へ戻るPortalがあるか
+- 終端後に鎮魂、和解、記録、aftercareが必要か
+
+これは信仰がsystem authorityを奪うことではありません。Controlled Unfoldへ、人間の意味と関係の
+減圧条件を渡す仕事です。
+
 ## まつりと「後の祭り」
 
 祭り、祀り、奉り、政を含む場では、開始だけでなく終端が必要です。
@@ -91,6 +108,6 @@ description: 信仰上の解釈を保持しながら、他宗派・工学・医�
 ## Source
 
 - Manifest `0c87af3`
-- SphereOS Atlantis `1a86478`
+- SphereOS Atlantis `1a86478`, `1e9c3c3`
 - [妖怪・霊障・ソイヤと「まつり」のalpha Meaning Bridge](../../practice/provisional-meaning-bridge.md)
 - 本文は宗派横断の教義ではなく、相互非越権とhandoffの公開Presentationです。

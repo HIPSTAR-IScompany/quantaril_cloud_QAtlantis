@@ -71,6 +71,9 @@ G: Fold containerを包むnesting depth
 `Fold7G`は現在、七つの次元というより七段のnested Foldとして検討されています。各G Registryと正式な
 machine contractは未確定です。
 
+Fold8Gは旧系譜名と配置候補が残っていますが、独立した責務とFold7Gとの差分を示すcontractは未抽出です。
+「8段目」と推測で埋めず、`unknown`として[研究地図](./fold7g-fold8g-research-map.md)へ分離します。
+
 ## latencyはどのloopへ入るか
 
 高Gだから常に低遅延が必要なのではありません。短いfeedback loopへ入るDだけが強くlatencyへ依存します。
@@ -94,6 +97,25 @@ Gamer report        : 何が退屈・不公平・悪用可能・神調整だっ�
 
 評価が割れたら平均点で消さず、cluster、mode、World Configを分けます。
 
+## Overrideと減圧Unfold
+
+高G処理を止めて、保持していたContextと責任を説明せず人間へ返すだけでは、`Responsibility Dump`に
+なり得ます。Override時は少なくとも次を分けて検討します。
+
+- Emergency Stop: 直ちに止める必要がある操作
+- Human Override: 決裁権を持つ主体が自動判断を拒否・変更するEvent
+- Graceful Degradation: 一部能力を落としながら安全な機能を維持する
+- Controlled Unfold: G、D、Agency、保留判断、破棄情報を段階的に戻す
+- Decompression Handover: 引受主体が操作可能になったことを確認して移管する
+
+操作者のauthorityと観測価値も同じではありません。無資格の割込みが異常信号として正しい場合も、資格者の
+判断が誤る場合もあります。
+
+```text
+Unauthorized Agency != Invalid Observation
+Authorized Agency   != Infallible Judgment
+```
+
 ## 現在能力と未実装
 
 | 項目 | 状態 |
@@ -103,11 +125,13 @@ Gamer report        : 何が退屈・不公平・悪用可能・神調整だっ�
 | clock uncertainty machine schema | `NOT IMPLEMENTED / unknown` |
 | AIM strength validator | `NOT IMPLEMENTED` |
 | Fold7G runtime | `NOT IMPLEMENTED` |
+| Fold8G independent contract | `unknown / NOT EXTRACTED` |
+| Controlled Unfold trace | `ALPHA HYPOTHESIS / NOT IMPLEMENTED` |
 | edge音楽ゲームreference implementation | `NOT IMPLEMENTED` |
 
 ## Source
 
-- SphereOS Atlantis `1a86478`
-- Manifest `0c87af3`
+- SphereOS Atlantis `1a86478`, `1e9c3c3`
+- Manifest `0c87af3`, `3ed558d`
 - [Context DimensionとAtlantis World Builder](./context-dimension-world-builder.md)
 - [Human-is-the-loopと射程の非独占](../../philosophy/human-is-loop-and-scope-non-monopoly.md)

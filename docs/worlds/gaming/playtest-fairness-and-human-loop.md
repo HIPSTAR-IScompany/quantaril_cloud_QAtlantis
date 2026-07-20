@@ -79,6 +79,27 @@ matchmaking、表示を分ける材料にします。
 ゲーマーの仕事は医療診断ではありませんが、プレイによる生活・財布・尊厳へのpainを最初に発見するsensorに
 なることがあります。深刻な場合は本人中心で適切な棚へhandoffし、製品修正も続けます。
 
+## 序盤ぬるぬる、中盤度し難いを長期Gテストへする
+
+起動が速い、描画が綺麗、無料区間が楽しい、tutorialが分かりやすいことは大切です。しかし、履歴、課金、
+所有権、World依存、長期最適化が積み上がった中盤以降のAgencyまでは保証しません。
+
+- logoutできるがAgentやCompanionだけWorldへ残る
+- importできるが、Identity、関係、来歴を含むexportができない
+- server終了や運営消失時にキャラクターを救出できない
+- World Configが違うのに陸続きとして扱う
+- Character Converterが片道で、帰還時のlossを表示しない
+- 補正、matchmaking、課金の意味が進行後に変わる
+
+クラッシュせずKPIが伸びていても、これらはクソゲーフラグになり得ます。「中盤から度し難い」を感想で
+焼却せず、どの進行深度、蓄積、version、World Configから変質したかを長期Gテストへ返します。
+
+## クソゲーフラグを踏みに行く
+
+完成後だけでなく、ServerやWorldを設計している時点からpre-mortemを募集します。報告者にmerge権限や
+全ゲーマー代表権は不要です。原語を残し、別clusterのreviewを集め、bug、UX pain、Meaning pain、governance、
+unknownへ分岐します。
+
 ## 報告する
 
 ```yaml
@@ -98,7 +119,7 @@ recommended_reviewers: []
 
 ## Sourceと関連文書
 
-- SphereOS Atlantis `1a86478`
+- SphereOS Atlantis `1a86478`, `1e9c3c3`
 - [AIM因果同期・Fold深度・Human-is-the-loop](../../engineering/q-atlantis/aim-fold-human-loop.md)
 - [Human-is-the-loopと射程の非独占](../../philosophy/human-is-loop-and-scope-non-monopoly.md)
 - [bug・ペイン・複合ペインとPain Scouter](../../engineering/pain-routing-and-pain-scouter.md)

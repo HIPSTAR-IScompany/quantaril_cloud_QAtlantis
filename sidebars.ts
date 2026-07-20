@@ -97,6 +97,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'engineering/q-atlantis/context-dimension-world-builder',
             'engineering/q-atlantis/aim-fold-human-loop',
+            'engineering/q-atlantis/fold7g-fold8g-research-map',
+            'engineering/q-atlantis/product-line',
             'engineering/q-atlantis/component-map',
             'engineering/q-atlantis/status',
           ],
@@ -125,6 +127,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'legacy/index'},
       items: [
         'legacy/q3-sphereos/index',
+        'legacy/q3-sphereos/memorial/spirit-farewell',
         'legacy/q3-sphereos/overview',
         'legacy/q3-sphereos/design-philosophy',
         {

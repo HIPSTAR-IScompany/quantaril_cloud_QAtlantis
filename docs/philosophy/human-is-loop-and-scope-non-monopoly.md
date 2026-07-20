@@ -84,9 +84,22 @@ flowchart TD
 AtlantisのCoreが行うのは、どの立場が真理かを決めることではなく、誰がどの定規をどのscopeで使い、
 何を変換し、何を変換できなかったかを残すことです。
 
+## Agencyと真理を分ける
+
+操作権を持つことと、観測が正しいことは別です。資格者、maintainer、成人、人間、AI、MAGIのどれも、
+肩書だけで無謬になりません。反対に、子ども、動物、少数派、無資格者の反応が異常を先に示すことがあります。
+
+```text
+authority: 誰が決裁・操作できるか
+epistemic value: その観測が何を知る手掛かりになるか
+```
+
+緊急信号を受け取る入口と、恒久的な制御権を渡す入口を分けます。Human-is-the-loopも人間を真理oracleへ
+置く言葉ではなく、意味、面白さ、尊厳を評価する主体をsystemの外へ追放しないという宣言です。
+
 ## Source
 
 - Manifest `0c87af3`
-- SphereOS Atlantis `1a86478`
+- SphereOS Atlantis `1a86478`, `1e9c3c3`
 - [棚別文書レジスターと公開パイプライン](../operations/cross-shelf-publication-register.md)
 - `Human-is-the-loop`のstable IDとmachine tokenは未確定です。

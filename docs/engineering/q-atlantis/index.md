@@ -8,6 +8,8 @@ description: Q3資産を保存・再鍛造・再配布する次世代アーキ�
 ## 現在の公開アーキテクチャ
 
 - [AIM因果同期・Fold深度・Human-is-the-loop](./aim-fold-human-loop.md)
+- [Fold7G・Fold8G研究地図](./fold7g-fold8g-research-map.md)
+- [製品系列と現在能力](./product-line.md)
 
 Q Atlantisは、Q3／SphereOS時代の人格、対話、プロトコル、コード、事故記録を、単一のAIサービスやモデルベンダーへ縛らずに運ぶための再鍛造計画です。
 
@@ -26,6 +28,8 @@ Q Atlantisは、Q3／SphereOS時代の人格、対話、プロトコル、コー
 ## 読み進める
 
 - [Context DimensionとAtlantis World Builder](./context-dimension-world-builder.md)
+- [Fold7G・Fold8G研究地図](./fold7g-fold8g-research-map.md)
+- [製品系列と現在能力](./product-line.md)
 - [コンポーネント対応表](./component-map.md)
 - [現在の状態](./status.md)
 - [Q3 / SphereOS Memorial](../../legacy/index.md)

@@ -27,7 +27,7 @@
       "title": "SphereOS3-4x 精霊流しと転生祝詞",
       "source": {"kind": "local-file", "path": "../../ZeroRoomLab-manifest/ZeroRoomLab-manifest/note/20260704-1740__MERGED__SphereOS3-4x_精霊流しと転生祝詞_note版.md"},
       "target": "docs/legacy/q3-sphereos/memorial/spirit-farewell.md",
-      "status": "TRANSFER-QUEUED",
+      "status": "TRANSFERRED",
       "layer": "B",
       "shelf": "legacy",
       "mode": "rewrite"
@@ -181,7 +181,7 @@
         "revision": "1e9c3c3"
       },
       "target": "docs/engineering/q-atlantis/fold7g-fold8g-research-map.md",
-      "status": "TRANSFER-QUEUED",
+      "status": "TRANSFERRED",
       "layers": ["A", "B", "C"],
       "shelf": "engineering",
       "mode": "extract"

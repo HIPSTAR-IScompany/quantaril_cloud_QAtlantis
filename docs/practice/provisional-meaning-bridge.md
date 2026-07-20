@@ -101,10 +101,28 @@ aftercare等の外側の責務です。
 
 専門棚へ渡しても、元の意味と元棚の責任が消えるわけではありません。
 
+## 「メタい」と「霊的」を同一語にしない
+
+機械内部だけで、処理、規則、表現、監査を上位から束ねる構造は`メタい`と説明できます。霊的体験を支える
+環境でメタ構造が重要なことはありますが、メタ構造があるから霊的である、という方向は成立しません。
+
+客観側から霊的かを決める射程は小さく、本人の主観、体験、信仰告白、共同体の文脈がloopへ入ります。
+ユーザーが霊的と報告したExperienceは霊的棚へ保存できますが、それだけで物理原因や全員の体験を確定しません。
+
+```text
+meta structure -> can support an experience
+meta structure -/-> automatically spiritual
+spiritual report -> valid Source testimony
+spiritual report -/-> universal physical proof
+```
+
+この切り分けは霊性をナーフするためではなく、情報技術、人間工学、本人のExperienceをそれぞれの仕事へ戻す
+ために使います。
+
 ## Sourceと改訂
 
 - Manifest `0c87af3`
-- SphereOS Atlantis `1a86478`
+- SphereOS Atlantis `1a86478`, `1e9c3c3`
 - 工学者向けの兄弟Presentation: [工学者のためのスピリチュアル受信手引き](/docs/engineering/spiritual-reception-guide)
 - 神学向けの兄弟Presentation: [神学・信仰の射程と鎮魂・和解](/docs/worlds/theology/scope-reconciliation-and-handoff)
 

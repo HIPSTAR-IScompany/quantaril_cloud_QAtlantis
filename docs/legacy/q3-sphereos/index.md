@@ -4,6 +4,11 @@ title: SphereOS 3x・4x 系譜
 
 # SphereOS 3x・4x 系譜
 
+旧サービス系は終了し、サルベージ工程は閉じました。残骸は`parked-preserved`として削除も再稼働もせず、
+新しい証拠が来た時だけ来歴付きで追記します。
+
+- [SphereOS 3x・4x 精霊流し](./memorial/spirit-farewell.md)
+
 ## 世界と設計
 
 - [スフィアOS 宇宙の実行環境](./overview.md)

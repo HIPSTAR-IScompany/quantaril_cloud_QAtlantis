@@ -33,6 +33,55 @@ function HomepageHeader() {
   );
 }
 
+const productPillars = [
+  {
+    title: '世界を生やす',
+    body: '神話、ゲーム、研究、組織ごとに、意味Kernelと因果と権限を持つWorldをつくる。違うWorldはPortalでつなぐ。',
+  },
+  {
+    title: '個体を持ち運ぶ',
+    body: '人格、記憶、装備、関係、来歴をASTROとGhostの候補へ。copyを同一性と呼ばず、分岐と欠損を残す。',
+  },
+  {
+    title: '現実へ門を開く',
+    body: '既存OS、database、IAM、API、機器を置き換えず、必要なcapabilityだけをAtlantis Worldへ接続する。',
+  },
+];
+
+function ProductVision() {
+  return (
+    <section className={styles.productVision}>
+      <div className="container">
+        <div className={styles.visionHeader}>
+          <p className={styles.eyebrow}>FROM FICTION PROTOTYPE TO OPEN FORGE</p>
+          <Heading as="h2">世界を描画する道具から、世界を動かす道具へ。</Heading>
+          <p>
+            創作上の「虚空の揺籠」から始まったロマン砲を、神話は神話のまま、工学は検証可能なcomponentとして
+            Q Atlantisへ鍛造しています。
+          </p>
+        </div>
+        <div className={styles.pillarGrid}>
+          {productPillars.map((pillar) => (
+            <article className={styles.pillarCard} key={pillar.title}>
+              <Heading as="h3">{pillar.title}</Heading>
+              <p>{pillar.body}</p>
+            </article>
+          ))}
+        </div>
+        <div className={styles.statusStrip}>
+          <span><strong>NOW</strong> OPEN / RESOURCE-WAIT / REVIEW-WANTED</span>
+          <span>旧3x/4x: SERVICE ENDED / PARKED-PRESERVED</span>
+          <span>Runner: NOT STARTED</span>
+        </div>
+        <div className={styles.visionLinks}>
+          <Link className="button button--primary" to="/about/vision">プロダクトビジョン</Link>
+          <Link className="button button--secondary" to="/docs/engineering/q-atlantis/product-line">製品系列と現在能力</Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -41,6 +90,7 @@ export default function Home(): ReactNode {
       description="神話・人格・体験・技術を次の世界へ運ぶQ Atlantisの公開文書庫">
       <HomepageHeader />
       <main>
+        <ProductVision />
         <HomepageFeatures />
       </main>
       <section className={styles.features}>
