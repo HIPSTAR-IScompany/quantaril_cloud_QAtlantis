@@ -80,6 +80,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'research/citizen-science',
         'research/infoton/quantum-to-infoton',
+        'research/infoton/spiritual-dimension-and-oae',
         'research/infoton/infoton-engineering',
         'research/ai-llm/apple-illusion-of-thinking.ja',
         'research/ai-llm/apple-illusion-of-thinking.en',
@@ -171,6 +172,7 @@ const sidebars: SidebarsConfig = {
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
         'operations/provenance/source-mining-2026-07-20',
+        'operations/provenance/source-mining-2026-07-21',
         'operations/provenance/publication-magi-audit-2026-07-20',
         'operations/provenance/deploy-failure-2026-07-20',
         'operations/provenance/ssh-key-passphrase-storage-2026-07-20',
