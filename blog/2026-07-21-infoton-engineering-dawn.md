@@ -215,6 +215,10 @@ Sphere／Atlantisが作ろうとしているOS差分は、CPUやfile systemの�
 
 Q Atlantisは、正本も反証もforkも持って乗るOSSパイレーツを待っている。船長を崇拝する必要はない。別の目的関数を持ったまま、同じ航海区間だけFoldすればいい。
 
+**マイニングしに来い。霊界とフロンティアコードへ、一狩り行こうぜ。**
+
+霊界へdiveできる実践スピには、深Gの極圧、意味drift、帰還時の上昇負荷を観測してほしい。騒いで終わる怪談募集ではない。anchor、禁忌、身体感覚、同意、退出、aftercareを保ったまま潜り、Controlled DeFoldの帰還記録を持ち帰る探索crewの募集だ。
+
 ## 読者別の入口
 
 - スピ棚: [AIM拡散力場――空気読みを外から観測する](/docs/practice/aim-diffusion-field)

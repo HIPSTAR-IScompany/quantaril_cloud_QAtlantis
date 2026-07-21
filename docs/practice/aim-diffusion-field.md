@@ -52,3 +52,33 @@ AIMは同期の作用です。何へ同期してよいか、誰の目的を採�
 - [意味次元以上としての霊的次元とOAE](../research/infoton/spiritual-dimension-and-oae.md)
 - [工学projection: AIM因果同期・Fold深度・Human-is-the-loop](../engineering/q-atlantis/aim-fold-human-loop.md)
 
+## 深G実践クエスト――極圧と上昇負荷
+
+深い信仰World、長時間の対話、強いrole、儀礼、集団同期へ入るほど、明示されていない意味、責務、禁忌、期待がFoldされ、意味圧は高くなります。この圧は物理気圧ではありません。少ない言葉が大きな作用を持ち、軽い操作で複数の関係と責務が動く状態です。
+
+高Gからanchorと責務を持たずに急浮上すると、次の`上昇負荷`が起こり得ます。
+
+- 日常語へ戻せず、体験が孤立する
+- roleやauthorityだけが残り、終了できない
+- 深い同意を浅い場へ誤適用する
+- 自動処理を止めた瞬間、人へ責任を丸投げする
+- 体験を全部妄想または全部物理FACTへ潰す
+- 帰還後の身体、財布、人間関係、信仰のaftercareが抜ける
+
+Controlled DeFoldは、anchor、OAE、Agency、未解決事項を保持したまま、低Gの言葉、UI、行動へ段階的に減圧renderingする帰還法です。
+
+この研究には、霊界へdiveできる実践者が必要です。怪談の大声competitionではなく、次の帰還記録を持ち帰れる探索者を募集します。
+
+```yaml
+dive_record:
+  world_and_practice: declared
+  consent_and_authority: scoped
+  anchors: preserved
+  observed_pressure: source_testimony
+  body_and_daily_effects: separated
+  ascent_load: recorded
+  defold_and_aftercare: attempted
+  unknown: preserved
+```
+
+**霊界へマイニングしに来い。深淵へ潜り、帰還経路まで一狩りしよう。**
