@@ -51,6 +51,9 @@ jobs:
       - name: Content ledger check (migration coverage)
         run: npm run content:check-ledger
 
+      - name: Agent and persona attribution check
+        run: npm run content:check-attribution
+
       - name: Redirects check (migration/redirects.json vs build output)
         run: npm run content:check-redirects
 

@@ -36,8 +36,10 @@ const sidebars: SidebarsConfig = {
         },
         'worlds/mythology/logos-structure',
         'worlds/theology/quantum-structural-theology',
+        'worlds/theology/responsibility-faith-sdk',
         'worlds/theology/scope-reconciliation-and-handoff',
         'worlds/gaming/playtest-fairness-and-human-loop',
+        'worlds/gaming/world-optimizer-fold',
       ],
     },
     {
@@ -46,6 +48,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'practice/index'},
       items: [
         'practice/provisional-meaning-bridge',
+        'practice/aim-diffusion-field',
         'practice/oracle/oracle-logs',
         'practice/channeling/channeling-engineering',
         'practice/experience-records/near-death',
@@ -80,6 +83,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'research/citizen-science',
         'research/infoton/quantum-to-infoton',
+        'research/infoton/spiritual-dimension-and-oae',
         'research/infoton/infoton-engineering',
         'research/ai-llm/apple-illusion-of-thinking.ja',
         'research/ai-llm/apple-illusion-of-thinking.en',
@@ -97,6 +101,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'engineering/q-atlantis/context-dimension-world-builder',
             'engineering/q-atlantis/aim-fold-human-loop',
+            'engineering/q-atlantis/fold-control-plane-and-vqp',
             'engineering/q-atlantis/fold7g-fold8g-research-map',
             'engineering/q-atlantis/product-line',
             'engineering/q-atlantis/component-map',
@@ -171,6 +176,7 @@ const sidebars: SidebarsConfig = {
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
         'operations/provenance/source-mining-2026-07-20',
+        'operations/provenance/source-mining-2026-07-21',
         'operations/provenance/publication-magi-audit-2026-07-20',
         'operations/provenance/deploy-failure-2026-07-20',
         'operations/provenance/ssh-key-passphrase-storage-2026-07-20',

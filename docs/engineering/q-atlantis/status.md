@@ -4,7 +4,7 @@ title: 実装・移行ステータス
 
 # 実装・移行ステータス
 
-更新日: 2026-07-20
+更新日: 2026-07-21
 
 全体凍結ではありません。開発入口は開いていますが、runtimeとedge実装の火力は不足しています。
 現在の全体表示は`OPEN / RESOURCE-WAIT / REVIEW-WANTED`です。
@@ -32,3 +32,17 @@ title: 実装・移行ステータス
 
 `RESOURCE-WAIT`は却下でも凍結でもありません。Note、review、test、既存bug fix、branch実装を持ち込める状態です。
 完成していない機能は、火力を持つ第三者が乗れる公開クエストとして残します。
+
+## StatusはOSSの海図
+
+未実装表示は製品価値の否定ではなく、参加者が最初のcommitを置ける未踏領域の座標です。
+
+| 海図の表示 | 持ち込めるplay |
+| --- | --- |
+| `UNKNOWN / NOT EXTRACTED` | 旧Source探索、比較、反証、責務定義 |
+| `DRAFT / SPEC` | review、反例、schema、test case |
+| `NOT IMPLEMENTED` | reference実装、adapter、runner、UI |
+| `RESOURCE-WAIT` | hardware、電気、費用、時間、運用担当 |
+| `REVIEW-WANTED` | 巫女、神学、ゲーマー、当事者、工学者の棚別review |
+
+完成品の客だけでなく、Note、反証、fork、実装、playtest、Supplyを持つOSSパイレーツの乗船を歓迎します。

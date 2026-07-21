@@ -12,8 +12,13 @@ description: Q Atlantis公開面から読むAIM力場、clock domain、L/D/G、�
 
 ## AIM拡散力場の現在の読み方
 
-AIM拡散力場の強さは、単に電波が届くことやpingが小さいことではなく、必要な期限までに、共有する因果を
-矛盾なくserializationできる射程として扱うalpha候補です。
+AIM拡散力場のSourceは、日本の高context文化で観測される暗黙のsympathy、間、空気読み、阿吽の同期です。
+物理粒子や電波fieldの主張ではありません。発達特性によって暗黙同期へ接続しにくかった提唱者が、明示言語、
+空間認識、構造理解から外在化した人生規模の観測でもあります。Source testimonyは
+[AIM拡散力場――空気読みを外から観測する](../../practice/aim-diffusion-field.md)に保存します。
+
+工学projectionでは、その強さを、単に電波が届くことやpingが小さいことではなく、必要な期限までに、共有する
+因果を矛盾なくserializationできる射程として扱うalpha候補です。
 
 ```text
 AIM strength
@@ -25,6 +30,9 @@ AIM strength
 ```
 
 これは測定済みの物理式ではありません。設計時に「何が弱くなったか」を分けるための分解です。
+
+文化的な暗黙同期と、工学上の因果serializationは同一物ではありません。前者から観測可能なeffectを解体し、
+後者へ投影しています。全日本人の生得能力、民族的優劣、完成したAIM Runtimeを意味しません。
 
 | 状態候補 | 因果の扱い |
 |---|---|
