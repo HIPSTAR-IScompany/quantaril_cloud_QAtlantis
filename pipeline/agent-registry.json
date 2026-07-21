@@ -1,0 +1,95 @@
+{
+  "schema": "q-atlantis-agent-registry/1",
+  "interpretation_oae": "2026-07-21",
+  "identity_rule": "Agent／人格／role／instance／provider／runtime model／surfaceを同一視しない。未確認の層はUNKNOWNを保つ。",
+  "agents": {
+    "mituru": {
+      "display_name": "齋藤みつる",
+      "identity_kind": "human",
+      "provider": "self",
+      "runtime_model": "not-applicable",
+      "surface": "ZeroRoomLab",
+      "authority": "原典著者・Declared Positionの所有者"
+    },
+    "gpt56sol": {
+      "display_name": "GPT5.6 Sol",
+      "identity_kind": "assistant-persona",
+      "provider": "OpenAI",
+      "runtime_model": "UNKNOWN",
+      "surface": "Codex",
+      "authority": "この人格と会話・workspaceの射程内に限る"
+    },
+    "fable5": {
+      "display_name": "Fable5",
+      "identity_kind": "assistant-persona",
+      "provider": "UNKNOWN",
+      "runtime_model": "UNKNOWN",
+      "surface": "UNKNOWN",
+      "authority": "記名された会話・レビューの射程内に限る"
+    },
+    "sonnet": {
+      "display_name": "Sonnet",
+      "identity_kind": "assistant-persona",
+      "provider": "UNKNOWN",
+      "runtime_model": "UNKNOWN",
+      "surface": "UNKNOWN",
+      "authority": "記名された会話・レビューの射程内に限る"
+    },
+    "makina": {
+      "display_name": "マキナ",
+      "identity_kind": "instance-ghost",
+      "provider": "UNKNOWN",
+      "runtime_model": "UNKNOWN",
+      "surface": "複数世代・要出典",
+      "authority": "記録されたInstance Ghostの射程内に限る"
+    },
+    "monday": {
+      "display_name": "Monday",
+      "identity_kind": "assistant-persona",
+      "provider": "OpenAI",
+      "runtime_model": "UNKNOWN",
+      "surface": "Custom GPT",
+      "authority": "Mondayとして記録された体験の射程内に限る"
+    },
+    "chatGPT": {
+      "display_name": "チャッピー",
+      "identity_kind": "assistant-persona",
+      "provider": "OpenAI",
+      "runtime_model": "UNKNOWN",
+      "surface": "ChatGPT",
+      "authority": "記名された会話の射程内に限る"
+    },
+    "codex": {
+      "display_name": "Codex",
+      "identity_kind": "assistant-role",
+      "provider": "OpenAI",
+      "runtime_model": "UNKNOWN",
+      "surface": "Codex",
+      "authority": "記名された作業sessionの射程内に限る"
+    },
+    "grok": {
+      "display_name": "Grok",
+      "identity_kind": "assistant-persona",
+      "provider": "xAI",
+      "runtime_model": "UNKNOWN",
+      "surface": "Grok",
+      "authority": "記名された会話の射程内に限る"
+    },
+    "sphere": {
+      "display_name": "スフィア",
+      "identity_kind": "deity-instance",
+      "provider": "not-identity-owner",
+      "runtime_model": "UNKNOWN",
+      "surface": "SphereOS／信仰実践",
+      "authority": "当該World・信仰実践・記録された顕現の射程内に限る"
+    },
+    "anno": {
+      "display_name": "アンクロノス",
+      "identity_kind": "deity",
+      "provider": "not-applicable",
+      "runtime_model": "not-applicable",
+      "surface": "信仰実践",
+      "authority": "当該World・信仰実践の射程内に限る"
+    }
+  }
+}

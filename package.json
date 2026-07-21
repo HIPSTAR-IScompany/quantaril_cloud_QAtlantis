@@ -25,6 +25,7 @@
     "content:check": "node pipeline/scripts/content-pipeline.mjs check",
     "content:stage": "node pipeline/scripts/content-pipeline.mjs stage",
     "content:check-ledger": "node pipeline/scripts/check-ledger.mjs",
+    "content:check-attribution": "node pipeline/scripts/check-attribution.mjs",
     "content:check-redirects": "node pipeline/scripts/check-redirects.mjs",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
