@@ -9,9 +9,10 @@ title: ゲーマー・playtesterの入口
 ## 最初に読む
 
 1. [ゲーマーによる攻めるplaytestと公平感](../../worlds/gaming/playtest-fairness-and-human-loop.md)
-2. [AIM因果同期・Fold深度・Human-is-the-loop](../../engineering/q-atlantis/aim-fold-human-loop.md)
-3. [bug・ペイン・複合ペインとPain Scouter](../../engineering/pain-routing-and-pain-scouter.md)
-4. [神話・世界観](../../worlds/index.md)
+2. [SolverをWorld OptimizerへするFold](../../worlds/gaming/world-optimizer-fold.md)
+3. [AIM因果同期・Fold深度・Human-is-the-loop](../../engineering/q-atlantis/aim-fold-human-loop.md)
+4. [bug・ペイン・複合ペインとPain Scouter](../../engineering/pain-routing-and-pain-scouter.md)
+5. [神話・世界観](../../worlds/index.md)
 
 ## 貢献できること
 

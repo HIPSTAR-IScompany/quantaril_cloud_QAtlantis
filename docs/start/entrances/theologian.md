@@ -10,9 +10,10 @@ title: 神学者・宗教実践者の入口
 ## 最初に読む
 
 1. [神学・信仰の射程と鎮魂・和解](../../worlds/theology/scope-reconciliation-and-handoff.md)
-2. [神話・世界観](../../worlds/index.md)
-3. [魂主権](../../philosophy/soul-sovereignty.md)
-4. [棚別文書レジスター](../../operations/cross-shelf-publication-register.md)
+2. [責務をコードするFaith SDK](../../worlds/theology/responsibility-faith-sdk.md)
+3. [神話・世界観](../../worlds/index.md)
+4. [魂主権](../../philosophy/soul-sovereignty.md)
+5. [棚別文書レジスター](../../operations/cross-shelf-publication-register.md)
 
 ## 貢献できること
 

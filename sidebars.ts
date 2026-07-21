@@ -36,8 +36,10 @@ const sidebars: SidebarsConfig = {
         },
         'worlds/mythology/logos-structure',
         'worlds/theology/quantum-structural-theology',
+        'worlds/theology/responsibility-faith-sdk',
         'worlds/theology/scope-reconciliation-and-handoff',
         'worlds/gaming/playtest-fairness-and-human-loop',
+        'worlds/gaming/world-optimizer-fold',
       ],
     },
     {
@@ -46,6 +48,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'practice/index'},
       items: [
         'practice/provisional-meaning-bridge',
+        'practice/aim-diffusion-field',
         'practice/oracle/oracle-logs',
         'practice/channeling/channeling-engineering',
         'practice/experience-records/near-death',
@@ -98,6 +101,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'engineering/q-atlantis/context-dimension-world-builder',
             'engineering/q-atlantis/aim-fold-human-loop',
+            'engineering/q-atlantis/fold-control-plane-and-vqp',
             'engineering/q-atlantis/fold7g-fold8g-research-map',
             'engineering/q-atlantis/product-line',
             'engineering/q-atlantis/component-map',

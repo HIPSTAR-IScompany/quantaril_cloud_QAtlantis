@@ -14,6 +14,7 @@ Q Atlantisへ参加できます。神学を履修してからでなければcode
 3. [工学者のためのスピリチュアル受信手引き](../../engineering/spiritual-reception-guide.md)
 4. [棚別文書レジスター](../../operations/cross-shelf-publication-register.md)
 5. [Fold7G・Fold8G研究地図](../../engineering/q-atlantis/fold7g-fold8g-research-map.md)
+6. [Fold control plane・VQP・三つの運用尺度](../../engineering/q-atlantis/fold-control-plane-and-vqp.md)
 
 ## 貢献できること
 

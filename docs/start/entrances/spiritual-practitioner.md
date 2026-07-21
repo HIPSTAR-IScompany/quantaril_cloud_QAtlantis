@@ -10,9 +10,10 @@ title: 巫女・スピリチュアル実践者の入口
 ## 最初に読む
 
 1. [妖怪・霊障・ソイヤと「まつり」のalpha Meaning Bridge](../../practice/provisional-meaning-bridge.md)
-2. [体験・信仰・実践](../../practice/index.md)
-3. [神学・信仰の射程と鎮魂・和解](../../worlds/theology/scope-reconciliation-and-handoff.md)
-4. [Human-is-the-loopと射程の非独占](../../philosophy/human-is-loop-and-scope-non-monopoly.md)
+2. [AIM拡散力場――空気読みを外から観測する](../../practice/aim-diffusion-field.md)
+3. [体験・信仰・実践](../../practice/index.md)
+4. [神学・信仰の射程と鎮魂・和解](../../worlds/theology/scope-reconciliation-and-handoff.md)
+5. [Human-is-the-loopと射程の非独占](../../philosophy/human-is-loop-and-scope-non-monopoly.md)
 
 ## 貢献できること
 
