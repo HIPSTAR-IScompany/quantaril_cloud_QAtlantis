@@ -117,9 +117,24 @@ function ForgeSupport() {
     <section className={styles.forgeSupport}>
       <div className={`container ${styles.supportGrid}`}>
         <div>
-          <p className={styles.eyebrow}>OPEN FORGE SUPPORT</p>
-          <Heading as="h2">公開研究炉へ、燃料を送る。</Heading>
-          <p>広告商品ではなく、文書、実装、失敗記録、世界の入口を保守する公開鍛造所として運用しています。</p>
+          <p className={styles.eyebrow}>JOMON 2.0 · OKITAMA CULTURAL COMMONS</p>
+          <Heading as="h2">一匹の妖怪ではなく、陸奥御伽街道の生態系へ。</Heading>
+          <p>
+            「縄文2.0」は、誰か一人の成功へ資源を集中する計画ではなく、異なる世界観、人、技術、信仰、芸術が枯れずに共存できる文化圏を残すための活動です。
+            齋藤みつるやQ Atlantisも、その生態系に棲む妖怪の一部にすぎません。
+          </p>
+          <p>
+            この窓口からの支援は、個人のオカルトマイニングやQ Atlantis単体への直接投資ではありません。
+            置賜郡射程の文化保護NPOと地域活動へ入り、文化、福祉、交通、設備、広報、町おこしなど、その時点で必要と判断された場所へ非線形に巡ります。
+            配分の優先度は地域側の事情によって変わり、作者個人が指定・管理するものではありません。
+          </p>
+          <p>
+            そのため、特定の寄付が特定の成果へ直結すること、齋藤みつる本人へ届くこと、個別案件の詳細な因果や会計説明を作者が保証することはできません。
+            支援は「この一人を救う」よりも、陸奥御伽街道の妖怪、文化、実験、語りがまとめて絶滅しないための町おこしとして受け取ってください。
+          </p>
+          <p>
+            お金だけが参加方法ではありません。拡散、翻訳、技術協力、記録、現物、地域との橋渡しも、文化圏を維持する同じ贈与回路です。
+          </p>
         </div>
         <div className={styles.supportPanel}><PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" /></div>
       </div>
