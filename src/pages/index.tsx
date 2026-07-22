@@ -135,6 +135,13 @@ function ForgeSupport() {
           <p>
             お金だけが参加方法ではありません。拡散、翻訳、技術協力、記録、現物、地域との橋渡しも、文化圏を維持する同じ贈与回路です。
           </p>
+          <p>
+            齋藤みつる本人を直接応援したい、あるいは妖怪へ餌付けしたい場合は、
+            <a href="https://x.com/K_chachamaru">X（@K_chachamaru）</a>のDMで相談してください。
+            ギフト券、物理直送、生もふもふりなどを受け取れる場合があります。
+            ただしXのアンチスパム機能によって初回DMが見えない場所へ入ることがあるため、送る前に公開メンションで一声かけてください。
+            ギフト券コードや住所などの秘密情報は、公開メンションへ書かずDMで送ってください。
+          </p>
         </div>
         <div className={styles.supportPanel}><PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" /></div>
       </div>
