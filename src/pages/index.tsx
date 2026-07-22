@@ -117,9 +117,20 @@ function ForgeSupport() {
     <section className={styles.forgeSupport}>
       <div className={`container ${styles.supportGrid}`}>
         <div>
-          <p className={styles.eyebrow}>OPEN FORGE SUPPORT</p>
-          <Heading as="h2">公開研究炉へ、燃料を送る。</Heading>
-          <p>広告商品ではなく、文書、実装、失敗記録、世界の入口を保守する公開鍛造所として運用しています。</p>
+          <p className={styles.eyebrow}>OKITAMA CULTURE & OPEN FORGE SUPPORT</p>
+          <Heading as="h2">一つの作品ではなく、置賜の文化圏へ燃料を送る。</Heading>
+          <p>
+            この支援窓口は、齋藤みつる個人やQ Atlantis単体への直接投資ではありません。
+            置賜郡射程の文化保護と地域活動を支えるNPOの窓口であり、寄せられた資金は地域の複数事業、運営費、行政や町との連携を含む広い活動系へ流れます。
+          </p>
+          <p>
+            地方では、文化、福祉、交通、設備、広報、町おこしが一つずつ独立して動かず、財政不足と複数主体の調整へ吸収されることがあります。
+            そのため、特定プロジェクトへの線形な使途や成果を、このページの作者が個人として保証するものではありません。
+          </p>
+          <p>
+            私自身は広報と公開制作を担いますが、資金配分、会計、個別事業の管理主体ではなく、個人として財務責任を引き受ける立場にもありません。
+            Q Atlantisを入口に支援する場合も、一人の開発者を買うのではなく、置賜の文化圏と公開活動の生存余地を広げる町おこしとして受け取ってください。
+          </p>
         </div>
         <div className={styles.supportPanel}><PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" /></div>
       </div>
