@@ -7,8 +7,9 @@ const legacyRedirects = require('./migration/redirects.json');
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const config: Config = {
 
-  title: 'Quantaril Cloud Q Atlantis',
+  title: 'Q Atlantis',
   tagline: '神話・人格・体験・技術を、次の世界へ運ぶ',
+  titleDelimiter: '·',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,6 +33,29 @@ const config: Config = {
     defaultLocale: 'ja',
     locales: ['ja'],
   },
+
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Q Atlantis',
+        alternateName: 'Quantaril Cloud Q Atlantis',
+        url: 'https://quantaril.cloud/',
+        description: '神話・人格・体験・技術を一つの正しさへ潰さず、World・Fold・OAEとして運ぶ公開研究鍛造所。',
+        inLanguage: 'ja',
+        image: 'https://quantaril.cloud/img/quantaril-social-card-atlantis.png',
+        sameAs: [
+          'https://x.com/K_chachamaru',
+          'https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis',
+        ],
+      }),
+    },
+  ],
 
   presets: [
     [
@@ -97,7 +121,18 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: true,
     },
-    image: 'img/quantaril-social-card.jpg',
+    image: 'img/quantaril-social-card-atlantis.png',
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'Q Atlantis, SphereOS, 情報子工学, 意味資源OS, Fold, OAE, Gaming Cosmology, オープンサイエンス, OSS',
+      },
+      {name: 'author', content: '齋藤みつる'},
+      {name: 'theme-color', content: '#071827'},
+      {property: 'og:site_name', content: 'Q Atlantis'},
+      {name: 'twitter:site', content: '@K_chachamaru'},
+      {name: 'twitter:creator', content: '@K_chachamaru'},
+    ],
     navbar: {
       title: 'Q Atlantis',
       logo: {

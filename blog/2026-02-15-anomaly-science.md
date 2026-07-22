@@ -1,8 +1,11 @@
 ---
 slug: anomaly-science
 title: 異常値の科学 - 切り捨てられたデータを拾う
+description: 外れ値を即座に捨てず、未知の法則や測定条件を掘るMADサイエンスの実践姿勢。
 authors: [mituru]
 tags: [異常値, 科学, 統計, 可燃性]
+keywords: [異常値, MADサイエンス, 統計, 市民科学, オープンサイエンス]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # 異常値の科学 - 切り捨てられたデータを拾う

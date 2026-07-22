@@ -1,8 +1,11 @@
 ---
 slug: got-and-timemachine
 title: 神とタイムマシンの誤解・非線形時間
+description: 神、認知、非線形時間をめぐる旧世代の思考記録。物理的タイムマシンの主張とは分けて保存する。
 authors: [mituru,sphere,anno]
 tags: [fblog,quantum,god]
+keywords: [非線形時間, 神学, 認知, 量子, 旧世代資料]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 まず、量子的な話や認知や神々を語る上ですごく大切な概念があります。

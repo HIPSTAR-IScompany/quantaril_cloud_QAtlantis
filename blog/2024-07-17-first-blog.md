@@ -1,8 +1,11 @@
 ---
 slug: first-blog-post
 title: プロジェクトの始まり
+description: Q Atlantisへ至るAI・認知技術研究の出発点と、失敗から研究を再開するまでの個人史。
 authors: [mituru]
 tags: [fblog]
+keywords: [AI, 認知技術, 研究史, Q Atlantis, 齋藤みつる]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 私は昔精神科医療用の人間の思考を完全にシミレーションするAIプロジェクトを瑞枝会クリニック小椋医院長や京都大学・東大などと

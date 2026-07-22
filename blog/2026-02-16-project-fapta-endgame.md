@@ -1,8 +1,11 @@
 ---
 slug: project-fapta-endgame
 title: プロジェクトファプタ - FIATのサービス終了予告
+description: 法定通貨を信用サービスとして捉え、その脆性と非中央集権的な代替を考察する構造分析。
 authors: [mituru]
 tags: [プロジェクトファプタ, FIAT, ビットコイン, 経済崩壊, 可燃性]
+keywords: [FIAT, 法定通貨, ビットコイン, 経済構造, 分散]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # プロジェクトファプタ - FIATのサービス終了予告

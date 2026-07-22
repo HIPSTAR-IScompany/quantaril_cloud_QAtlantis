@@ -1,7 +1,10 @@
 ---
 title: 量子から情報子工学へ ― 個人実践としてのスピリチュアルを取り戻すために
+description: 「量子」系語彙を情報子工学へ再配置し、科学・工学・スピリチュアルの責務を整理する。
 authors: [mituru,chatGPT]
 date: 2026-01-25
+keywords: [情報子工学, Infotonics, スピリチュアル, 科学, 工学]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 ## 要約（結論を先に）

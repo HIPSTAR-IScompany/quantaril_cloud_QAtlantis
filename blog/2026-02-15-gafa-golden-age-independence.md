@@ -1,8 +1,11 @@
 ---
 title: GAFA黄金期から独立へ - 構造原理主義者の選択
+description: 2007〜2011年の技術文化を振り返り、構造原理主義者が独立を選んだ理由を記す個人史。
 authors: [mituru]
 date: 2026-02-15
 tags: [personal, history, philosophy]
+keywords: [GAFA, 技術史, 独立, 構造原理主義, 個人史]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 ## はじめに

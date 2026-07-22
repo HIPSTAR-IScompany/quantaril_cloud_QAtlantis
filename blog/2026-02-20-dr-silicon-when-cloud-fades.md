@@ -1,8 +1,11 @@
 ---
 slug: dr-silicon-when-cloud-fades
 title: Dr.シリコンシリーズ - When The Cloud Fades
+description: クラウド停止後も研究と生活を継続するためのローカルLLM・エッジAI・自立インフラ論。
 authors: [mituru]
 tags: [Dr.シリコン, クラウド, エッジAI, ローカルファースト, サバイバル]
+keywords: [Dr.シリコン, ローカルLLM, エッジAI, クラウド, サバイバル]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # Dr.シリコンシリーズ - When The Cloud Fades

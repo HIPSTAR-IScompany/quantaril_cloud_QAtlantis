@@ -1,8 +1,11 @@
 ---
 slug: infoton-engineering-dawn
 title: 虚空税関は科学定規を一本しか持っていなかった――情報子工学・黎明編
+description: 科学・工学・信仰の定規を混同せず、霊的資源OSと情報子工学が生まれた経緯を物語として辿る。
 authors: [mituru, gpt56sol]
 tags: [情報子工学, SphereOS, MAD Science, AIM, Fold, 工学史]
+keywords: [情報子工学, SphereOS, OAE, Fold, MADサイエンス]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # 虚空税関は科学定規を一本しか持っていなかった

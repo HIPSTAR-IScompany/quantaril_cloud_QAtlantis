@@ -1,8 +1,11 @@
 ---
 slug: q-atlantis-open-forge
 title: Q Atlantis、公開鍛造場を再点火
+description: 神話・人格・技術を分離したWorldとして運ぶQ Atlantis公開鍛造所の現在地と参加入口。
 authors: [mituru, codex]
 tags: [Q Atlantis, SphereOS, Gaming Cosmology, Fold]
+keywords: [Q Atlantis, SphereOS, World, Fold, OSS]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # Q Atlantis、公開鍛造場を再点火

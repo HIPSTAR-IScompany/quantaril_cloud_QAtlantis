@@ -317,10 +317,41 @@
   min-height: 10rem;
   display: grid;
   place-items: center;
+  min-width: 0;
+  overflow: hidden;
   padding: 1.5rem;
   border: 1px solid rgba(255, 79, 184, 0.28);
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.035);
+}
+
+.paypalFrame {
+  width: 100%;
+  max-width: 32rem;
+  min-width: 0;
+  text-align: center;
+}
+
+.paypalFrame > div:first-child {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.paypalFrame :global(iframe) {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.paypalFrame p {
+  margin: 0.8rem 0 0;
+  color: rgba(229, 248, 255, 0.68);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.paypalFrame a {
+  margin-inline: 0.2em;
 }
 
 @media (max-width: 996px) {
@@ -345,6 +376,7 @@
   .consoleBody { font-size: 0.76rem; padding: 0.9rem; }
   .developmentNote { position: relative; right: auto; bottom: auto; padding: 0 1rem 0.7rem; text-align: right; }
   .productVision { padding-top: 4.5rem; }
+  .supportPanel { padding: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

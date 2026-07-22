@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
@@ -144,15 +145,30 @@ function ForgeSupport() {
             齋藤みつる側から個別にギフト券を要求する運用はしません。ギフト券コードや住所などの秘密情報は、公開メンションへ書かずDMだけで扱ってください。
           </p>
         </div>
-        <div className={styles.supportPanel}><PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" /></div>
+        <div className={styles.supportPanel}>
+          <PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" className={styles.paypalFrame} />
+        </div>
       </div>
     </section>
   );
 }
 
 export default function Home(): ReactNode {
+  const pageTitle = '神話・人格・技術を運ぶ公開鍛造所';
+  const pageDescription = 'Q Atlantisは、神話・人格・体験・技術を一つの正しさへ潰さず、World・Fold・OAEとして運ぶ公開研究鍛造所です。';
+
   return (
-    <Layout title="Q Atlantis" description="神話・人格・体験・技術を次の世界へ運ぶQ Atlantisの公開鍛造所">
+    <Layout title={pageTitle} description={pageDescription}>
+      <Head>
+        <meta name="keywords" content="Q Atlantis, SphereOS, 情報子工学, 意味資源OS, Fold, OAE, Gaming Cosmology, オープンサイエンス, OSS" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Q Atlantis" />
+        <meta property="og:title" content={`${pageTitle} · Q Atlantis`} />
+        <meta property="og:image:alt" content="複数のWorldをPortalでつなぐQ Atlantis公開鍛造所" />
+        <meta name="twitter:title" content={`${pageTitle} · Q Atlantis`} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image:alt" content="複数のWorldをPortalでつなぐQ Atlantis公開鍛造所" />
+      </Head>
       <div className={styles.homeShell}>
         <HomepageHeader />
         <main>

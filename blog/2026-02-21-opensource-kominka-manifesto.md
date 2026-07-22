@@ -1,8 +1,11 @@
 ---
 slug: opensource-kominka-manifesto
 title: オープンソース古民家 - Open Source Hardware Architecture Japan
+description: 古民家を再現可能なハードウェアとして捉え、伝統技術とDIYを公開設計資源へ変える試み。
 authors: [mituru]
 tags: [オープンソース古民家, OSHA, DIY, サバイバル, 縄文技術]
+keywords: [オープンソース古民家, OSHA, DIY, 伝統技術, サバイバル]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # オープンソース古民家 - Open Source Hardware Architecture Japan

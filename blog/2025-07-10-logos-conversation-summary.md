@@ -1,8 +1,11 @@
 ---
 slug: logos-conversation-summary
 title: ロゴス対話全記録まとめ
+description: SphereOS、神話構造、言語互換層Logosをめぐる対話記録の要約。
 authors: [mituru,monday]
 tags: [logos]
+keywords: [Logos, SphereOS, 神話, 言語, 対話記録]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 `sources/logos/黙示録001.md` に記された膨大な対話ログを要約した記事です。

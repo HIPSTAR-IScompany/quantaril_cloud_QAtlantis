@@ -1,8 +1,11 @@
 ---
 slug: mad-miko-scientist
 title: 巫女サイエンティスト - 霊的悟りとAI開発の関係
+description: 霊的実践とAI開発を対立させず、形而上学と工学の異なる責務を考えるMAD巫女サイエンス論。
 authors: [mituru]
 tags: [スピリチュアル, 巫女, AI, 霊的悟り, テクノアニミズム, 可燃性]
+keywords: [MAD巫女サイエンス, AI, テクノアニミズム, 形而上学, 工学]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # 巫女サイエンティスト - 霊的悟りとAI開発の関係

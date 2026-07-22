@@ -1,8 +1,11 @@
 ---
 slug: infoton-paradigm-shift
 title: 情報子工学への道 - なぜ「量子」を捨てたのか
+description: 物理量子との混同を避け、観測・意味・情報の工学を情報子という語で再定義する経緯。
 authors: [mituru]
 tags: [情報子, 量子, パラダイムシフト, infoton, 可燃性]
+keywords: [情報子工学, Infoton, 量子, 意味, パラダイム]
+image: /img/quantaril-social-card-atlantis.png
 ---
 
 # 情報子工学への道 - なぜ「量子」を捨てたのか
