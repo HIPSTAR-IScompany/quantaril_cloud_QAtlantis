@@ -180,6 +180,7 @@ const sidebars: SidebarsConfig = {
         'operations/provenance/source-mining-2026-07-20',
         'operations/provenance/source-mining-2026-07-21',
         'operations/provenance/publication-magi-audit-2026-07-20',
+        'operations/provenance/funding-lineage-publication-magi-audit-2026-07-26',
         'operations/provenance/deploy-failure-2026-07-20',
         'operations/provenance/ssh-key-passphrase-storage-2026-07-20',
         'operations/site-notice',
