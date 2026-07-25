@@ -12,6 +12,7 @@ Q Atlantisが何を作れるかだけでなく、誰のために、どの境界�
 - [ハームリダクション](./harm-reduction.md)
 - [Human-is-the-loopと射程の非独占](./human-is-loop-and-scope-non-monopoly.md)
 - [オープンソース原理主義](./open-source-manifesto.md)
+- [アメノウズメと日本ゲシュタルトの実装境界](./jomon-2.0-japan-gestalt-and-uzume.md)
 - [縄文vs弥生](./civilization/jomon-vs-yayoi.md)
 
 ここに置く思想は、OSがユーザーへ強制する唯一の教義ではありません。異なる思想とworld flavorが分岐・共存・退出できることを、工学側の境界設計へ要求します。
