@@ -11,6 +11,7 @@ description: 原典、正本、生成、転送、URL互換、状態表示を管�
 - [ZeroRoomLab-manifest転送メモ](./migration/manifest-transfer-notes.md)
 - [ノートから公開文書へのパイプライン](./content-pipeline/index.md)
 - [棚別文書レジスターと公開パイプライン](./cross-shelf-publication-register.md)
+- [Q Atlantisの資金・系譜実装契約](./funding-and-lineage-integration.md)
 - [来歴と正本](./provenance/index.md)
 - [既知のnpm脆弱性](./known-vulnerabilities.md)
 
