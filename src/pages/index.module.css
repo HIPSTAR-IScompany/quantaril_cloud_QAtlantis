@@ -325,6 +325,11 @@
   background: rgba(255, 255, 255, 0.035);
 }
 
+.supportPanelInner {
+  width: 100%;
+  max-width: 32rem;
+}
+
 .paypalFrame {
   width: 100%;
   max-width: 32rem;
@@ -352,6 +357,20 @@
 
 .paypalFrame a {
   margin-inline: 0.2em;
+}
+
+.supportPolicy {
+  margin: 1.15rem 0 0;
+  padding-top: 1rem;
+  color: rgba(229, 248, 255, 0.66);
+  border-top: 1px solid rgba(255, 79, 184, 0.2);
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.supportPolicy a {
+  color: var(--atlas-cyan);
+  font-weight: 800;
 }
 
 @media (max-width: 996px) {

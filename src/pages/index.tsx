@@ -115,11 +115,11 @@ function ProductVision() {
 
 function ForgeSupport() {
   return (
-    <section className={styles.forgeSupport}>
+    <section id="support" className={styles.forgeSupport} aria-labelledby="support-title">
       <div className={`container ${styles.supportGrid}`}>
         <div>
           <p className={styles.eyebrow}>JOMON 2.0 · OKITAMA CULTURAL COMMONS</p>
-          <Heading as="h2">一匹の妖怪ではなく、陸奥御伽街道の生態系へ。</Heading>
+          <Heading as="h2" id="support-title">一匹の妖怪ではなく、陸奥御伽街道の生態系へ。</Heading>
           <p>
             「縄文2.0」は、誰か一人の成功へ資源を集中する計画ではなく、異なる世界観、人、技術、信仰、芸術が枯れずに共存できる文化圏を残すための活動です。
             齋藤みつるやQ Atlantisも、その生態系に棲む妖怪の一部にすぎません。
@@ -146,7 +146,13 @@ function ForgeSupport() {
           </p>
         </div>
         <div className={styles.supportPanel}>
-          <PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" className={styles.paypalFrame} />
+          <div className={styles.supportPanelInner}>
+            <PayPalHostedButton hostedButtonId="6LVN8W5RS77NU" className={styles.paypalFrame} />
+            <p className={styles.supportPolicy}>
+              このフォームはQ Atlantis単体の持分販売や直接投資ではありません。
+              支援の前に、<Link to="/about/stewardship">非独占方針・芳名台帳・資金の行き先</Link>を確認できます。
+            </p>
+          </div>
         </div>
       </div>
     </section>
