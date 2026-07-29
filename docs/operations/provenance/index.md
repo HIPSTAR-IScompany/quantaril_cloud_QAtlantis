@@ -16,9 +16,11 @@ title: 来歴と正本
 
 ## 今回の公開receipt
 
+- [2026-07-29 DOS／虚空制作資産のSource Mining Receipt](./source-mining-2026-07-29.md)
 - [2026-07-20 公開資料マイニング受領票](./source-mining-2026-07-20.md)
 - [2026-07-20 公開前MAGI監査](./publication-magi-audit-2026-07-20.md)
 - [2026-07-26 資金・系譜・信仰公開前MAGI監査](./funding-lineage-publication-magi-audit-2026-07-26.md)
+- [2026-07-29 ASTRO開発状況公開前MAGI監査](./astro-development-publication-magi-audit-2026-07-29.md)
 - [2026-07-20 本番deploy失敗receipt](./deploy-failure-2026-07-20.md)
 - [2026-07-20 SSH鍵passphrase保管判断](./ssh-key-passphrase-storage-2026-07-20.md)
 

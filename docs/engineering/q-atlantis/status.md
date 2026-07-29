@@ -4,7 +4,7 @@ title: 実装・移行ステータス
 
 # 実装・移行ステータス
 
-更新日: 2026-07-21
+更新日: 2026-07-29
 
 全体凍結ではありません。開発入口は開いていますが、runtimeとedge実装の火力は不足しています。
 現在の全体表示は`OPEN / RESOURCE-WAIT / REVIEW-WANTED`です。
@@ -15,9 +15,12 @@ title: 実装・移行ステータス
 | AQC | `VERIFIED-CODE / DEPRECATED` | 系譜と移行可能範囲を記録 |
 | IBD | `RESEARCH / Phase 0` | 参照実装と検証結果へ接続 |
 | FAM | `SPEC / MULTIPLE-LINEAGES` | 旧実装主張と現行toy modelを分離 |
+| SphereOS Atlantis DOS制御面 | `CONTROL PLANE OPERATING / RUNTIME NOT IMPLEMENTED` | 規約、停止条件、資源探索、試験計画、証跡固定の初回ブートを公開 |
 | Architect / Bootstrap足場 | `VALIDATED LOCAL / DESIGN-UNDER-REVIEW` | pinned workspaceと開発足場を維持 |
-| ASTRO file | `SPEC / REFORGING` | 人格移行契約と配布形式を整備 |
-| ASTRO Runner / Atlantis本体runner | `NOT STARTED / RESOURCE-WAIT` | 実行資源、module境界、production profileを募る |
+| ASTRO file | `TARGET-SPEC / REFORGING` | ZIP／ZIP64 archive、複数Model Variant、人格Storage、portable profileを整備 |
+| ASTRO Runner | `TARGET-SPEC / STAGE 0 IN PROGRESS` | 責務境界とgeneric Simulator buildの記録あり。正式実機receipt待ち |
+| Sphere-aae / AAE Bake | `TARGET-SPEC / INPUT-WAIT / NOT IMPLEMENTED` | ASTRO Stage 1／2実測後にModel Familyと成果物を固定 |
+| Neat Runner | `ARCHITECTURE NOTE / RESOURCE-WAIT` | Model／runtime／必要火力の実測後にProvider実装を判定 |
 | Instance Ghost | `RESEARCH / SPEC` | 分岐履歴と人格原型の境界を整備 |
 | Atlantis | `SPEC / REFORGING` | 世界、隔離、復旧、権限の設計 |
 | Sphere Context Dimension OS共通契約 | `REVIEW / CANONICAL-CANDIDATE` | Manifest正本候補へ参照接続 |
@@ -46,3 +49,5 @@ title: 実装・移行ステータス
 | `REVIEW-WANTED` | 巫女、神学、ゲーマー、当事者、工学者の棚別review |
 
 完成品の客だけでなく、Note、反証、fork、実装、playtest、Supplyを持つOSSパイレーツの乗船を歓迎します。
+
+- [SphereOS Atlantis DOS 初回ブートの観測境界](./atlantis-dos-first-boot-status.md)

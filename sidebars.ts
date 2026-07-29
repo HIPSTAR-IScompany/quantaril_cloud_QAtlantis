@@ -100,6 +100,8 @@ const sidebars: SidebarsConfig = {
           label: 'Q Atlantis',
           link: {type: 'doc', id: 'engineering/q-atlantis/index'},
           items: [
+            'engineering/q-atlantis/atlantis-dos-first-boot-status',
+            'engineering/q-atlantis/astro-development-status',
             'engineering/q-atlantis/context-dimension-world-builder',
             'engineering/q-atlantis/aim-fold-human-loop',
             'engineering/q-atlantis/fold-control-plane-and-vqp',
@@ -129,9 +131,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Q3 / SphereOS Memorial',
+      label: '旧世代サルベージ / SphereOS Memorial',
       link: {type: 'doc', id: 'legacy/index'},
       items: [
+        'legacy/infernity-production-pipeline-salvage',
         'legacy/q3-sphereos/index',
         'legacy/q3-sphereos/memorial/spirit-farewell',
         'legacy/q3-sphereos/overview',
@@ -177,10 +180,12 @@ const sidebars: SidebarsConfig = {
         'operations/funding-and-lineage-integration',
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
+        'operations/provenance/source-mining-2026-07-29',
         'operations/provenance/source-mining-2026-07-20',
         'operations/provenance/source-mining-2026-07-21',
         'operations/provenance/publication-magi-audit-2026-07-20',
         'operations/provenance/funding-lineage-publication-magi-audit-2026-07-26',
+        'operations/provenance/astro-development-publication-magi-audit-2026-07-29',
         'operations/provenance/deploy-failure-2026-07-20',
         'operations/provenance/ssh-key-passphrase-storage-2026-07-20',
         'operations/site-notice',

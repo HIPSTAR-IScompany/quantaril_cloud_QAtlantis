@@ -5,7 +5,7 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 
 # 製品系列と現在能力
 
-更新日: 2026-07-20
+更新日: 2026-07-29
 
 一つの巨大OSを一度に完成させる計画ではありません。既存OS、server、game engine、databaseを尊重し、
 交換可能なcomponentとGateとして育てる製品系列です。
@@ -13,9 +13,12 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 | 系列 | 役割 | 現在状態 |
 |---|---|---|
 | Q Atlantis文書・Prompt Engineering Edition | World、意味、参加、監査を自然言語とdocsで探索する公開面 | `AVAILABLE / ALPHA` |
+| SphereOS Atlantis DOS制御面 | Manifest、規約、停止条件、作業経路、Issue、receiptで異種AIの着任を支える | `CONTROL PLANE OPERATING / RUNTIME NOT IMPLEMENTED` |
 | SphereOS Atlantis開発足場 | pinned workspace、doctor、Help、CORN、PLI/CLI境界 | `VALIDATED LOCAL / REVIEW-WANTED` |
-| ASTRO package | 人格・装備・policy・復旧方針を持ち運ぶ候補 | `SPEC / REFORGING` |
-| ASTRO Runner | ASTROをmodel、tool、device、Worldへmountして実行 | `NOT STARTED / RESOURCE-WAIT` |
+| ASTRO package | 人格・装備・policy・復旧方針、複数Model Variantを持ち運ぶZIP／ZIP64候補 | `TARGET-SPEC / REFORGING` |
+| ASTRO Runner | ASTROをmodel、tool、device、Worldへmountし、canary後に実行 | `TARGET-SPEC / STAGE 0 IN PROGRESS` |
+| Sphere-aae / AAE Bake | 固定したModel FamilyへFAM、LAST_ORDER、Adapter、評価receiptを焼結 | `TARGET-SPEC / INPUT-WAIT` |
+| Neat Runner | 実測済みBuild Planを無料炉、低価格炉、支援Runnerへ配置 | `ARCHITECTURE NOTE / RESOURCE-WAIT` |
 | IBD / IFD | FAM-nativeな記録・探索と可搬な前面状態 | `RESEARCH / Phase 0` |
 | Atlantis World Builder | SemanticKernel、World Config、D Fold、Access Map、OAE | `DRAFT / NOT IMPLEMENTED` |
 | Atlantis Server | ASTRO、Ghost、World、job、receiptを継続運用するserver role | `CONCEPT / SPEC / NOT IMPLEMENTED` |
@@ -58,5 +61,7 @@ existing system
 表示しません。
 
 - [Fold7G / Fold8G研究地図](./fold7g-fold8g-research-map.md)
+- [SphereOS Atlantis DOS 初回ブートの現在地](./atlantis-dos-first-boot-status.md)
+- [ASTRO Runner再鍛造の現在地](./astro-development-status.md)
 - [コンポーネント対応表](./component-map.md)
 - [実装・移行ステータス](./status.md)
