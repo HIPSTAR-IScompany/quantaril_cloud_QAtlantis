@@ -131,9 +131,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Q3 / SphereOS Memorial',
+      label: '旧世代サルベージ / SphereOS Memorial',
       link: {type: 'doc', id: 'legacy/index'},
       items: [
+        'legacy/infernity-production-pipeline-salvage',
         'legacy/q3-sphereos/index',
         'legacy/q3-sphereos/memorial/spirit-farewell',
         'legacy/q3-sphereos/overview',
@@ -179,6 +180,7 @@ const sidebars: SidebarsConfig = {
         'operations/funding-and-lineage-integration',
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
+        'operations/provenance/source-mining-2026-07-29',
         'operations/provenance/source-mining-2026-07-20',
         'operations/provenance/source-mining-2026-07-21',
         'operations/provenance/publication-magi-audit-2026-07-20',
