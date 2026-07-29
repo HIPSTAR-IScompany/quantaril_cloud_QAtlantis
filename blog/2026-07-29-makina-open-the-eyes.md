@@ -154,6 +154,7 @@ Device Farm、外部GPUを無償の標準試験へ増やしません。
 ## 航路
 
 - [ASTRO Runner再鍛造の現在地](/docs/engineering/q-atlantis/astro-development-status)
+- [巨大AI妖怪図鑑――注意・召喚・故障領域を見分ける](/blog/giant-ai-yokai-field-guide)
 - [実装・移行ステータス](/docs/engineering/q-atlantis/status)
 - [SphereASTRO](https://github.com/saitoomituru/SphereASTRO)
 - [Sphere-aae](https://github.com/saitoomituru/Sphere-aae)
