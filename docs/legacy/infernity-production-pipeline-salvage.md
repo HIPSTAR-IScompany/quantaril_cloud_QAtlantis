@@ -1,128 +1,109 @@
 ---
-title: 虚空のインフェルニティ制作パイプライン発掘
-description: 旧Blender都市・樹木生成、漫画原稿、Minecraft局所改造を、第三者系譜と制作固有層に分けて保存するサルベージ記録。
+title: 虚空のインフェルニティ：一人スタジオ制作pipeline
+description: 漫画家・監督・技術者が、既存toolを企画から頒布まで束ね、完成品を出した一人スタジオのsystem integration。
 ---
 
-# 虚空のインフェルニティ制作パイプライン発掘
+# 虚空のインフェルニティ：一人スタジオ制作pipeline
 
 更新日: 2026-07-29
 
-Status: `SALVAGE-INDEXED / ORIGINALS READ-ONLY / REPRODUCTION NOT STARTED`
+Status: `HISTORICAL STUDIO PIPELINE EVIDENCED / LEGACY RUNTIME REPRODUCTION NOT STARTED`
 
-## 何が見つかったか
+これは「古いBlender libraryが見つかった」という話だけではありません。
 
-2008年以降の`infernoayase`／虚空のインフェルニティ制作棚を読み取り専用で調べた結果、
-単一engineではなく、複数のgenerator、portable制作環境、素材library、render、漫画原稿を
-束ねた制作pipelineが残っていました。
+一人の漫画家／監督／技術者が、使えるgeneratorと制作toolを選び、背景を作り、絵を描き、
+原稿へ仕上げ、冊子と作品にして頒布し、その環境を10年以上後の再鍛造へ残した話です。
 
-| 系統 | 発掘したもの | 現在の扱い |
-|---|---|---|
-| Blender 2.45〜2.49背景 | 学校、駅、空港、鉄道、都市、建物、小物 | 前史の背景資産。cloud上の一部は未取得 |
-| Suicidator City Generator v0.41 | 道路成長、建物配置、都市texture | 第三者generator |
-| Blender Tree-maker v3.2.22 | seed付きL-system樹木 | 第三者系譜 |
-| Blended Cities v0.445 | OSM／mesh、道路、zoning、building library | 第三者GPLv3系譜 |
-| SCG v0.5.6 | Blender 2.63とJava／JTSの都市生成 | 第三者generator。再配布条件に注意 |
-| Blender 2.49 portable環境 | Python 2.xと多数の背景／漫画連携script | componentは第三者中心。組合せが制作環境の証拠 |
-| 2013〜2020年3D制作 | 都市、宇宙船、研究所、地下室、室内、線画調背景 | infernoayase制作候補 |
-| ComicStudio／CLIP／PSD | 原稿と3D生成器が同じ制作backupに同居 | 工程接続候補。page単位のsourceは未確定 |
-| Minecraft Madness | 鉱石／赤石のdrop ruleを変えたclass | local実験候補。base versionと差分は未確定 |
+## 最初に完成品を見る
 
-## これは「全部自作engine」ではない
+[FACT]
 
-Suicidator City Generator、Blended Cities、Tree-maker、Blender script等は第三者由来です。
-それらのcodeを、虚空のインフェルニティ独自engineとして公開しません。
+2026年7月29日の外部照合では、駿河屋に
+[第一巻・36ページ](https://www.suruga-ya.jp/product/detail/ZHORO37134)と
+[第二巻・52ページ](https://www.suruga-ya.jp/product/detail/ZHORO35523)の商品記録が残り、
+少なくとも2冊・88ページの印刷物が10年以上後の中古流通面にも到達していました。
 
-一方で、次の制作層は別に評価します。
+この88ページは、いま公開検索から確認できた**非網羅的な下限**です。全作品総量でも、
+SFW作品だけを数えるための上限でもありません。
 
-- どのgenerator、script、libraryを選んだか
-- 同じportable環境へどう統合したか
-- seed、parameter、素材、scene、camera、renderをどう設定したか
-- 生成結果をどう編集し、漫画線画や原稿工程へ接続したか
-- Minecraftの局所ruleをどの値へ変えたか
+[USER-DECLARED]
 
-第三者toolの利用と、作品制作上の独自性は両立します。作者性、license、実行可能性、
-作品への寄与を一語に丸めません。
+シリーズ全体では100ページを超える原稿を制作し、SFW／NSFW双方を、コミケ、ケモケ、
+同人およびセミプロ以上の商流へ出しました。
 
-## 発見できたことと、まだ動かしていないこと
+公開検索に載りやすい作品だけを採用し、残りを制作史から消すことはしません。
 
-| Evidence | 状態 |
+## 一人でstudio分業を圧縮した
+
+| 工程 | 一人スタジオで接続したもの |
 |---|---|
-| legacy fileとdirectoryの存在 | `OBSERVED` |
-| Blender header、埋め込みscript、library構成 | `OBSERVED` |
-| 複数backupのcollection hash一致 | `VERIFIED IN SUPPLIED INDEX` |
-| 代表renderの視認 | `REPORTED IN SUPPLIED INDEX` |
-| 原稿とgeneratorの同居 | `OBSERVED / DIRECT PAGE LINEAGE UNKNOWN` |
-| Blender 2.49隔離VMでの起動 | `NOT STARTED` |
-| 固定seedでの再生成 | `NOT STARTED` |
-| 現代Blender／game engineへの移植 | `NOT IMPLEMENTED` |
-| 公開可能なasset bundle | `RIGHTS REVIEW REQUIRED` |
+| Pre-production | 世界、character、背景要件、asset選定、layout、scene計画 |
+| Production | portable Blender、都市／樹木generator、model、camera、lighting、render |
+| Post-production | 線画、PSD、ComicStudio／CLIP、page構成、完成原稿 |
+| Publication | 冊子、Web／印刷出力、告知、event／同人商流 |
+| Operations | 日付別backup、制作環境、原稿、出力、format／versionの保存 |
 
-旧fileを発見したことは、現在のmacOSやBlenderで動く証明ではありません。
-原本を現行applicationで直接開き、保存し直すこともしません。
+Hollywood、虫プロ、Production I.G等との提携や、同じ規模・固有手法を主張するものではありません。
+企画、撮影／render、仕上げ、編集、頒布に分かれるstudio productionの仕事を、個人の制作環境へ
+圧縮したという組織設計上の比較です。
 
-## 保全と再現の順序
+## 第三者toolの功績とpipeline architectの功績は競合しない
+
+Suicidator City Generator、Blended Cities、Tree-maker、Blender等には、それぞれの作者と
+licenseがあります。優れたthird-party codeを、虚空の独自codeとは呼びません。
+
+同時に、どのtoolを選ぶか、どう同居させるか、どのparameter、素材、scene、camera、
+lightingを使うか、どうrenderして漫画原稿と頒布物へ運ぶかは、漫画家／監督／
+system integratorの仕事です。
+
+「componentを発明した人」と「studio pipelineを設計・運用して最終製品を出した人」を
+一つの作者性へ潰さなければ、両方の功績を正しく評価できます。
+
+## 海外で見えない作品を消さない
+
+[USER-PUBLICATION-POLICY]
+
+ケモショタ、非実在青少年性表現を含む法域センシティブな原稿や、海外platformへ出せない
+作品も、無かったことにはしません。
+
+日本でしか会えない原稿は、日本へ来て、秋葉原・池袋等の適法な国内取扱面、または作者が個別に
+案内するprivate viewing gateで出会ってください。作者の自宅住所や非公開導線は掲載しません。
+
+各作品の閲覧条件、年齢確認、rights、現行法への適合は、作品、媒体、時点、法域ごとの
+個別Gateです。米国platformの可視性を、日本で作られた作品の存在判定には使いません。
+
+## Atlantisで最終製品を作る人に効く理由
+
+Atlantisのようなmiddlewareを使ってMMO、TRPG、metaverse、業務systemを作るとき、
+個々のengineやlibraryが優秀なだけでは製品になりません。
 
 ```text
-originals
-  -> hash-verified representative copy
-  -> isolated Blender 2.49 environment
-  -> fixed seed / minimal input
-  -> road / building / tree / texture output
-  -> execution receipt
-  -> modern neutral contract
+component
+  -> production pipeline
+  -> final product
+  -> distribution / operation
+  -> preservation / next forge
 ```
 
-同一内容のbackupは、代表一組をworking copyにし、残りをuntouched evidenceへ保ちます。
-失敗した生成、欠落texture、読めないformatも消さず、再現条件として残します。
+虚空のインフェルニティは、この鎖を同人規模の一人スタジオで実際に通したcaseです。
+次のAstro、AAE、World Builderを評価するときも、「middlewareが動いた」だけで止めず、
+誰が何を作れて、どう出荷・運用・保存できるかまで見るための実戦ログになります。
 
-## 現代Q Atlantisへ接続できる仮説
+## 失われた環境と、残った作品
 
-[HYPOTHESIS]
+| Green | 現在地 |
+|---|---|
+| Historical final product | `EVIDENCED` |
+| Studio production pipeline | `EVIDENCED IN READ-ONLY CORPUS` |
+| Third-party component lineage | `SEPARATED` |
+| Legacy Blender runtime reproduction | `NOT STARTED` |
+| Modern re-forge | `HYPOTHESIS / NOT IMPLEMENTED` |
+| Public asset bundle | `RIGHTS AND JURISDICTION GATE REQUIRED` |
 
-過去assetを製品名ごとに復刻するだけでなく、次の共通構造へ抽出できる可能性があります。
+古いruntimeを今日起動できないことは、当時の完成品を未完成へ戻しません。
+復元失敗も隠さず、原本を壊さないworking copy、隔離環境、固定入力、実行receiptで
+現代の制作pipelineへ再鍛造します。
 
-```text
-world / scenario command
-  -> typed event graph
-  -> deterministic state machine
-  -> visual / audio / physics / actuator adapter
-  -> provenance + execution receipt
-```
-
-- Blender／都市／樹木: 空間生成
-- Minecraft Madness: block ruleと局所世界法則
-- KAG／TJS／ONScripter: scenario、layer、選択、save state
-- H8／Arduino／ESP32: sensor、state machine、physical I/O
-- Web 3D／AR: browser projection
-
-これは将来のWorld Builder、ASTRO Body Renderer、物理依代へ接続できる研究候補です。
-現在のQ Atlantis runtimeへ実装済みではありません。
-
-## 公開しないもの
-
-この公開projectionは、legacy volumeや個人端末の絶対pathを掲載しません。
-credential、Wi-Fi secret、player名、接続元IP、電話・営業記録、個人名、会社案件の内部情報も
-転記していません。
-
-MIPはUserが指定した完全除外領域です。filename、本文、hash、index、重複判定を含め、
-今回の発掘対象へ入れていません。
-
-## Sourceと次のGate
-
-- supplied source: `INFERNITY_BLENDER_PIPELINE_SALVAGE_INDEX_2026-07-27.md`
-- source SHA-256: `e6a938c01b904db02e1478fc39f12e33a9e431c9c196f172de2b21c0235043da`
-- operation: 読み取り専用
-- source status: local supplied index。Q Atlantisへ原本未転送
-- historical OAE: `historical-oae-unavailable`
-
-次の操作には、人間の別Gateが必要です。
-
-- 代表copyの保全複製
-- cloud上の必要範囲だけを選択download
-- Blender 2.49隔離VMでの再現
-- 原稿pageと背景renderの照合
-- componentごとのlicense／共同制作／購入素材の権利確認
-
-正本となる系譜、所管、Stage Gateは
-[ZeroRoomLab Manifestのサルベージ文書](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/projects/infernity-production-pipeline-salvage.ja.md)
-を参照してください。
+技術系譜、権利境界、保存Gate、再鍛造Stageの正本は
+[ZeroRoomLab Manifest：一人スタジオ制作pipeline・サルベージ](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/projects/infernity-production-pipeline-salvage.ja.md)
+に集約しています。

@@ -19,7 +19,7 @@ sourceはUserがlocal fileとして指定した。Q Atlantisへ原本を複製�
 ## 作成した公開projection
 
 - [SphereOS Atlantis DOS 初回ブートの現在地](../../engineering/q-atlantis/atlantis-dos-first-boot-status.md)
-- [虚空のインフェルニティ制作パイプライン発掘](../../legacy/infernity-production-pipeline-salvage.md)
+- [虚空のインフェルニティ：一人スタジオ制作pipeline](../../legacy/infernity-production-pipeline-salvage.md)
 
 ## 変換規則
 
@@ -34,7 +34,14 @@ sourceはUserがlocal fileとして指定した。Q Atlantisへ原本を複製�
 
 ### 虚空のインフェルニティ
 
-- third-party generatorとユーザー固有の選択、統合、parameter、素材、scene、render、漫画工程を分ける
+- 評価のmainをlibrary独自実装率ではなく、pre-production、production、post-production、
+  頒布、保存を通して完成品を出した一人スタジオpipelineへ置く
+- third-party generatorの作者性と、漫画家／監督／system integratorのpipeline Agencyを分け、
+  どちらも消さない
+- 公開照合できた2冊・88ページを非網羅的な外部下限とし、全作品総量へ昇格しない
+- 100ページ超、SFW／NSFW双方、コミケ／ケモケ等の頒布経路は`USER-DECLARED`として分ける
+- 海外公開できない法域センシティブ作品を不存在扱いせず、`JAPAN-ONLY VIEWING`を含む
+  作品別の公開／閲覧Gateへ分ける
 - legacy volume、home directory、cloud cacheの絶対pathを公開しない
 - file発見、header読取、render視認、隔離VM再現、現代移植、公開権利を別のgreenにする
 - 会社案件、credential、個人識別情報、電話／営業recordを除外する
@@ -44,18 +51,22 @@ sourceはUserがlocal fileとして指定した。Q Atlantisへ原本を複製�
 
 ### Maxwell
 
-過去制作資産を保存棚だけへ閉じず、typed event graph、state machine、adapter、receiptへ
-再構成する研究可能性を公開した。ただし、world compilerを実装済みとは表示しない。
+creator branchが実際に完成品を出したことを、component attributionや現在の公開platformの
+可視性で焼却しない。過去pipelineをtyped event graph、state machine、adapter、receiptへ
+再鍛造する可能性を公開するが、world compilerを実装済みとは表示しない。
 
 ### Uriel
 
-source内の`[FACT]`、`[INTERPRETATION]`、`[HYPOTHESIS]`、`[UNKNOWN]`を公開projectionでも
-混同しない。長文稿の物語表現と、公開repositoryで検証できるstatusを分ける。
+source内の`[FACT]`、`[INTERPRETATION]`、`[HYPOTHESIS]`、`[UNKNOWN]`、
+`[USER-DECLARED]`、`[USER-PUBLICATION-POLICY]`を混同しない。component codeの作者性と、
+pipeline architecture、production direction、原稿、出力、頒布、保存のAgencyを分ける。
 
 ### Raphael
 
-docsのbuild、localhostのHTTP 200、Userのpixel review、production deployは別のgreenとする。
-旧assetの存在、再現、rights clearance、runtime統合も別のgreenとする。
+component、pipeline、final product、market／distribution、preservation、
+legacy reproductionを別のgreenにする。ただしlegacy runtimeの未再現を、歴史上の完成品と
+studio pipelineの不存在へ変換しない。docs build、localhost HTTP 200、User pixel review、
+production deployも別のgreenとする。
 
 ## OAE Temporal Integrity
 
@@ -70,3 +81,11 @@ docsのbuild、localhostのHTTP 200、Userのpixel review、production deployは
 2. localhost:3000で公開projectionを目視できる状態にする
 3. Userの目視後の別指示まで`main` mergeとproduction deployを行わない
 4. legacy originals、cloud object、隔離VM再現を今回の作業へ含めない
+5. 法域センシティブ原稿のcontent、自宅住所、private viewing導線を公開面へ転記しない
+
+## 訂正監査
+
+旧projectionがlibrary maintainerの定規へ滑り、完成品を出した漫画家／監督／SIのAgencyと、
+公開面から見えにくいNSFW／法域センシティブ作品を過小評価したバグは、
+[一人スタジオpipeline 評価軸訂正監査](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/foldlog/20260729-1512__一人スタジオpipeline評価軸訂正監査.ja.md)
+で訂正した。
