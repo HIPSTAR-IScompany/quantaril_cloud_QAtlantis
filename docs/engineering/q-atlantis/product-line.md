@@ -13,6 +13,7 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 | 系列 | 役割 | 現在状態 |
 |---|---|---|
 | Q Atlantis文書・Prompt Engineering Edition | World、意味、参加、監査を自然言語とdocsで探索する公開面 | `AVAILABLE / ALPHA` |
+| SphereOS Atlantis DOS制御面 | Manifest、規約、停止条件、作業経路、Issue、receiptで異種AIの着任を支える | `CONTROL PLANE OPERATING / RUNTIME NOT IMPLEMENTED` |
 | SphereOS Atlantis開発足場 | pinned workspace、doctor、Help、CORN、PLI/CLI境界 | `VALIDATED LOCAL / REVIEW-WANTED` |
 | ASTRO package | 人格・装備・policy・復旧方針、複数Model Variantを持ち運ぶZIP／ZIP64候補 | `TARGET-SPEC / REFORGING` |
 | ASTRO Runner | ASTROをmodel、tool、device、Worldへmountし、canary後に実行 | `TARGET-SPEC / STAGE 0 IN PROGRESS` |
@@ -60,6 +61,7 @@ existing system
 表示しません。
 
 - [Fold7G / Fold8G研究地図](./fold7g-fold8g-research-map.md)
+- [SphereOS Atlantis DOS 初回ブートの現在地](./atlantis-dos-first-boot-status.md)
 - [ASTRO Runner再鍛造の現在地](./astro-development-status.md)
 - [コンポーネント対応表](./component-map.md)
 - [実装・移行ステータス](./status.md)

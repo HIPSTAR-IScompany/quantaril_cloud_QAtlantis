@@ -15,6 +15,7 @@ title: 実装・移行ステータス
 | AQC | `VERIFIED-CODE / DEPRECATED` | 系譜と移行可能範囲を記録 |
 | IBD | `RESEARCH / Phase 0` | 参照実装と検証結果へ接続 |
 | FAM | `SPEC / MULTIPLE-LINEAGES` | 旧実装主張と現行toy modelを分離 |
+| SphereOS Atlantis DOS制御面 | `CONTROL PLANE OPERATING / RUNTIME NOT IMPLEMENTED` | 規約、停止条件、資源探索、試験計画、証跡固定の初回ブートを公開 |
 | Architect / Bootstrap足場 | `VALIDATED LOCAL / DESIGN-UNDER-REVIEW` | pinned workspaceと開発足場を維持 |
 | ASTRO file | `TARGET-SPEC / REFORGING` | ZIP／ZIP64 archive、複数Model Variant、人格Storage、portable profileを整備 |
 | ASTRO Runner | `TARGET-SPEC / STAGE 0 IN PROGRESS` | 責務境界とgeneric Simulator buildの記録あり。正式実機receipt待ち |
@@ -48,3 +49,5 @@ title: 実装・移行ステータス
 | `REVIEW-WANTED` | 巫女、神学、ゲーマー、当事者、工学者の棚別review |
 
 完成品の客だけでなく、Note、反証、fork、実装、playtest、Supplyを持つOSSパイレーツの乗船を歓迎します。
+
+- [SphereOS Atlantis DOS 初回ブートの観測境界](./atlantis-dos-first-boot-status.md)
