@@ -49,6 +49,26 @@ sourceはUserがlocal fileとして指定した。Q Atlantisへ原本を複製�
 - 会社案件、credential、個人識別情報、電話／営業recordを除外する
 - MIPはfilename、本文、hash、index、重複判定を含む完全除外を維持する
 
+### 2026-07-29 技術的触媒の追記
+
+- Userは、榊正宗氏の新しい生成系library群とFreePencil2の公開実装を観測したことが、
+  旧Infernity制作環境を掘り返す直接のきっかけだったと説明した
+- [FreePencil2公開repository](https://github.com/megamarsun/FreePencil2)で、
+  作者、3D modelから線画を抽出するBlender add-onという公開説明、GPL-3.0-or-later表示を確認した
+- sourceの存在確認と、手元build、性能、出力品質、旧資産互換を別greenにした
+- FreePencil2を、断線した一人スタジオpost-productionを現代Blenderへ再実装・移植する
+  `KEY-PART CANDIDATE / NOT INTEGRATED`として評価する
+- 外部実装を単なる発掘スイッチへ矮小化せず、旧Infernity側も前後工程を束ねる統合先として保持する
+- 採用、互換試験、実装StageはUser側の財布、時間、計算資源を含むresource gateの後段とし、
+  納期、支援要求、共同開発を約束しない
+- InfernityとFreePencil2の同一実装、直接派生、共同開発、公式系譜を主張しない
+- 公開SNS上のlike／短いreplyは接触receiptに留め、推薦、技術承認、共同研究へ昇格しない
+- 「東北近接ジェネレーティブ妖怪界隈」は`FLAVOR-UX / CURRENT-INTERPRETATION`であり、
+  公式cluster、提携団体、地域統計ではない
+- 東北のずんだ妖怪と山形の毛玉ケモナー妖怪を別project／別系譜として保持し、
+  AI以前から3DCG、character、漫画、映像へgeneratorを持ち込んだ隣接サブカル文化圏として説明する
+- 添付されたSNS画面は本文assetとして複製せず、第三者accountを含む画面全体の再公開を避けた
+
 ## MAGI claim scope
 
 ### Maxwell
