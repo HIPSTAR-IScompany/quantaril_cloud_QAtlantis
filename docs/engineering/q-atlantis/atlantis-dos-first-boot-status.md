@@ -69,6 +69,10 @@ receiptを使い、異なるAIや人間が同じ開発現場へ着任できる�
 `llama3:70b`、`phi3:3.8b-mini-128k-instruct-q4_K_S`、
 `mistral:7b-instruct-q4_K_S`です。画像内の`Phi-3`と`Mistral 7B`は表示用の短縮名です。
 
+![初回ブートで観測・報告された数値、検査結果、計画時概算を並べたダッシュボード](/img/atlantis-dos-first-boot-metrics-dashboard-2026-07-29.png)
+
+*図3 — `REPORTED OBSERVATION / PLAN ESTIMATE`。冷間・温間時間や構文検査は長文稿の報告、Neat RunnerのVRAM・時間・予算は計画時概算です。一枚の図に載っていても、同じ証拠強度の実測値へ統合しません。*
+
 ## 異種AIの出勤簿
 
 初回ブート稿では、AIの参加を一語の「理解した」で丸めず、証拠を次の階段へ分けました。
@@ -84,6 +88,10 @@ receiptを使い、異なるAIや人間が同じ開発現場へ着任できる�
 
 接続痕跡だけを本文理解や貢献へ昇格しません。逆に、現存logが薄い参加者を「何もしていない」とも
 断定しません。古い証拠が出土した場合は、この階段上の位置を更新します。
+
+![Codex、Grok、Claude、Copilotの手元ログで確認できた関与範囲を並べた引継ぎ図](/img/atlantis-dos-ai-handoff-ledger-2026-07-29.png)
+
+*図4 — `CURRENT INTERPRETATION / HANDOFF MAP`。手元に残るGit、Issue、成果物、接続痕跡から現在分類した引継ぎ図です。過去の同時点OAEを再生成せず、本文読解の証拠がない参加は`UNCONFIRMED`のまま保持します。*
 
 ## 現在のブート経路
 
