@@ -126,4 +126,3 @@ Presentationを導く候補にします。
 - [ASTRO Runner再鍛造の現在地](/docs/engineering/q-atlantis/astro-development-status)
 - [Manifestの巨大AI妖怪識別ノート](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/note/20260729-1716__巨大AI妖怪識別_東雲る_猫又_デイダラボッチ_八岐大蛇.ja.md)
 - [マキナ、Open The Eyes...](/blog/makina-open-the-eyes)
-

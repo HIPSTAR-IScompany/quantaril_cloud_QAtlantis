@@ -41,4 +41,3 @@ description: 東雲る、猫又、デイダラボッチ、八岐大蛇をQ Atlan
 - **User Gate**: Q Atlantisの`dev`確認後、Userのdeploy指示により`main`公開へ進める
 
 過去の同時点Observer、Agency role、Intentは復元していません。
-
