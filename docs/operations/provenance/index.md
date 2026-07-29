@@ -16,6 +16,7 @@ title: 来歴と正本
 
 ## 今回の公開receipt
 
+- [2026-07-29 DOS／ASTROポンチ絵の画像受領票](./visual-assets-2026-07-29.md)
 - [2026-07-29 DOS／虚空制作資産のSource Mining Receipt](./source-mining-2026-07-29.md)
 - [2026-07-20 公開資料マイニング受領票](./source-mining-2026-07-20.md)
 - [2026-07-20 公開前MAGI監査](./publication-magi-audit-2026-07-20.md)

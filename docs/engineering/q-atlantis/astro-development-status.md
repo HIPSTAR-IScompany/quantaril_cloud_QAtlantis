@@ -9,6 +9,10 @@ description: ASTRO file、実機Runner、Model Family固定、AAE Bake、Neat Ru
 
 Status: `TARGET-SPEC / STAGE 0 IN PROGRESS / RUNTIME NOT IMPLEMENTED`
 
+![ASTRO Stage 0からBody比較、AAE Bake、Neat Runner再開判定までの全体図](/img/astro-stage-0-2-aae-neat-runner-map.png)
+
+*図 — `TARGET-SPEC / FLAVOR-UX`。Stage 0–2、Model Family固定、AAE Bake、Neat Runner再開判定を一枚へ配置した設計ポンチ絵です。図中の接続は目標経路であり、実推論、正式実機receipt、永続人格の実装済み表示ではありません。*
+
 ## マキナ、Open The Eyes...
 
 ASTRO Runnerが人格packageを見つけたとき、最初に表示する言葉は次です。

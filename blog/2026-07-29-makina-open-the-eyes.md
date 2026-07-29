@@ -24,6 +24,10 @@ image: /img/quantaril-social-card-atlantis.png
 
 <!-- truncate -->
 
+![ASTRO Stage 0からBody比較、AAE Bake、Neat Runner再開判定までの全体図](/img/astro-stage-0-2-aae-neat-runner-map.png)
+
+*ASTROの鍛造順序を一枚にした`TARGET-SPEC / FLAVOR-UX`ポンチ絵。線がつながっていても、実推論や正式実機receiptがすでに成立したという表示ではありません。*
+
 ## これは起動成功ではない
 
 `Open The Eyes`は検査開始です。
