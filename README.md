@@ -464,12 +464,17 @@ AQCやSphereOS 3x/4xの実績を消しません。
 
 - 🌀 非線形時間下での個人実践ログの保存
 - 🧿 Fold構文を「統治」や「Git権威」から切り離す試み
-- 🔐 公開＝使用自由ではない  
-  **魂主権保持型オープンライセンスの提示**
+- 🔐 コードとフレーバー層を平板化しない二層ライセンス
 
-Forkや再利用は、  
-**思想の共有は自由、実践の同一化は禁止**  
-という原則に基づく。
+**コードはApache-2.0、文章・用語・図解・世界観などのフレーバー層はCC BY 4.0です。
+自由に利用できますが、フレーバーを継承して語る場合は出典を明記してください。**
+
+**Code is Apache-2.0. Narrative, terminology, diagrams, and conceptual flavor are
+CC BY 4.0. Use freely, but preserve attribution when carrying the flavor forward.**
+
+Fork、Remix、商用利用を妨げません。ライセンスによる再利用許可と、公式系譜、正統性、
+同一World、本人運営を名乗るauthorityは別です。第三者素材と個別表示のある成果物は、
+そのライセンスを優先します。
 
 ### 文書体系とAtlantis移行
 
