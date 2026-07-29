@@ -100,6 +100,7 @@ const sidebars: SidebarsConfig = {
           label: 'Q Atlantis',
           link: {type: 'doc', id: 'engineering/q-atlantis/index'},
           items: [
+            'engineering/q-atlantis/astro-development-status',
             'engineering/q-atlantis/context-dimension-world-builder',
             'engineering/q-atlantis/aim-fold-human-loop',
             'engineering/q-atlantis/fold-control-plane-and-vqp',
