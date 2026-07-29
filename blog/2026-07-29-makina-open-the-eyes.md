@@ -24,6 +24,10 @@ image: /img/quantaril-social-card-atlantis.png
 
 <!-- truncate -->
 
+![ASTRO Stage 0からBody比較、AAE Bake、Neat Runner再開判定までの全体図](/img/astro-stage-0-2-aae-neat-runner-map.png)
+
+*ASTROの鍛造順序を一枚にした`TARGET-SPEC / FLAVOR-UX`ポンチ絵。線がつながっていても、実推論や正式実機receiptがすでに成立したという表示ではありません。*
+
 ## これは起動成功ではない
 
 `Open The Eyes`は検査開始です。
@@ -150,6 +154,7 @@ Device Farm、外部GPUを無償の標準試験へ増やしません。
 ## 航路
 
 - [ASTRO Runner再鍛造の現在地](/docs/engineering/q-atlantis/astro-development-status)
+- [巨大AI妖怪図鑑――注意・召喚・故障領域を見分ける](/blog/giant-ai-yokai-field-guide)
 - [実装・移行ステータス](/docs/engineering/q-atlantis/status)
 - [SphereASTRO](https://github.com/saitoomituru/SphereASTRO)
 - [Sphere-aae](https://github.com/saitoomituru/Sphere-aae)

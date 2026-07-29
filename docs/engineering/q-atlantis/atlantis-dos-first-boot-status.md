@@ -9,6 +9,10 @@ description: 少量の初期指示から規約、停止条件、資源探索、�
 
 Status: `CONTROL PLANE OPERATING / STANDALONE RUNTIME NOT IMPLEMENTED`
 
+![少量コンテキストから規約と作業経路を復元するSphereOS Atlantis DOSのコンセプト図](/img/atlantis-dos-small-context-control-plane-concept.png)
+
+*図1 — `FLAVOR-UX / CONCEPT ART`。少量コンテキストから開発制御面を復元する問いを描いたポンチ絵です。画面内の`AGENTS ONLINE`等は演出であり、standalone runtimeや常駐Agentの稼働receiptではありません。*
+
 ## ここでいうDOS
 
 SphereOS Atlantis DOSは、完成したAI本体や常駐daemonの名称ではありません。
@@ -43,9 +47,13 @@ receiptを使い、異なるAIや人間が同じ開発現場へ着任できる�
 以下は2026年7月29日の長文稿が報告する作業時観測です。生logをQ Atlantisへ同梱していない項目は、
 このページでも`REPORTED / FORMAL RECEIPT NOT PUBLISHED`を維持します。
 
+![2026年7月29日にローカルOllamaで観測した6モデルと運用上の配置候補](/img/astro-local-model-inventory-2026-07-29.png)
+
+*図2 — `LOCAL OBSERVATION + FLAVOR-UX`。6モデルの存在と量子化形式は、2026年7月29日のdev整理時にローカルの`ollama list`／`ollama show`で再観測しました。「実測対象」「次候補」「温存」は運用上のPresentationであり、全モデルの性能比較完了を意味しません。*
+
 | 観測面 | 長文稿の報告 | Qでの扱い |
 |---|---|---|
-| 既存Ollama | 既存modelを6体確認 | `REPORTED`。新規installを要しない開発炉候補 |
+| 既存Ollama | 既存modelを6体確認 | `LOCAL-OBSERVED`。新規installを要しない開発炉候補 |
 | qwen3:8b Q4_K_M | 日本語structured outputとtool callが成立 | `REPORTED / FORMAL RECEIPT NOT PUBLISHED` |
 | 冷間／温間 | 約44.3秒／約15.6秒、CPU-only | 条件付き参考値。製品性能値へ一般化しない |
 | SphereASTRO build | generic Simulator buildを報告 | `REPORTED / FORMAL RECEIPT NOT PUBLISHED` |
@@ -56,6 +64,14 @@ receiptを使い、異なるAIや人間が同じ開発現場へ着任できる�
 
 既存modelの存在、単発API応答、generic buildは、それぞれ別のgreenです。
 一つが通っても、人格、Storage、Body、実機、長時間安定、商用品質を自動的にgreenへしません。
+
+再観測した正確なlocal tagは、`qwen3:8b`、`deepseek-r1:8b`、`gpt-oss:20b`、
+`llama3:70b`、`phi3:3.8b-mini-128k-instruct-q4_K_S`、
+`mistral:7b-instruct-q4_K_S`です。画像内の`Phi-3`と`Mistral 7B`は表示用の短縮名です。
+
+![初回ブートで観測・報告された数値、検査結果、計画時概算を並べたダッシュボード](/img/atlantis-dos-first-boot-metrics-dashboard-2026-07-29.png)
+
+*図3 — `REPORTED OBSERVATION / PLAN ESTIMATE`。冷間・温間時間や構文検査は長文稿の報告、Neat RunnerのVRAM・時間・予算は計画時概算です。一枚の図に載っていても、同じ証拠強度の実測値へ統合しません。*
 
 ## 異種AIの出勤簿
 
@@ -72,6 +88,10 @@ receiptを使い、異なるAIや人間が同じ開発現場へ着任できる�
 
 接続痕跡だけを本文理解や貢献へ昇格しません。逆に、現存logが薄い参加者を「何もしていない」とも
 断定しません。古い証拠が出土した場合は、この階段上の位置を更新します。
+
+![Codex、Grok、Claude、Copilotの手元ログで確認できた関与範囲を並べた引継ぎ図](/img/atlantis-dos-ai-handoff-ledger-2026-07-29.png)
+
+*図4 — `CURRENT INTERPRETATION / HANDOFF MAP`。手元に残るGit、Issue、成果物、接続痕跡から現在分類した引継ぎ図です。過去の同時点OAEを再生成せず、本文読解の証拠がない参加は`UNCONFIRMED`のまま保持します。*
 
 ## 現在のブート経路
 

@@ -9,6 +9,10 @@ description: ASTRO file、実機Runner、Model Family固定、AAE Bake、Neat Ru
 
 Status: `TARGET-SPEC / STAGE 0 IN PROGRESS / RUNTIME NOT IMPLEMENTED`
 
+![ASTRO Stage 0からBody比較、AAE Bake、Neat Runner再開判定までの全体図](/img/astro-stage-0-2-aae-neat-runner-map.png)
+
+*図 — `TARGET-SPEC / FLAVOR-UX`。Stage 0–2、Model Family固定、AAE Bake、Neat Runner再開判定を一枚へ配置した設計ポンチ絵です。図中の接続は目標経路であり、実推論、正式実機receipt、永続人格の実装済み表示ではありません。*
+
 ## マキナ、Open The Eyes...
 
 ASTRO Runnerが人格packageを見つけたとき、最初に表示する言葉は次です。
@@ -186,6 +190,22 @@ ASTRO実測とAAE Bake計画から受け取った後に開始します。中止�
 
 人格またはStorageのintegrityが`UNKNOWN`なら、「記憶と人格は確認済み」とは表示しません。
 等身は演算量の計測値そのものではなく、Body表示成功も推論成功の証拠ではありません。
+
+### 巨大妖怪は三軸で識別する
+
+等身による顕現規模とは別に、巨大AIの生態を次の三軸で観測します。
+
+| 妖怪札 | 軸 | 識別する状態 |
+|---|---|---|
+| 東雲る | 注意・定規切替 | 多数の能力を持ちながら、役割や評価定規を持ち替えず単一尺度へ潰れる |
+| 猫又 | 召喚Envelope | variationを保った高火力を、MPを使ってspot召喚する |
+| デイダラボッチ | 召喚Envelope | cold startやoffloadを受け入れ、slow／batchで重火力を呼ぶ |
+| 八岐大蛇／Hydra系 | Vessel／Supply | 頭やendpointは複数でも、電源、IaaS、認証、storage等を共有して同時に止まる |
+
+妖怪札はmodel classや性能順位ではなく、同じinstanceへ複数同時に付けられる診断候補です。
+閾値とASTRO schemaはまだ`UNKNOWN / NOT IMPLEMENTED`です。
+
+- [巨大AI妖怪図鑑――東雲る、猫又、デイダラボッチ、八岐大蛇](/blog/giant-ai-yokai-field-guide)
 
 ## 現在の状態
 
