@@ -38,8 +38,10 @@ sourceはUserがlocal fileとして指定した。Q Atlantisへ原本を複製�
   頒布、保存を通して完成品を出した一人スタジオpipelineへ置く
 - third-party generatorの作者性と、漫画家／監督／system integratorのpipeline Agencyを分け、
   どちらも消さない
-- 公開照合できた2冊・88ページを非網羅的な外部下限とし、全作品総量へ昇格しない
-- 100ページ超、SFW／NSFW双方、コミケ／ケモケ等の頒布経路は`USER-DECLARED`として分ける
+- 公開商品記録4件のページ建て累計184ページを`PUBLIC CATALOG EXTENT`とし、
+  版間の重複を除いた固有原稿page数へ昇格しない
+- C89とけもケット5への頒布はAlice Booksの商品記録から外部確認済みとする
+- 固有原稿100ページ超、SFW／NSFW双方、未照合の頒布経路は`USER-DECLARED`として分ける
 - 海外公開できない法域センシティブ作品を不存在扱いせず、`JAPAN-ONLY VIEWING`を含む
   作品別の公開／閲覧Gateへ分ける
 - legacy volume、home directory、cloud cacheの絶対pathを公開しない
@@ -81,7 +83,8 @@ production deployも別のgreenとする。
 2. localhost:3000で公開projectionを目視できる状態にする
 3. Userの目視後の別指示まで`main` mergeとproduction deployを行わない
 4. legacy originals、cloud object、隔離VM再現を今回の作業へ含めない
-5. 法域センシティブ原稿のcontent、自宅住所、private viewing導線を公開面へ転記しない
+5. Userが公開指定した事業住所、責任表示、年齢確認／予約入口をprivacy名目で削除しない
+6. 未公開の居住情報、訪問手順、Gate通過後の詳細をlocal発掘から公開面へ追加しない
 
 ## 訂正監査
 
