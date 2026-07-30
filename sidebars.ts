@@ -154,6 +154,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'legacy/q3-sphereos/personas/sphere-os-3',
             'legacy/q3-sphereos/incidents/betares-rescue',
+            'legacy/q3-sphereos/incidents/gpt-store-cross-border-market-incident-and-mad-miko-ai',
             'legacy/q3-sphereos/logos/黙示録001-restructured',
           ],
         },
