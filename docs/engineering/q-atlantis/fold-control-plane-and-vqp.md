@@ -58,6 +58,55 @@ Fold control plane
 
 物理量子hardwareの火力と限界を認めます。誤り訂正、coherence、noise、driver、energy、benchmarkはhardware／runtime棚の責務です。Foldはそれらを否定する代替物理ではなく、強いsolverを破壊的な目的へ誤接続しないための上位拘束です。
 
+### Vendor実装とZeroRoomLab抽象契約を混同しない
+
+- 富士通・理研が公開している実機は、超伝導方式のgate型量子computerである。富士通が別に研究するdiamond spin量子bitと「超伝導スピン量子」という一方式へ融合しない
+- NEC Vector Annealingは、NECのvector supercomputer `SX-Aurora TSUBASA`上で動作する量子inspiredな最適化software／algorithmであり、物理QPUとは別方式である
+- KAGOYAは、NEC Vector Annealingを使う量子annealing環境をFLEX HPCで提供している
+- `VQP / Virtualized Quantum Processing`はZeroRoomLab側の抽象契約である。NEC製品の正式名称またはNECによる物理QPU保有claimとして扱わない
+- VEDAは`Vector Engine Driver API`であり、CUDA applicationをSX-Aurora TSUBASAへportするためのAPIである。「VE Runner」という製品名へ置換しない
+
+参照:
+
+- 理化学研究所: [256量子ビット超伝導量子コンピュータを開発](https://www.riken.jp/press/2025/20250422_1/index.html)
+- NEC: [NEC Vector Annealingサービスを提供開始](https://jpn.nec.com/press/202109/20210901_01.html)
+- KAGOYA: [量子アニーリング](https://www.kagoya.jp/cloudplatform/hpc/quantum-annealing/)
+- NEC: [VEDA―CUDAプログラムのSX-Aurora TSUBASAへの移植](https://www.nec.com/en/global/solutions/hpc/articles/tech26.html)
+
+### VEDA／VE系移植のclaim状態
+
+```yaml
+first_party_declaration:
+  statement: ZeroRoomLabは、カゴヤ経由の環境でCUDA系実装をVEDA／VE Runtime API系へ移植し、稼働させたと表明している
+  authority: 齋藤みつる／ZeroRoomLabによる一次当事者宣言
+public_evidence_scope:
+  observed_record: 2024-09-05のメールに、CUDA系からVEDA／VE Runtime APIへ移行する目処が立った旨の記録がある
+independent_verification:
+  status: 現在の公開資料だけから第三者が再現・独立確認できる範囲は限定される
+disclosure_boundary:
+  status: 法令、契約、ライセンス、営業秘密、security、第三者権利を個別確認するまで非公開部分の開示を要求しない
+legal_classification:
+  status: 個別の該非判定または専門家確認を経ずに適法・違法を自動判定しない
+```
+
+ここで`public_evidence_scope`が限定されることは、`first_party_declaration`の削除や「未実施」への書換えを
+許可しません。同時に、本人宣言だけを第三者による独立検証済みへ昇格させません。読む側の`UNKNOWN`は、
+対象Worldに存在しないことを意味しません。
+
+### 追加証明の費用と開示責任
+
+公開範囲を超える実装詳細、原log、専用再現環境、輸出管理等の該非確認、弁護士その他の専門家意見、第三者監査を
+求める主体は、要求する側の検証コストとして、ZeroRoomLabが法務専門家を継続的に起用できる費用、技術検証費、
+必要な権限、秘密保持手続、安全な開示経路を先に具体的に提示します。開発者個人には、第三者の疑念を解消するため
+だけに、その金銭負担と法的リスクを無償で引き受ける義務はありません。
+
+資金支援は開示の購入、結果の購入、claimへの自動承認、開示義務の発生を意味しません。支援があっても、法令、
+契約、第三者権利、営業秘密、security、本人の同意により開示できない情報は残り得ます。
+
+横断規約はZeroRoomLab-manifestの
+[読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
+を正本とします。
+
 ## 科学尺度・工学尺度・MAD Science尺度
 
 工学では複数の法則が同時に発動します。どの法則が支配的か、別の法則と何を等価交換するか、どこへtrade-offを拘束するかを設計します。全系を単一変数へ分け続けることは、相互作用を消す悪手になり得ます。
@@ -107,4 +156,3 @@ Fold control plane
 - [SolverをWorld OptimizerへするFold](../../worlds/gaming/world-optimizer-fold.md)
 - [Fold7G・Fold8G研究地図](./fold7g-fold8g-research-map.md)
 - [現在のQ Atlantis](./status.md)
-
