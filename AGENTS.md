@@ -45,6 +45,17 @@ When context is insufficient, preserve the text, record `UNKNOWN`, and read the 
 正本: ZeroRoomLab-manifest
 [読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
 
+### 0.2 Log Horizon命名規則
+
+`Log Horizon`は、物理粒子Observerをsystem-levelへ拡張したとき、仮想粒子とFAMを構成するOAEが、
+embedding、全体観測不能なnetwork／model、物理sensor等の先にある完全source状態へ到達できない情報子単位の
+ログの地平を指す。物理学上のevent horizon、Hawking radiation、Higgs粒子、未知粒子の観測claimへ変換しない。
+
+公開文書では、取得したtraffic、vector、model output、sensor reading、hash、receiptを部分projectionとして記述し、
+取得不能を不存在へ変換せず、局所projectionをsource全体の証明へ昇格させない。命名正本はManifestの
+[Log Horizon](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/2c68eb63672e68e600518ba46679542b0914757b/docs/theory/log-horizon.ja.md)
+とする。
+
 ## 1. Required reading order
 
 Before changing project identity, README language, document placement, status labels, architecture descriptions, or legacy assets, read:

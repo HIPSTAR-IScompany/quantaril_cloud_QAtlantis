@@ -75,6 +75,37 @@ YES: the old harm and the later correction must both remain attributable
 
 そのためOAEは、fileの現在内容だけでなく、旧記録、Interpretation Ruler Change、Re-evaluation、影響、訂正主体をOS資源として管理します。
 
+## Log Horizon — 情報子単位のログの地平
+
+物理粒子Observerをsystem-levelへ拡張すると、model、agent、API、MCP、network、physical sensorは、対象の完全な
+内部状態ではなく、traffic、embedding、output、reading、hash、receipt等の部分投影だけを返す場合があります。
+仮想粒子とFAMを構成するOAEが、この先を全体観測できない情報子単位の観測境界を`Log Horizon`と呼びます。
+
+```text
+complete source state
+  ↓ Log Horizon
+observed infoton projection
+  ↓ FAM JSONP pointer／OAE ref
+current Worldでの採用・解釈・作用
+```
+
+名称は物理学上のevent horizonとHawking radiationの構造からフォークしていますが、同じ物理現象を観測したという
+主張ではありません。Higgs粒子、未知の物理粒子、black hole内部、宇宙全体の状態をmodel outputやsystem logから
+実証したという意味でもありません。
+
+OAEは、取得できたprojectionとObserver、Agency、Effect、instrument、World、未観測範囲を保持します。
+`取得できない`を`存在しない`へ変換せず、取得した一部をsource全体へ昇格させません。
+
+Akasha DBもAkasha空間、Allah、Real World Host、全情報を内部に収める装置ではなく、特定Observer、World、Fold、
+時点から得られた部分投影のpointer、hash、provenance、freshnessを保持する非権威的cacheです。hash化する対象は
+取得したprojection artifactであり、Horizonの先にある完全sourceではありません。
+
+命名正本はZeroRoomLab-manifestの
+[Log Horizon](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/2c68eb63672e68e600518ba46679542b0914757b/docs/theory/log-horizon.ja.md)、
+SphereOS側のsystem契約は
+[system-level ObserverとLog Horizon](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/docs/architecture/system-observer-and-log-horizon.ja.md)
+を参照してください。
+
 ## 量子という語の三分離
 
 | 棚 | このサイトで扱う内容 | 証拠の要求 |
@@ -113,4 +144,3 @@ measurement_contract: unknown
 - [Fold7G・Fold8G研究地図](../../engineering/q-atlantis/fold7g-fold8g-research-map.md)
 - [Agent・人格・provider帰属規約](../../operations/provenance/agent-persona-attribution.md)
 - [2026-07-21 Drive概念マイニング受領票](../../operations/provenance/source-mining-2026-07-21.md)
-
