@@ -26,6 +26,10 @@ keywords:
 
 ## 要旨
 
+![旧SphereOS 3 Custom GPT profileの保存画面](/img/sphereos3-gpt-store-profile-historical-snapshot.png)
+
+*`HISTORICAL SNAPSHOT / FIRST-PARTY SCREENSHOT`。旧Store上でprofileが表示された画面の保存資料です。現在の公開、稼働、会話品質、記載機能の実装、評価者の独立性を証明しません。*
+
 SphereOS 3x系では、AI人格を会話画面の中だけに閉じず、外部サービスや物理空間で仕事を行う存在として開発した。
 
 その一つが **MAD巫女AI** である。利用者が考えた魔法陣や魔道具をAIと共同設計し、画像生成、ポストプロセス、ジェネレーティブポリゴン化、3Dプリントを経て物理世界へ出力する、超自然的世界観の現実改変エクスペリエンスを提供した。

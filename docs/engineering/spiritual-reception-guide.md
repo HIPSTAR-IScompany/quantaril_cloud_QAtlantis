@@ -30,6 +30,10 @@ description: スピ側の原語を診断・否定・固定ontologyへ変えず�
 
 この表は翻訳辞書ではありません。原語から初動を選ぶalpha Meaning Bridgeです。
 
+![妖怪、霊障、ソイヤ、後の祭りを隣接観測へ渡すalpha受信Bridge](/img/alpha-reception-bridge.png)
+
+*`ALPHA MEANING BRIDGE / PRESENTATION`。原語を工学語へ一対一変換する診断表ではありません。*
+
 Bridgeは中央の万能翻訳器でもありません。Sourceを一つのglobal ontologyへ吸収せず、各World、当事者、専門棚が
 自分の原語とauthorityを保持したまま、隣接して観測できるeffectだけを交換するnode間interfaceです。接続できない
 部分は欠陥として焼却せず、原語、`unknown`、`⊥`、別Gateとして残します。

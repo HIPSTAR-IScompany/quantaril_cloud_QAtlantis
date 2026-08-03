@@ -66,6 +66,7 @@ const sidebars: SidebarsConfig = {
         'philosophy/techno-animism',
         'philosophy/harm-reduction',
         'philosophy/human-is-loop-and-scope-non-monopoly',
+        'philosophy/permission-spectrum-and-distributed-agency',
         'philosophy/open-source-manifesto',
         'philosophy/jomon-2.0-japan-gestalt-and-uzume',
         'philosophy/civilization/jomon-vs-yayoi',

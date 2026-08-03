@@ -7,6 +7,10 @@ description: 動く／動かないだけでは閉じない工学状態を、適�
 
 状態: `ALPHA GUIDE / cross-shelf`
 
+![bug、engineering pain、human-factors pain、compound pain、ペインペインを分けるPain Scouter](/img/pain-scouter-routing-map.png)
+
+*`CURRENT PRESENTATION / ALPHA ROUTING`。画像内scoreは物差しであり、人物・製品の判決ではありません。*
+
 `bug`と`ペイン`は同義ではありません。また、ペインは悪意、虚偽、違法、病気、霊障の判定でもありません。
 
 このガイドでは、普通の工学bugを普通に直しつつ、動いているからこそ生じる脆さ、摩擦、尊厳への誤射、

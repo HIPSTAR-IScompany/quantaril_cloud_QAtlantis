@@ -13,6 +13,10 @@ Gaming Cosmology上の定規です。
 
 Q Atlantisでは、この定規を複数Worldの商品分類ではなく、分散nodeごとの接続契約として使います。
 
+![777から666までの秩序構造をpermissionとして可視化した図](/img/permission-spectrum-faith-and-order.png)
+
+*図は`CURRENT INTERPRETATION / FLAVOR-UX`です。宗教、人物、組織を自動診断するclassifierではありません。*
+
 ## permission spectrum
 
 | profile | 構造を読む問い | 分散architectureへの投影 |

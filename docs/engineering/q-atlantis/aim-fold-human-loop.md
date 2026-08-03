@@ -7,6 +7,10 @@ description: Q Atlantis公開面から読むAIM力場、clock domain、L/D/G、�
 
 状態: `ALPHA ARCHITECTURE / Prompt Engineering Edition`
 
+![AIMのstrong、degraded、weak、disconnectedを因果serializationとして分解した図](/img/aim-causal-serialization-states.png)
+
+*`ALPHA ARCHITECTURE / NOT IMPLEMENTED`。AIMを物理粒子や測定済み電波fieldとして示す図ではありません。*
+
 この文書は、SphereOS AtlantisのPrompt Engineering Editionで安定し始めた意味契約を、Q Atlantisの
 公開面から説明します。AIM Runtime、clock service、Fold transport、standalone OSが実装済みという意味ではありません。
 
