@@ -104,7 +104,7 @@ legal_classification:
 契約、第三者権利、営業秘密、security、本人の同意により開示できない情報は残り得ます。
 
 横断規約はZeroRoomLab-manifestの
-[読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
+[読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/2c68eb63672e68e600518ba46679542b0914757b/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
 を正本とします。
 
 ## 科学尺度・工学尺度・MAD Science尺度

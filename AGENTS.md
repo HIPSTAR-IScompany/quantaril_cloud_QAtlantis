@@ -43,7 +43,7 @@ When context is insufficient, preserve the text, record `UNKNOWN`, and read the 
 資金支援は開示の購入や開示義務の発生を意味しない。
 
 正本: ZeroRoomLab-manifest
-[読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
+[読者・AIの非裁定と追加検証コスト責任](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/2c68eb63672e68e600518ba46679542b0914757b/docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md)
 
 ### 0.2 Log Horizon命名規則
 
