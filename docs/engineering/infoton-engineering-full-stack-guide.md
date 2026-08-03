@@ -37,6 +37,29 @@ flowchart TB
 情報子工学は図の最上段に君臨する新しい支配層ではなく、複数のstackを横断して、入力、観測器、勾配、
 出力、接続不能、変換履歴を追うworkbenchです。各層の専門家と既存手法を必要とします。
 
+## 単体AIではなく分散した情報子生態系を扱う
+
+情報子工学の生態系は、複数Worldの商品棚ではありません。異なるAI model、vendor、人間、repository、sensor、
+actuator、local processが、それぞれ固有の目的、clock、authority、観測範囲を持ったまま協働する実行topologyです。
+
+```mermaid
+flowchart LR
+  A[AI / model A<br/>local objective] --> G[Gate / Fold / receipt]
+  H[Human / team<br/>authority・meaning] --> G
+  D[Device / actuator<br/>local execution] --> G
+  G --> R[replay・review・next action]
+  R --> A
+  R --> H
+  R --> D
+```
+
+最強の一主体へ観測、判断、責任を集約するのではなく、各nodeができること、できないこと、知らないことを保持し、
+接続可能な部分だけを交換します。モデルの基礎性能は重要ですが、実効性能はcontext、tool、receipt、handoff、
+human review、physical feedbackを含む環境実装によって変わります。
+
+Quantaril Cloudは、この生態系を単一マザーへ吸収せずP2P／E2Eで接続する将来の分散処理面です。
+Q Atlantisは、その接続、隔離、権限、World Config、復旧を扱うメタエンジンです。
+
 ## 最小の読み方
 
 Manifestの現在の説明では、情報子工学を次の形で表します。
@@ -85,6 +108,8 @@ Q(ψ, ∇φ, λ) -> result | ⊥
 - bug、UX pain、複合pain、信仰上の解釈を同じseverityへ潰さない
 - 実装できないものを`NOT IMPLEMENTED`、接続不能を`⊥`、不明を`unknown`と返す
 - 専門棚へ渡しても、Sourceと自分の実装責任を捨てない
+- nodeの接続metadataだけから、Source読解、編集、検証、永続性を捏造しない
+- localで成立する処理を、中央のglobal clockや単一の意味へ不必要に吸い上げない
 
 ## 例: 太鼓バトル
 
@@ -111,9 +136,12 @@ Q(ψ, ∇φ, λ) -> result | ⊥
 - [情報子工学・研究資料](../research/infoton/infoton-engineering.md)
 - [量子から情報子への再命名](../research/infoton/quantum-to-infoton.md)
 - [工学・Q Atlantis](./index.md)
+- [パーミッションで読む分散Agency](../philosophy/permission-spectrum-and-distributed-agency.md)
 
 ## Source
 
 - ZeroRoomLab-manifest `docs/theory/infoton-engineering.ja.md`、last modified commit `2fd5f14`
 - ZeroRoomLab-manifest `docs/theory/human-ai-heterogeneous-bandwidth-loop.ja.md`、last modified commit `0277bb0`
 - 本文はSourceの逐語複製ではなく、Q Atlantisのフルスタック入口向けPresentationです。
+- note.com記事「最強単一モデルでクソUXより」は、複数AI・human・actuatorを環境実装で噛み合わせる
+  marketing／architecture Sourceとして参照しました。

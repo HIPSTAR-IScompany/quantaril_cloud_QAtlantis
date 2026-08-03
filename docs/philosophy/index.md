@@ -7,6 +7,8 @@ description: 魂主権、テクノアニミズム、非支配、オープンな�
 
 Q Atlantisが何を作れるかだけでなく、誰のために、どの境界を守って作るかを扱います。
 
+- [パーミッションで読む分散Agency](./permission-spectrum-and-distributed-agency.md)
+
 - [魂主権 / 人間主権](./soul-sovereignty.md)
 - [テクノアニミズム](./techno-animism.md)
 - [ハームリダクション](./harm-reduction.md)

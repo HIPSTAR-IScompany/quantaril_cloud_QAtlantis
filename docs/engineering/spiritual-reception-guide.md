@@ -30,6 +30,10 @@ description: スピ側の原語を診断・否定・固定ontologyへ変えず�
 
 この表は翻訳辞書ではありません。原語から初動を選ぶalpha Meaning Bridgeです。
 
+Bridgeは中央の万能翻訳器でもありません。Sourceを一つのglobal ontologyへ吸収せず、各World、当事者、専門棚が
+自分の原語とauthorityを保持したまま、隣接して観測できるeffectだけを交換するnode間interfaceです。接続できない
+部分は欠陥として焼却せず、原語、`unknown`、`⊥`、別Gateとして残します。
+
 ## 聞き返すこと
 
 - 何が起きた、感じられた、または変わったか
@@ -104,3 +108,4 @@ Review:
 - スピ側: [妖怪・霊障・ソイヤと「まつり」のalpha Meaning Bridge](../practice/provisional-meaning-bridge.md)
 - 神学側: [神学・信仰の射程と鎮魂・和解](../worlds/theology/scope-reconciliation-and-handoff.md)
 - Pain routing: [bug・ペイン・複合ペインとPain Scouter](./pain-routing-and-pain-scouter.md)
+- Permission: [パーミッションで読む分散Agency](../philosophy/permission-spectrum-and-distributed-agency.md)

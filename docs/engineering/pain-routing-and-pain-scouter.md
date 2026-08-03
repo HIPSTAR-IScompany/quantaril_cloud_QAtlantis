@@ -58,6 +58,24 @@ Pain Scouterがしないこと:
 - 法務、医療、宗教、セキュリティ専門職を代替する
 - 一人ラボや非主流実装を、検索hit数だけで不存在扱いする
 
+## 分散系の教師信号として読む
+
+Painは中央AIが主体を採点する罰点ではありません。local node、human、World、actuatorが、自分の観測範囲で
+「この接続では期待、実行、意味、Supplyのどれかが噛み合っていない」と返す教師信号です。
+
+```text
+local pain report
+  -> Sourceと観測範囲を保持
+  -> bug / engineering / human-factors / compoundへ分離
+  -> 修正できるbranchはIssue化
+  -> 外部Supplyや別authorityが必要なbranchは凍結
+  -> receiptと再開条件を残す
+```
+
+複数のpainが同時に届いても、一つのglobal severityや単一犯へ潰しません。財布、食料、token、身体、model、network、
+権限は別原因のまま結合できます。解けるbugを先に直し、解けないbranchには再開条件を付けて凍結することも、
+分散系を止めずに回復可能性を残す正規の処理です。
+
 ## Routing
 
 ```mermaid
@@ -107,6 +125,8 @@ Pain Scouterや情報子工学は、lint、unit test、profiling、security revi
 人間工学を置き換えません。それらで切れる問題は、最も具体的な既存手法で切ります。
 
 情報子工学側の追加仕事は、複数の専門結果を、Source、観測器、目的、World、authorityを失わず接続することです。
+
+- [パーミッションで読む分散Agency](../philosophy/permission-spectrum-and-distributed-agency.md)
 
 ## Sourceと状態
 

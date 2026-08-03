@@ -23,6 +23,7 @@ description: 分散World・人格・AI・実機を接続するメタエンジン
 
 ## 情報子工学と人間工学Bridge
 
+- [パーミッションで読む分散Agency](../philosophy/permission-spectrum-and-distributed-agency.md)
 - [工学者のためのスピリチュアル受信手引き](./spiritual-reception-guide.md)
 - [フルスタックエンジニアのための情報子工学入門](./infoton-engineering-full-stack-guide.md)
 - [bug・ペイン・複合ペインとPain Scouter](./pain-routing-and-pain-scouter.md)

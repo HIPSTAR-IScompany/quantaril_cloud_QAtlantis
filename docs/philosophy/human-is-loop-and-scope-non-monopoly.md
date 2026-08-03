@@ -24,6 +24,10 @@ description: 度し難さ、面白さ、意味を人間の外へ追放せず、�
 しかし、その条件で遊び続けたいか、意味が壊れたか、当事者の尊厳が削られたかは、機械試験だけでは
 閉じません。人間の報告は、機械試験の精度不足を埋める低品質dataではなく、別の観測器からの入力です。
 
+これは全人類の評価を一人のhuman operatorへ集中する設計でもありません。異なる当事者、player cluster、専門家、
+Worldが、それぞれlocalな評価loopを持ち、receiptと異議を交換します。Human-is-the-loopは中央の人間oracleを置く
+言葉ではなく、評価主体を分散systemの外へ追放しないための言葉です。
+
 ## 否定しないことと抱え込まないこと
 
 他棚を否定しないことは、すべての主張を無制限に承認することではありません。また、自棚で全部を説明する
@@ -102,4 +106,5 @@ epistemic value: その観測が何を知る手掛かりになるか
 - Manifest `0c87af3`
 - SphereOS Atlantis `1a86478`, `1e9c3c3`
 - [棚別文書レジスターと公開パイプライン](../operations/cross-shelf-publication-register.md)
+- [パーミッションで読む分散Agency](./permission-spectrum-and-distributed-agency.md)
 - `Human-is-the-loop`のstable IDとmachine tokenは未確定です。

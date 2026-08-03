@@ -43,6 +43,22 @@ AIM strength
 
 非同期であること自体を失敗にしません。非同期を包む上限、収束、replay契約が失われるほど共有AIMは弱まります。
 
+## AIMは単一マザーのfieldではない
+
+AIM拡散力場を、一つの巨大AIや中央operatorが全nodeへ放射する命令fieldとして設計しません。各human、AI、World、
+deviceはlocal AIMを持ち得ます。複数nodeが同じKernel、deadline、authority、World Configを回復できる範囲で共有AIMが
+成立し、対応づけられなければ`weak`、`disconnected`、Gate、Portalへ分かれます。
+
+```mermaid
+flowchart LR
+  A[Node A<br/>local AIM・clock・state] <-->|Fold candidate<br/>receipt・authority| G[Gate / Portal]
+  G <-->|Fold candidate<br/>receipt・authority| B[Node B<br/>local AIM・clock・state]
+```
+
+P2P／E2Eはpacket transportや暗号だけで完了しません。Q Atlantisでのend-to-end候補には、owner、Source、authority、
+ordering、freshness、Last Order、replay条件が端点間で失われないことも含みます。ただし、現在の本文はtarget
+architectureであり、完成したE2E protocol、暗号方式、Fold runtimeの実装証拠ではありません。
+
 ## clock domainを分ける
 
 リモート太鼓バトルでは、すべてを中央serverのpacket到着clockへ合わせる必要はありません。
@@ -132,6 +148,7 @@ Authorized Agency   != Infallible Judgment
 | L/D/GとAIM因果serializationの公開説明 | ALPHA |
 | clock uncertainty machine schema | `NOT IMPLEMENTED / unknown` |
 | AIM strength validator | `NOT IMPLEMENTED` |
+| local AIM間のP2P／E2E handoff contract | `ALPHA TARGET / NOT IMPLEMENTED` |
 | Fold7G runtime | `NOT IMPLEMENTED` |
 | Fold8G independent contract | `unknown / NOT EXTRACTED` |
 | Controlled DeFold trace | `ALPHA HYPOTHESIS / NOT IMPLEMENTED` |
