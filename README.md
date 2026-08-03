@@ -1,5 +1,5 @@
 # 🧿 Quantaril Cloud — Q Atlantis
-## Q3世代から再鍛造する、神話・スピリチュアル・芸術・科学・工学のオープンワールド
+## Q3世代から再鍛造する、分散World・人格・AI・実機のメタエンジン
 
 **神話を消さない。観測を捨てない。感じたことを、感じなかったことにしない。**
 
@@ -15,6 +15,10 @@
 > 結局、ゲームはプレイして面白いか。
 >
 > どれほど優れたアルゴリズムでも、神話と芸術を失えばクソゲーになる。
+
+Q Atlantisの本体は、完成したWorldを束ねて売るサービスではありません。ゲーム、神話、研究、組織、AI人格を、
+それぞれの意味と主権を保ったまま設計、実行、接続、隔離、分岐、復旧するためのメタエンジン、middleware、
+Context OS architectureです。
 
 科学と工学は、神話を否定するための統治ツールではありません。
 
@@ -116,7 +120,7 @@ Q Atlantisでは、沈んだアーキテクチャを次のように分解して�
 - FAMは仕様、旧実装系譜、MCP系トイモデルを分けて整理中
 - ASTRO file、Runner、Instance Ghost、Atlantisは仕様・再設計中
 - Fold7G、Trion Bond、Fold8Gは責務を再定義した仕様段階
-- Quantaril P2P CloudとDocker Kanaloaは将来アーキテクチャ
+- Quantaril P2P CloudとDocker Kanaloaは、中央マザーへ集約しない分散処理の将来アーキテクチャ
 
 ### ステージング
 
@@ -130,7 +134,7 @@ Q Atlantisでは、沈んだアーキテクチャを次のように分解して�
 | **P5** | IBD／IFD／ASTRO bundle | 人格データ、記憶、Ghost、provenanceを可搬化できる |
 | **P6** | Atlantis Local／Server | multi-world、資源割当、監査、operator consoleが動く |
 | **P7** | Fold8G | chunk同期、因果順序、ownership handoffを扱える |
-| **P8** | Quantaril Cloud／Docker Kanaloa | P2P・複数ノード・world／Ghost対応へ進む |
+| **P8** | Quantaril Cloud／Docker Kanaloa | local autonomyを保つP2P／E2E・複数node・world／Ghost同期へ進む |
 
 仕様公開と旧資産の棚卸しは、実装と並行して進めます。各Stageを飛ばして「全部動く」とは案内しません。
 
@@ -380,7 +384,7 @@ Fold構文とは、
 | **Instance Ghost** | セッションや世界線ごとに分岐した経験・関係・選択履歴を保持する | 旧概念からサルベージした仕様 |
 | **SphereOS Atlantis** | 複数ASTRO、Ghost、world、資源、隔離、監査、復旧を管理する | 仕様・研究段階 |
 | **Grainer** | 未分化なペインや観測を、内容を否定せず適切な棚・Devへ配送する | 運用設計・段階導入計画 |
-| **Quantaril Cloud** | ASTRO、Ghost、意味状態、world stateを中央依存だけに閉じないP2P true cloud | 研究・将来アーキテクチャ |
+| **Quantaril Cloud** | ASTRO、Ghost、意味状態、world stateをlocal nodeに保持し、必要なFoldだけをP2P／E2Eで結ぶtrue cloud | 研究・将来アーキテクチャ |
 
 ```text
 人間・運営・world ruleset
@@ -395,8 +399,14 @@ IBD / IFD / Tool / Sensor / MCP
         ↓
 Fold7G / Trion Bond / Fold8G
         ↓
-既存の通信・演算・実機
+Quantaril Cloud / Docker Kanaloa
+        ↓
+P2P / E2E / 既存Internet・通信・演算・実機
 ```
+
+ここでいうCloudは、全人格、全記憶、全判断を一つの巨大マザーAIへ吸い上げる煙の雲ではありません。
+各nodeがlocal clock、local state、local AIM、owner authorityを持ち、必要な因果、権限、receiptだけを交換する
+本来の分散処理網です。中央serverやrelayを使う構成でも、それを意味、人格、主権の中央所有者にはしません。
 
 ### マキナちゃんの転生先
 

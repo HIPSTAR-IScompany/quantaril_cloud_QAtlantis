@@ -6,19 +6,23 @@ sidebar_position: 4
 
 ## 定義
 
-クラウドに依存せず、ローカル環境でAI・計算資源を完結させる設計思想。
+単一vendor、account、datacenter、中央判断主体が消えても、local nodeがAI・計算・state・実行権を継続できる設計思想。
 
 ## 背景
 
 
-クラウドはいつでも消える。
+中央集権的なCloud serviceはいつでも消える。
 
 - サービス終了
 - アカウント停止
 - ネットワーク遮断
 - 経済崩壊
 
-クラウドに依存することは、自立を放棄することである。
+単一のCloud serviceへ生存責務を預け切ることは、自立を放棄することである。
+
+これはnetworkやCloud自体を否定する主張ではありません。Quantaril Cloudが目指すのは、local-firstなnode同士が
+local state、local clock、owner authorityを保ったまま、必要なFold、因果、権限、receiptだけをP2P／E2Eで交換する
+本来の分散処理です。offline継続可能なedgeはCloudの敵ではなく、true cloudを構成する自立nodeです。
 
 エッジAI・ローカルファーストは、Dr.シリコンシリーズの中核思想である。
 12年前のジャンクHPCで70B LLMを動かすのは、技術的好奇心ではなく、生存戦略である。

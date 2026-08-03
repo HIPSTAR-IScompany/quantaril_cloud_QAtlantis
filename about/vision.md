@@ -1,13 +1,14 @@
 ---
 sidebar_position: 2
 title: 虚空の揺籠からQ Atlantisへ
-description: 創作原型、神話、ゲーム体験、実装を混線させずにQ Atlantisのプロダクトビジョンを読む。
+description: 虚空の揺籠から継承した分散メタエンジンと、神話・ゲーム・実装の責務を分けて読む。
 ---
 
 # 虚空の揺籠からQ Atlantisへ
 
-Q Atlantisは、世界を描画するだけでなく、人格、記憶、道具、AI、社会ルール、現実の機器まで、
-同じ世界の出来事として扱おうとする公開研究・開発プロジェクトです。
+Q AtlantisはWorldコンテンツの束ではなく、人格、記憶、道具、AI、社会ルール、現実の機器までを、
+それぞれの境界と主権を保ちながら一つのWorldの出来事として扱えるようにする分散メタエンジンの
+公開研究・開発プロジェクトです。
 
 その原型は、2008〜2015年頃の創作『虚空のインフェルニティ』に登場したメタエンジン
 「虚空の揺籠」にあります。これは現実の実装実績ではありません。しかし、人格を持つ世界、運営後の独裁、
@@ -29,6 +30,12 @@ ASTRO package、Instance Ghost、FAM、IBD/IFDの候補を使い、AI人格やAg
 
 既存のPOSIX OS、database、IAM、API、server、game engine、deviceを置き換えるのではなく、Atlantis Server
 Advanced等のGate候補から接続する。基幹をAtlantisへ強制移住させず、必要なWorldだけに門を開きます。
+
+### Cloudを分散処理へ戻す
+
+各nodeはlocal clock、local state、local AIM、owner authorityを持ちます。Quantaril Cloudは全状態を中央マザーへ
+吸い上げず、Fold7G、Gate、Portalの接続候補を通じて、必要な因果、権限、receiptだけをP2P／E2Eで交換します。
+Infernity系Gaming Worldや今後のWorld templateは、この基盤を試すreference Worldであり、基盤の本体ではありません。
 
 ## ロマンと実装状態を同じ箱へ入れない
 

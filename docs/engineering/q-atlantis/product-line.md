@@ -1,6 +1,6 @@
 ---
 title: 製品系列と現在能力
-description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、ロマン砲と配布物を混ぜずに示す。
+description: 分散メタエンジン、ASTRO、Server、Fold、P2P true cloudの役割と実装状態を示す。
 ---
 
 # 製品系列と現在能力
@@ -9,6 +9,10 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 
 一つの巨大OSを一度に完成させる計画ではありません。既存OS、server、game engine、databaseを尊重し、
 交換可能なcomponentとGateとして育てる製品系列です。
+
+製品の基礎は複数Worldの販売サービスではなく、World、人格、AI、人間、実機を設計、実行、接続、隔離、復旧する
+メタエンジン／middleware／Context OS architectureです。Infernity系Gaming WorldやWorld templateは、その上で動く
+reference Worldまたは配布候補であり、基盤そのものではありません。
 
 | 系列 | 役割 | 現在状態 |
 |---|---|---|
@@ -24,6 +28,7 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 | Atlantis Server | ASTRO、Ghost、World、job、receiptを継続運用するserver role | `CONCEPT / SPEC / NOT IMPLEMENTED` |
 | Atlantis Server Advanced | 既存DB、IAM、API、機器、複数tenantへ門を開く企業向けGate候補 | `CONCEPT / SPEC` |
 | Docker Kanaloa | ASTRO、Ghost、World、capabilityを扱う分散orchestrator候補 | `FUTURE` |
+| Quantaril Cloud | local stateと実行権を保つnode間で必要なFold、因果、権限、receiptをP2P／E2E交換 | `RESEARCH / FUTURE` |
 | World / Flavor SDK | 同じstateを各Worldの言葉、演出、宗派、game UIへ投影 | `DESIGNING` |
 | Fold7G / Trion Bond | 意味・因果・規範・Agencyを扱うnested Fold候補 | `DRAFT / RESEARCH / RUNTIME NOT IMPLEMENTED` |
 | Fold8G | Fold7Gより上位または外部接続を担う旧名称の再検討 | `UNKNOWN / CONTRACT NOT EXTRACTED` |
@@ -39,6 +44,9 @@ description: Q Atlantis、ASTRO、Server、Fold等の役割と実装状態を、
 
 Atlantisを入れても、POSIX OS、Web server、X Server、database、cloudを買わなくてよいという意味ではありません。
 既存基盤を交換可能な下位implementationとして尊重し、AtlantisはWorldと意味の接続責務へ集中します。
+
+ここでいうCloudは、単一vendorの巨大server、全知的マザーAI、全Worldの中央memoryを指しません。中央serverやrelayを
+使う場合も、それを意味、人格、主権の所有者にせず、各nodeのlocal autonomyを維持する分散処理面を指します。
 
 ## 「基幹を移住させない。門を開く」
 

@@ -1,11 +1,13 @@
 ---
 title: 工学・Q Atlantis
-description: 世界と人格を運ぶための保存、実行、境界、復旧、SDK設計。
+description: 分散World・人格・AI・実機を接続するメタエンジン、middleware、Context OS設計。
 ---
 
 # 工学・Q Atlantis
 
-工学棚の責務は、神話を裁くことではなく、異なる世界、人格、記憶、権限、来歴を混線させずに運ぶ舞台を作ることです。
+工学棚の責務は、神話を裁くことではなく、異なるWorld、人格、AI、人間、実機、記憶、権限、来歴を
+混線させずに運ぶ分散メタエンジンを作ることです。Q AtlantisはWorldの商品群ではなく、Worldを設計、実行、
+接続、隔離、復旧するmiddleware／Context OS architectureです。
 
 ## Q Atlantis
 
