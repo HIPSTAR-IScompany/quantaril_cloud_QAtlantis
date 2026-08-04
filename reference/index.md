@@ -28,7 +28,7 @@ slug: /
 |---|---|---|
 | Sphere | [Sphere family](./sphere/index.md) | SphereOS Atlantis、MAGI、IBD等の責務と実装境界 |
 | FAM | [FAM](./fam/index.md) | FAMの仕様系譜、入出力、Last Order、実装状態 |
-| OND | [OND](./ond/index.md) | 演者主権型live production系の製品referenceへのroute |
+| x800 | [x800 土偶family](./x800/index.md) | OND800、SAO800、FAN800等、八百万へ増殖できる土偶製品family |
 
 ## 状態の読み方
 

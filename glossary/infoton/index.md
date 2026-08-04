@@ -8,7 +8,7 @@ description: 情報子工学、FAM、IBD周辺の語を解決する索引。
 | 用語 | 一文解決 |
 |---|---|
 | [情報子](./infoton.md) | source、observer、routing、output、verifierの関係を失わず扱う情報単位。 |
-| [FAM](./fam.md) | 意味・依存・選択・出典・停止をFold Treeとして追跡する構造。 |
+| [FAM（ファム）](./fam.md) | 探索技の状態を持つ叡智を記述する汎用叡智記述フォーマット。 |
 | IBD | FAMとprovenanceをmetaphor-neutralに保存・探索するcomponent。 |
 
 長い思想と研究は[情報子工学資料](/docs/research/infoton/infoton-engineering)、実装入口は

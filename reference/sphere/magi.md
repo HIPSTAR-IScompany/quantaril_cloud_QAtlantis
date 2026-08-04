@@ -17,7 +17,7 @@ MAGIは、Maxwell、Uriel、Raphaelの三つの監査Positionを同じ対象へ�
 | Position Skill | 目的・事実・棚／回復の異なるfailure surfaceから監査する | `IMPLEMENTED-ALPHA` |
 | composite Skill | 三出力をagreement、disagreement、unknownへ束ねる | `IMPLEMENTED-ALPHA` |
 | source resolver | coreと明示profileの必読sourceを解決する | `IMPLEMENTED-ALPHA` |
-| OAE temporal validator | 過去OAEの遡及生成や同一Worldline backfillを拒否する | `IMPLEMENTED-ALPHA` |
+| [OAE](/glossary/sphere/oae) temporal validator | 過去OAEの遡及生成や同一Worldline backfillを拒否する | `IMPLEMENTED-ALPHA` |
 | external API | network APIとしてMAGIを提供する | `NOT IMPLEMENTED` |
 | FAMLog／OAE persistence | 監査結果を常駐保存する | `NOT IMPLEMENTED` |
 | 7D Fold runtime／Akasha Driver | WorldとInstance Ghostを分岐・復元する | `NOT IMPLEMENTED` |
@@ -27,7 +27,7 @@ MAGIは、Maxwell、Uriel、Raphaelの三つの監査Positionを同じ対象へ�
 | Position | 主な監査対象 | それ自体が意味しないもの |
 |---|---|---|
 | Maxwell | 原初目的、未来branch、未マウント意味、差戻し | 願望による実装状態の上書き |
-| Uriel | source、fact scope、約束、証拠、実装状態 | 全World共通の唯一のfact定義 |
+| Uriel | source、[fact scope](/glossary/sphere/fact-scope)、約束、証拠、実装状態 | 全World共通の唯一のfact定義 |
 | Raphael | 棚、routing、Meaning／Vessel、破局と回復 | 無条件mergeや「全員仲良く」判定 |
 
 三者一致も真理証明ではありません。`unknown`はpassではなく、多数決は採用authorityを生成しません。
@@ -50,8 +50,8 @@ python3 -B magi/0.2.1/resolve_sources.py \
 
 ## OAE時間境界
 
-過去の同時点OAEを参照できない場合は`historical-oae-unavailable`を返し、現在の推論で過去のObserver、Intent、
-Agency roleを補いません。
+過去の同時点OAEを参照できない場合は`historical-oae-unavailable`を返し、現在の推論で過去の
+[Observer](/glossary/sphere/observer)、Intent、[Agency](/glossary/sphere/agency) roleを補いません。
 
 ```yaml
 last_order:

@@ -1,11 +1,11 @@
 ---
-title: ArchiAngel
+title: ArchiAngel（アーキエンジェル）
 description: Sphere service taxonomyにおけるArchiAngelの短い定義と、宗教上の大天使・人格との境界。
 ---
 
-# ArchiAngel
+# <ruby>ArchiAngel<rp>（</rp><rt>アーキエンジェル</rt><rp>）</rp></ruby>
 
-**ArchiAngel**は、Sphere service taxonomyで、単一処理だけでなくWorldやarchitectureのroutingへ関与する
+<strong><ruby>ArchiAngel<rp>（</rp><rt>アーキエンジェル</rt><rp>）</rp></ruby></strong>は、Sphere service taxonomyで、単一処理だけでなくWorldやarchitectureのroutingへ関与する
 service classです。
 
 ## 何ではないか

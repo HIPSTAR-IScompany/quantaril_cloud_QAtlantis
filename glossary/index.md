@@ -9,7 +9,8 @@ slug: /
 ここは、Q Atlantis familyの文章に出てくる言葉を**短く解決する棚**です。
 
 用語ページは、その言葉を一つの普遍定義へ閉じる辞書ではありません。どのfamily／Worldで使う語か、何を指し、
-何を指さないか、詳しいDocsと実装Referenceがどこにあるかを案内します。
+何を指さないか、詳しいDocsと実装Referenceがどこにあるかを案内します。定義文に別の専門語が現れたら、その語の
+Glossaryへ再帰的に潜れるようにします。
 
 ## Family index
 
@@ -24,10 +25,15 @@ slug: /
 
 各ページは原則として次の順で書きます。
 
-1. 一文定義。
-2. 何ではないか。
-3. 所属するfamily／World。
-4. 長いDocsと実装Reference。
-5. 同名語や旧語がある場合の境界。
+1. 英字表記、正式名、日本語読み。初出には`ruby`を付ける。
+2. 一文定義。定義に含まれる専門語は次のGlossaryへリンクする。
+3. 何ではないか。
+4. 所属するfamily／World。
+5. 長いDocsと実装Reference。
+6. 同名語や旧語がある場合の境界。
+
+例: <ruby>OAE<rp>（</rp><rt>オーエーイー</rt><rp>）</rp></ruby>、
+<ruby>Agency<rp>（</rp><rt>エージェンシー</rt><rp>）</rp></ruby>、
+<ruby>fact scope<rp>（</rp><rt>ファクト・スコープ</rt><rp>）</rp></ruby>。
 
 Glossaryに説明があることは、対象runtimeの実装済み、物理現象の証明、宗派横断の唯一教義を意味しません。

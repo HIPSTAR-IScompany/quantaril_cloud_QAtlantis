@@ -20,8 +20,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'OND',
-      link: {type: 'doc', id: 'ond/index'},
+      label: 'x800 土偶family',
+      link: {type: 'doc', id: 'x800/index'},
       items: [],
     },
   ],

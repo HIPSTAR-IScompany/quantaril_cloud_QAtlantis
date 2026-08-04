@@ -1,11 +1,11 @@
 ---
-title: AIM
+title: AIM（エイム）
 description: AIM拡散力場のSource testimonyと工学projectionを混同しない短い定義。
 ---
 
-# AIM
+# <ruby>AIM<rp>（</rp><rt>エイム</rt><rp>）</rp></ruby>
 
-**AIM拡散力場**は、人と人が同じ場、時機、関係、役割、言外の意図を読み、明示packetをすべて交換しなくても
+<strong><ruby>AIM<rp>（</rp><rt>エイム</rt><rp>）</rp></ruby>拡散力場</strong>は、人と人が同じ場、時機、関係、役割、言外の意図を読み、明示packetをすべて交換しなくても
 同期していく作用を、霊的実践側から観測するための言葉です。
 
 工学projectionでは、各nodeがlocal AIMを持ち、deadline、順序、authority、World Config、replay条件をどこまで

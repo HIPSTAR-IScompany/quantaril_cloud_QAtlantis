@@ -9,6 +9,12 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'sphere/index'},
       items: [
         'sphere/oae',
+        'sphere/agency',
+        'sphere/observer',
+        'sphere/system',
+        'sphere/registry',
+        'sphere/fact-scope',
+        'sphere/effect',
         'sphere/aim',
         'sphere/archiangel',
       ],

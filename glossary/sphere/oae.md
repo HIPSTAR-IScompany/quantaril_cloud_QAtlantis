@@ -1,12 +1,17 @@
 ---
-title: OAE
+title: OAE（オーエーイー）
 description: Observer Agential Effectの短い定義と、Event・Agency・因果claimとの境界。
 ---
 
-# OAE
+# <ruby>OAE<rp>（</rp><rt>オーエーイー</rt><rp>）</rp></ruby>
 
-**OAE（Observer Agential Effect）**は、あるObserver／Systemが、特定のRegistryとfact scopeから、Agencyが関与した
-Effectとして認識・記録するSphereの管理単位です。
+<strong><ruby>OAE<rp>（</rp><rt>オーエーイー</rt><rp>）</rp></ruby>（Observer Agential Effect）</strong>は、ある
+[<ruby>Observer<rp>（</rp><rt>オブザーバー</rt><rp>）</rp></ruby>](./observer.md)／
+[<ruby>System<rp>（</rp><rt>システム</rt><rp>）</rp></ruby>](./system.md)が、特定の
+[<ruby>Registry<rp>（</rp><rt>レジストリー</rt><rp>）</rp></ruby>](./registry.md)と
+[<ruby>fact scope<rp>（</rp><rt>ファクト・スコープ</rt><rp>）</rp></ruby>](./fact-scope.md)から、
+[<ruby>Agency<rp>（</rp><rt>エージェンシー</rt><rp>）</rp></ruby>](./agency.md)が関与した
+[<ruby>Effect<rp>（</rp><rt>エフェクト</rt><rp>）</rp></ruby>](./effect.md)として認識・記録するSphereの管理単位です。
 
 ## 何ではないか
 

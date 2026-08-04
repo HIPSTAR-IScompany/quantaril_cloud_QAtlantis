@@ -1,10 +1,10 @@
 ---
-title: 情報子
+title: 情報子（Infoton／インフォトン）
 description: Q Atlantisと情報子工学における情報子の短い定義と、物理粒子claimとの境界。
 slug: /infoton/term
 ---
 
-# 情報子
+# 情報子（<ruby>Infoton<rp>（</rp><rt>インフォトン</rt><rp>）</rp></ruby>）
 
 **情報子（Infoton）**は、内容だけでなく、source、observer、routing、output、verifier、目的、制約を伴って
 状態や意味が解決される情報単位です。
