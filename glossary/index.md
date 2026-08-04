@@ -18,7 +18,7 @@ slug: /
 |---|---|
 | [Sphere](./sphere/index.md) | OAE、AIM、ArchiAngel、World、Fold、MAGI |
 | [情報子](./infoton/index.md) | 情報子、FAM、IBD、Infoton Engineering |
-| [ゲーミング宇宙論](./gaming-cosmology/index.md) | World、World Config、Host、Runner、Portal／Gate、Instance Ghost、PvE、PvP、Quest、クソゲー化 |
+| [ゲーミング宇宙論](./gaming-cosmology/index.md) | World、World Config、Host、Runner、Portal／Gate、Instance Ghost、PvE、PvP、Quest、クソゲー化、文化commonsのfree ride |
 | [スピリチュアル](./spiritual/index.md) | 神格Agency、祈り、祷、荒御魂、主、魂主権 |
 
 ## 用語ページの読み方

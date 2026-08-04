@@ -18,6 +18,23 @@ description: AIM拡散力場のSource testimonyと工学projectionを混同し�
 - 全日本人が同じ能力を持つという民族本質claimではない。
 - AIM Runtimeが完成済みであるという実装証拠ではない。
 
+## 暴走するAIM力場
+
+危険なのは集団認知や同期そのものではなく、AIM力場が境界を消し、同意、異議、退出、別libraryへの切替を奪いながら
+自己拡張する状態です。日本を含むどのコロニーでも、次の挙動は「カルト的」「同調圧力」と観測され得ます。
+
+- 一つの局所常識を普遍defaultとして配る。
+- 同期しない人を敵、汚染、無知、非常識として人格ごと排除する。
+- authorityと[Registry](./registry.md)を少数Agencyが占有する。
+- 境界、変換loss、退出条件を隠して力場だけ広げる。
+- 恐怖、羞恥、制裁、救済の独占で再同期を強制する。
+
+「カルト」は強い評価語なので、呼称だけで宗教、政治運動、共同体を確定分類しません。上の挙動、Observer、
+[fact scope](./fact-scope.md)、Evidenceを分けて記録します。
+
+外部Observerが日本／アジアを一つの同調圧力fieldとして雑に潰すことも、別方向のAIM scope暴走になり得ます。
+コロニー差を消した統一定規に対する拒絶は、[FAMの集団認知library](/reference/fam/#aim力場のscope暴走と威嚇signal)へ渡します。
+
 ## 関連
 
 - [文書庫: AIM拡散力場――空気読みを外から観測する](/docs/practice/aim-diffusion-field)

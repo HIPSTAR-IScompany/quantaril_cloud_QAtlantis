@@ -48,12 +48,20 @@ language_meaning_branch:
   community_scope_ref: unknown
   generation_scope_ref: unknown
   institution_register_ref: unknown
+  commonsense_library_ref: unknown
+  colony_scope_ref: unknown
+  boundary_condition_refs: []
   cognitive_frame_refs: []
   conceptual_metaphor_refs: []
   pragmatic_context_ref: unknown
   speaker_self_position_ref: unknown
   listener_interpretation_refs: []
   affect_and_association_refs: []
+  observed_error_handles: []
+  scope_expansion_claim_refs: []
+  universalization_risk: unknown
+  interpretation_oae_refs: []
+  repair_portal_refs: []
   parent_branch_refs: []
   transformation_refs: []
   loss_notes: []
@@ -70,6 +78,140 @@ language_meaning_branch:
 
 状態は`DRAFT / SPEC / NOT IMPLEMENTED`です。語源、系統、時代区分の学術的確定は、出典と該当分野の検証を
 別Evidenceとして要求します。FAMへ書けることを、歴史言語学上の確定へ昇格させません。
+
+### 集団認知libraryのprotocol不整合
+
+「どこの常識？」をresolver callとして扱うと、暗黙の常識を普遍defaultにせず、コロニーごとのlibraryへ明示的に
+名前を付けられます。
+
+```yaml
+protocol_mismatch_observation:
+  source_expression: ""
+  observer_ref: unknown
+  commonsense_library_ref: unknown
+  colony_scope_ref: unknown
+  generation_scope_ref: unknown
+  expected_protocol_ref: unknown
+  received_protocol_ref: unknown
+  observed_error_handle: "KY | 非常識 | 不謹慎 | DQN | F--K | ソイヤ | other"
+  interpretation_oae_ref: unknown
+  person_judgement: prohibited
+  repair_portal_refs: []
+  last_order: ask-which-commonsense-library
+```
+
+error handleは、protocol不整合がどう表出したかの観測値です。ラベルを付けられた人の人格、病理、善悪、所属を
+自動確定しません。郷／壕／コロニー境界が不明なら、常識を捏造せず`unknown`を返します。
+
+### scope拡張と政治ラベル
+
+常識libraryの適用範囲を、同意やPortalなしに拡大する動きは`scope_expansion_claim`として分離します。
+
+```yaml
+scope_expansion_claim:
+  claimant_ref: unknown
+  observer_ref: unknown
+  source_library_ref: unknown
+  target_colony_scope_ref: unknown
+  direction: "local-to-universal | external-to-local | unknown"
+  consent_or_authority_ref: unknown
+  observed_error_handle: "グローバリスト | 左翼的 | パヨク | KY | other"
+  label_target_ref: unknown
+  political_affiliation_inference: prohibited
+  universalization_risk: unknown
+  interpretation_oae_ref: unknown
+  repair_portal_refs: []
+```
+
+西洋、日本、左翼、保守、グローバリスト等を、それぞれ単一のObserverやlibraryとして扱いません。ある西洋Observerの
+「同調圧力ではないか」という観測と、ある日本の政治subcultureの「外来の統一圧力ではないか」という観測を並置し、
+実際にどのruleが誰へ強制されたかを別Evidenceで確認します。
+
+`パヨク`等の侮蔑を含み得る呼称は、Source expression／error handleとして保存できますが、人物の思想所属や人格を
+確定するfieldには使いません。局所libraryを守る自由も、別libraryを選ぶ自由も、同じ[Portal／Gate](/glossary/gaming-cosmology/portal)と
+退出条件で監査します。
+
+### AIM力場のscope暴走と威嚇signal
+
+集団認知libraryを運ぶ[AIM力場](/glossary/sphere/aim)が、同意なしに境界を越え、異議や退出を塞ぐ場合は、通常の
+語彙ずれより強い`aim_scope_expansion`として扱います。
+
+```yaml
+aim_scope_expansion:
+  observer_ref: unknown
+  aim_field_ref: unknown
+  source_library_ref: unknown
+  target_colony_scope_refs: []
+  boundary_erasure_observed: unknown
+  consent_ref: unknown
+  dissent_route_ref: unknown
+  exit_route_ref: unknown
+  registry_capture_claim: unknown
+  coercion_signals: []
+  collective_identity_collapse: "日本人 | アジア人 | 西洋人 | other | unknown"
+  rejection_error_handles: []
+  threat_signal:
+    expression: unknown
+    class: "rhetorical | capability-claim | concrete-threat | unknown"
+    target_ref: unknown
+    timing_ref: unknown
+  safety_handoff_required: unknown
+  interpretation_oae_ref: unknown
+  last_order: preserve-boundaries-and-escalate-concrete-threats
+```
+
+日本／アジアを一つの認知libraryへ畳む低解像度な外部観測は、各国・地域・世代・共同体の境界を消します。その結果、
+`F--K`の拒絶や、テポドン／ノドン等の兵器名を用いた威嚇表現が返る場合があります。これは民族の本質でも、暴力の
+正当化でもありません。粗い統合に対する反応が、どの段階までエスカレートしたかを観測するfieldです。
+
+兵器名が比喩や罵倒でなく、対象、時期、能力を伴う具体的脅威なら、通常のerror handleやFLAVOR-UXへ留めず、
+`concrete-threat`として安全・運用系へhandoffします。逆に、外部Observerが恐怖を理由に全アジアを同じ危険libraryへ
+再統合することも避けます。
+
+### 文化commonsのlineage conflict
+
+文化・知財のfree ride claimは、国籍や政治ラベルで裁かず、来歴と許諾の比較可能なprofileへします。
+
+```yaml
+cultural_lineage_conflict:
+  claim_scope: "humanities | cognitive-linguistics | meme-operations"
+  claimant_ref: unknown
+  observer_ref: unknown
+  artifact_ref: unknown
+  source_candidate_refs: []
+  date_evidence_refs: []
+  author_or_steward_refs: []
+  license_refs: []
+  access_route_refs: []
+  transformation_diff_refs: []
+  attribution_receipt_refs: []
+  compensation_or_reciprocity_refs: []
+  origin_claims: []
+  observed_error_handles: "ウリジナル | アルジナル | 猿真似 | F--K | other"
+  aesthetic_rejection_handles: "ダサい | 映えない | 背乗り | other"
+  audit_presentation: "悪代官 | 水戸黄門プリーズ | other | none"
+  legal_claim_status: out-of-scope
+  legal_cost_asymmetry_observed: unknown
+  order_infrastructure_issue_ref: unknown
+  identity_hijack_status: not-inferred
+  collective_identity_inference: prohibited
+  repair_portal_refs: []
+  last_order: preserve-lineage-and-request-evidence
+```
+
+呼称は対立が発生した事実を見つける入口であり、侵害の証拠ではありません。共有、引用、open license、独立創作、
+二次創作、慣習的継承、権利侵害を一括りにしません。このprofileは人文科学／認知言語学／ミーム運用のscopeに置き、
+法務結論が必要な場合だけ、該当する契約・法域・権限を持つ別Worldへhandoffします。
+
+悪代官／水戸黄門プリーズは、手柄を奪うAgencyと来歴を再監査するAgencyを見分ける時代劇Presentationです。
+ダサい／映えない／背乗りは、韓国を含む各コロニー内部でoriginalityを問う美学上のreject handleとして記録できます。
+どちらもSource、date、license、変形差分の代わりになる裁定ではありません。
+
+金銭取引で法務コスト非対称が発生した場合、個人へ無制限の立証費用を課さず、provenance、異議、仲裁、救済Accessを
+安価にする秩序インフラIssueを生成します。神話Presentationでは`天津神へIssue`、工学projectionでは
+`order_infrastructure_issue_ref`として保持し、個別紛争の勝敗とインフラ責務を分けます。
+
+- [用語集: 文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
 
 ## 系譜境界
 

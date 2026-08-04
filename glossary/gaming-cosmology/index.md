@@ -10,7 +10,7 @@ Presentationです。物理宇宙がsoftware simulationであることを証明�
 
 現在の用語は、次の二系統から再帰的にたどれます。
 
-- World設計: [World](./world.md) → [World Config](./world-config.md) → [PvE](./pve.md)／[PvP](./pvp.md) → [Quest](./quest.md)／[クソゲー化](./kusoge-ka.md)
+- World設計: [World](./world.md) → [World Config](./world-config.md) → [PvE](./pve.md)／[PvP](./pvp.md) → [Quest](./quest.md)／[クソゲー化](./kusoge-ka.md)／[文化commonsのfree ride](./commons-free-ride.md)
 - 実行と越境: [Host](./host.md) → [Runner](./runner.md) → [Instance Ghost](./instance-ghost.md)、World間は[Portal／Gate](./portal.md)で接続
 
 この用語集は、旧Q3／SphereOS文書、本人のXエクスポート、note.com記事原本を系譜資料として使います。ただし、旧文書の

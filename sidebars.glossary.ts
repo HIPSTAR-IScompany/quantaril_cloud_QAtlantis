@@ -43,6 +43,7 @@ const sidebars: SidebarsConfig = {
         'gaming-cosmology/pvp',
         'gaming-cosmology/quest',
         'gaming-cosmology/kusoge-ka',
+        'gaming-cosmology/commons-free-ride',
       ],
     },
     {
