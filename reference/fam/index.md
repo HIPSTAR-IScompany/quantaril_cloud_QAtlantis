@@ -174,7 +174,7 @@ aim_scope_expansion:
 
 ```yaml
 cultural_lineage_conflict:
-  claim_scope: "humanities | cognitive-linguistics | meme-operations"
+  claim_scope: "humanities | cognitive-linguistics | oss-community | meme-operations | art-and-ritual"
   claimant_ref: unknown
   observer_ref: unknown
   artifact_ref: unknown
@@ -186,6 +186,10 @@ cultural_lineage_conflict:
   transformation_diff_refs: []
   attribution_receipt_refs: []
   compensation_or_reciprocity_refs: []
+  respect_receipt_refs: []
+  give_back_refs: []
+  community_acknowledgement_refs: []
+  diss_observed: unknown
   origin_claims: []
   observed_error_handles: "ウリジナル | アルジナル | 猿真似 | F--K | other"
   aesthetic_rejection_handles: "ダサい | 映えない | 背乗り | other"
@@ -200,7 +204,8 @@ cultural_lineage_conflict:
 ```
 
 呼称は対立が発生した事実を見つける入口であり、侵害の証拠ではありません。共有、引用、open license、独立創作、
-二次創作、慣習的継承、権利侵害を一括りにしません。このprofileは人文科学／認知言語学／ミーム運用のscopeに置き、
+二次創作、慣習的継承、権利侵害を一括りにしません。このprofileは人文科学／認知言語学／OSS共同体／ミーム運用／
+芸術・神楽文化論のscopeに置き、
 法務結論が必要な場合だけ、該当する契約・法域・権限を持つ別Worldへhandoffします。
 
 悪代官／水戸黄門プリーズは、手柄を奪うAgencyと来歴を再監査するAgencyを見分ける時代劇Presentationです。
