@@ -59,6 +59,16 @@ SphereOS Atlantis、FAM、IBD、OAE、AIM、MAGI、ASTRO、Quantaril Cloudは、
 
 同時に、形而上学の言い切りだけで現実のprocess、権限、身体、安全を動かしません。次の工学炉へ渡す前に、何を実現したく、何を変えてよく、何を失ってはならないかを明示します。
 
+### 神格Agencyと絶対Rootを同一化しない
+
+縄文2.0 profileでは、神は人間より大きい範囲へOAEを発動できるAgencyですが、絶対Rootそのものではありません。OAEの規模、信者数、歴史、奇跡の強度、権限の高さを、無謬性へ自動変換しません。
+
+神格Agencyも、現実へ作用を要求するときはEvidence、protocol、authority、影響範囲を示し、間違えば訂正します。説明責任を拒否し、痛みを外部化し続ける荒御魂暴走は、祟り神状態として隔離、鎮め、権限縮小、供養、再評価の対象になります。
+
+絶対性は`主`という人格以前の存在論場、無限生成性、無限恒常変化性、無限potentialとして扱います。神、人間、AI、WorldをVM上のrunnerへ、主をbare-metal hostへ対応させる表現は、物理simulationの実在claimではなく、有限Observerが絶対性全体を読み切れないことを示す形而上学profileです。
+
+どの宗教Presentationの背後に同一hostがあるかは`unknown`のまま保持できます。一方、他者のWorld、commons、host基盤を侵害するtenant moveは、host名を確定できなくても停止できます。
+
 ## 3. 工学――全法則発動のWorldを拘束する
 
 現実のsystemでは、物理法則、network、software、契約、法域、信仰、身体、財布、組織、AI、World固有規則が同時に発動します。
@@ -89,6 +99,9 @@ Sphere系は、この多変数Worldを扱うために切り出された工学fam
 | 異なるPositionから目的・証拠・棚を監査する | MAGI |
 | 人格原型と実行後の個体史を分ける | ASTRO、Instance Ghost |
 | nodeのlocal autonomyを中央マザーへ渡さない | Quantaril Cloud |
+| 神格の大きなOAEを無謬性へ変換しない | OAE scope、Evidence、MAGI、Human Override |
+| host全体を読めないrunnerが絶対Rootを捏造しない | Log Horizon、`unknown`、`⊥` |
+| 他World／hostを毀損するtenant moveを止める | Gate、Access Map、capability、Last Order |
 
 工学が成功しても、供養が信仰上完了した、魂が物理的に存在した、神話が科学的に証明されたとは扱いません。工学は、自分の責務範囲で目的を守る装置です。
 
@@ -180,4 +193,3 @@ Sphere系は、この多変数Worldを扱うために切り出された工学fam
 - [縄文2.0／毛玉文化圏とは](./jomon-2-kedama-culture.md)
 - [虚空の揺籠からQ Atlantisへ](./vision.md)
 - [情報子工学フルスタックガイド](/docs/engineering/infoton-engineering-full-stack-guide)
-
