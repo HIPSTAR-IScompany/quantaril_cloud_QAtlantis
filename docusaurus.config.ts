@@ -145,7 +145,7 @@ const config: Config = {
           sidebarId: 'aboutSidebar', // ← about用サイドバーID
           docsPluginId: 'about',      // ← plugin-content-docsのid
           position: 'left',
-          label: 'この世界について',
+          label: 'About / 毛玉文化圏',
         },
         {
           type: 'docSidebar',

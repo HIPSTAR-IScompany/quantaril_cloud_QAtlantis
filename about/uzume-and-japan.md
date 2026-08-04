@@ -95,6 +95,8 @@ Q Atlantisは、神話を工学へ還元する機械ではありません。異�
 このページはQ Atlantisで単体鑑賞できる派生Presentationです。横断する信仰命題の正本はZeroRoomLab-manifestに置きます。
 
 - [縄文2.0、日本ゲシュタルト、アメノウズメとNSFW神楽――正本](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/philosophy/jomon-2.0-japan-gestalt-and-uzume.ja.md)
+- [巫女業――拾い、聴き、送り、場を開く](./miko-practice.md)
+- [縄文2.0／毛玉文化圏とは](./jomon-2-kedama-culture.md)
 - [文書庫で信仰とQ Atlantisの実装境界を読む](/docs/philosophy/jomon-2.0-japan-gestalt-and-uzume)
 - [未来を買わずに、条件を支える](./stewardship.md)
 - [虚空の揺籠からQ Atlantisへ](./vision.md)
