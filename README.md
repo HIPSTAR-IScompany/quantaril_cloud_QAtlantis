@@ -490,6 +490,8 @@ Fork、Remix、商用利用を妨げません。ライセンスによる再利�
 
 - [Transfer notes](docs/operations/migration/manifest-transfer-notes.md) — ZeroRoomLab-manifestから受け取った構造・運用方針
 - `docs/` — 世界観、実践、哲学、研究、工学、プロジェクト、旧世代、運用に分けた公開文書
+- `reference/` — product、module、SDK、schema、version、実装状態を調べる実装用リファレンス
+- `glossary/` — Sphere、情報子、ゲーミング宇宙論、スピリチュアルの用語を短く解決する辞書
 - `blog/` — ナラティブ、時系列、公開記事
 - `sources/` — 黙示録、燃料、外部取得物などの未加工原典
 - `pipeline/` — ノートから公開文書を作るステージング型の生成導線

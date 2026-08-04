@@ -190,6 +190,7 @@ const sidebars: SidebarsConfig = {
         'operations/funding-and-lineage-integration',
         'operations/sakura-matchbox-deployment',
         'operations/provenance/index',
+        'operations/provenance/three-shelf-information-architecture-magi-audit-2026-08-04',
         'operations/provenance/source-mining-2026-07-29',
         'operations/provenance/source-mining-2026-07-20',
         'operations/provenance/source-mining-2026-07-21',

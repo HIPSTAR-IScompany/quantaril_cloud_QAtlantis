@@ -97,4 +97,4 @@ Quantaril Cloudの`Cloud`も、全状態を一つの巨大AIへ預ける煙の�
 | Reference | product、module、SDK、schema、version、実装状態を調べる |
 | Glossary | Sphere、情報子、ゲーミング宇宙論、スピリチュアルの用語を解決する |
 
-ReferenceとGlossaryは次の公開棚として段階的に構築します。Aboutは、そのすべてが何のために存在するのかを失わないための上流です。
+[Reference](/reference/)と[Glossary](/glossary/)は、独立したURLとサイドバーを持つ公開棚として構築を始めました。Aboutは、そのすべてが何のために存在するのかを失わないための上流です。

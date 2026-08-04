@@ -11,6 +11,9 @@ description: Quantaril Cloudの神話・実践・研究・工学・旧世代資�
 
 すべてを一つの真理体系へ押し込まず、読む目的に応じて棚を分けています。
 
+この`/docs/`棚は、思想、実践、研究、設計判断を**読む・考える・試す**場所です。製品やmoduleを実装するときは
+[Reference](/reference/)へ、見慣れない語を短く解決するときは[Glossary](/glossary/)へ進んでください。
+
 自分の職種、宗派、persona、プレイスタイルから始める場合は、[読者・参加者別の入口](./entrances/index.md)を
 使ってください。入口は格付けではなく、異なるPresentationから同じ文書庫へ入るrouteです。
 

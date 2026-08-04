@@ -109,6 +109,24 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebars.about.ts'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'reference',
+        path: 'reference',
+        routeBasePath: 'reference',
+        sidebarPath: require.resolve('./sidebars.reference.ts'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'glossary',
+        path: 'glossary',
+        routeBasePath: 'glossary',
+        sidebarPath: require.resolve('./sidebars.glossary.ts'),
+      },
+    ],
   ],
 
   themeConfig: {
@@ -151,7 +169,21 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'projectSidebar',
           position: 'left',
-          label: '文書庫',
+          label: 'Docs',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'referenceSidebar',
+          docsPluginId: 'reference',
+          position: 'left',
+          label: 'Reference',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'glossarySidebar',
+          docsPluginId: 'glossary',
+          position: 'left',
+          label: 'Glossary',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
