@@ -37,6 +37,12 @@ description: Observer Agential Effectの短い定義と、Event・Agency・因�
 分け、対象や時期を伴う場合は[FAMのAIM scope暴走profile](/reference/fam/#aim力場のscope暴走と威嚇signal)から
 安全handoffへ渡します。
 
+## 後続eventによる再評価
+
+ある時点で「滑った」と記録したOAEは、後から意味が回収されても削除しません。Source OAEへ、観測窓、追加Context、
+新しいObserver／観客クラスタを持つRe-evaluation OAEをappendします。「滑ったイントロ」と「全体では神曲だった」は、
+観測時点が違えば同時に成立できます。
+
 ## 関連
 
 - [リファレンス: MAGI SDK](/reference/sphere/magi)

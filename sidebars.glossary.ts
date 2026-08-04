@@ -48,6 +48,19 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'アジアスラング・レジスター辞典',
+      link: {type: 'doc', id: 'asian-slang/index'},
+      items: [
+        'asian-slang/uriginal',
+        'asian-slang/aliginal',
+        'asian-slang/sarumane',
+        'asian-slang/ky',
+        'asian-slang/scope-miss-diss',
+        'asian-slang/scope-error-handles',
+      ],
+    },
+    {
+      type: 'category',
       label: 'スピリチュアル',
       link: {type: 'doc', id: 'spiritual/index'},
       items: [],

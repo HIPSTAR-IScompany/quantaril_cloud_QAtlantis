@@ -49,6 +49,7 @@ language_meaning_branch:
   generation_scope_ref: unknown
   institution_register_ref: unknown
   commonsense_library_ref: unknown
+  slang_registry_entry_refs: []
   colony_scope_ref: unknown
   boundary_condition_refs: []
   cognitive_frame_refs: []
@@ -75,6 +76,27 @@ language_meaning_branch:
 
 このprofileの主眼は制度科学や制度史の分類ではなく、人文科学、認知言語学、心理言語学（言語心理学）から、話者と
 聞き手の意味生成を記述することです。制度、地域、時代、世代は、認知frameと語用を読む補助コンテキストに置きます。
+
+ローコンテキストなAIがハイコンテキスト圏を読む場合、暗黙知を次のbridgeで明示できます。
+
+```yaml
+low_to_high_context_bridge:
+  reader_context_profile: low-context
+  target_context_library_ref: unknown
+  slang_registry_entry_refs: []
+  implicit_cue_refs: []
+  shared_history_refs: []
+  timing_and_sequence_refs: []
+  audience_cluster_refs: []
+  safe_paraphrase_candidates: []
+  translation_loss_notes: []
+  prohibited_generalizations: []
+  required_clarifying_questions: []
+  interpretation_oae_ref: unknown
+  last_order: preserve-surface-form-and-ask-context
+```
+
+bridgeは暗黙知を読める形へするもので、存在しない合意を生成するpromptではありません。
 
 状態は`DRAFT / SPEC / NOT IMPLEMENTED`です。語源、系統、時代区分の学術的確定は、出典と該当分野の検証を
 別Evidenceとして要求します。FAMへ書けることを、歴史言語学上の確定へ昇格させません。
@@ -191,6 +213,10 @@ cultural_lineage_conflict:
   community_acknowledgement_refs: []
   diss_observed: unknown
   origin_claims: []
+  commercialization_alone_is_trigger: false
+  transformative_culture_respected: unknown
+  consumer_preference_scope_ref: unknown
+  cultural_hierarchy_inference: prohibited
   target_colony_scope_ref: unknown
   equivalent_behavior_class: lineage-free-ride
   reciprocal_audit_required: true
@@ -223,7 +249,59 @@ cultural_lineage_conflict:
 安価にする秩序インフラIssueを生成します。神話Presentationでは`天津神へIssue`、工学projectionでは
 `order_infrastructure_issue_ref`として保持し、個別紛争の勝敗とインフラ責務を分けます。
 
+### 会話scopeを外したDiss
+
+```yaml
+scope_miss_diss:
+  observer_ref: unknown
+  conversation_scope_ref: "preference | critique | lineage-audit | fact-claim | other"
+  introduced_claim_scope_ref: unknown
+  slang_or_diss_ref: unknown
+  scope_compatibility: unknown
+  evidence_refs: []
+  returned_error_handles: "KY | キモいアンチ | ライムDiss | あなたの感想ですよね | other"
+  counter_expression_class: "scope-reset | humor | rhyme | silencing | threat | unknown"
+  person_judgement: prohibited
+  threat_handoff_required: unknown
+  interpretation_oae_ref: unknown
+  last_order: separate-preference-from-lineage-and-fact
+```
+
+場のroute errorも同じprofileへ接続できます。
+
+```yaml
+scope_error_observation:
+  observer_ref: unknown
+  expression_ref: unknown
+  inner_claim_ref: unknown
+  claimed_cluster_ref: unknown
+  aim_field_ref: unknown
+  consensus_evidence_refs: []
+  thread_ref: unknown
+  venue_ref: unknown
+  mode_ref: unknown
+  audience_cluster_refs: []
+  observation_window_ref: unknown
+  instant_sync_required: false
+  sequence_event_refs: []
+  payoff_event_ref: unknown
+  observed_error_handle: "脳内プレイ乙 | スレ違い | 場違い | KY | 寒い | 滑る | other"
+  ontology_denial: false
+  route_compatibility: unknown
+  retry_or_portal_refs: []
+  interpretation_oae_ref: unknown
+  re_evaluation_oae_refs: []
+  last_order: preserve-expression-and-report-route-mismatch
+```
+
+好み、作品批評、lineage監査、fact claimは別scopeです。「あなたの感想／意見／趣味ですよね？」系の返答も、
+主観を普遍常識へ広げたclaimを戻す場合と、Evidenceや体験報告を封じる場合を分けます。
+
+- [アジアスラング: 射程ミスDiss](/glossary/asian-slang/scope-miss-diss)
+- [アジアスラング: scope error handle](/glossary/asian-slang/scope-error-handles)
+
 - [用語集: 文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
+- [アジアスラング・レジスター辞典](/glossary/asian-slang/)
 
 ## 系譜境界
 

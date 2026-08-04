@@ -16,6 +16,7 @@ title: 来歴と正本
 
 ## 今回の公開receipt
 
+- [2026-08-04 アジアスラング・レジスター辞典Source Receipt](./asian-slang-registry-source-receipt-2026-08-04.md)
 - [2026-08-04 ゲーミング宇宙論用語集Source Mining Receipt](./gaming-cosmology-glossary-source-receipt-2026-08-04.md)
 - [2026-08-04 Docs・Reference・Glossary三棚化MAGI監査](./three-shelf-information-architecture-magi-audit-2026-08-04.md)
 - [2026-07-29 DOS／ASTROポンチ絵の画像受領票](./visual-assets-2026-07-29.md)
