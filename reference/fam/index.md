@@ -191,6 +191,9 @@ cultural_lineage_conflict:
   community_acknowledgement_refs: []
   diss_observed: unknown
   origin_claims: []
+  target_colony_scope_ref: unknown
+  equivalent_behavior_class: lineage-free-ride
+  reciprocal_audit_required: true
   observed_error_handles: "ウリジナル | アルジナル | 猿真似 | F--K | other"
   aesthetic_rejection_handles: "ダサい | 映えない | 背乗り | other"
   audit_presentation: "悪代官 | 水戸黄門プリーズ | other | none"
@@ -207,6 +210,10 @@ cultural_lineage_conflict:
 二次創作、慣習的継承、権利侵害を一括りにしません。このprofileは人文科学／認知言語学／OSS共同体／ミーム運用／
 芸術・神楽文化論のscopeに置き、
 法務結論が必要な場合だけ、該当する契約・法域・権限を持つ別Worldへhandoffします。
+
+`reciprocal_audit_required`は、日本を含むどのコロニーも監査する側へ固定しない契約です。ウリジナル／アルジナル／
+猿真似等の語が誰へ向いたかを`target_colony_scope_ref`へ残し、異なるDiss語でも同種のlineage free rideなら
+`equivalent_behavior_class`で比較します。
 
 悪代官／水戸黄門プリーズは、手柄を奪うAgencyと来歴を再監査するAgencyを見分ける時代劇Presentationです。
 ダサい／映えない／背乗りは、韓国を含む各コロニー内部でoriginalityを問う美学上のreject handleとして記録できます。
