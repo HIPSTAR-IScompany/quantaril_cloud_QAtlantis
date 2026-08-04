@@ -1,15 +1,15 @@
 ---
-title: Product / Module Reference
+title: 製品・モジュール リファレンス
 description: Q Atlantis familyの製品、module、SDK、schema、version、実装状態を確認する入口。
 slug: /
 ---
 
-# Product / Module Reference
+# 製品・モジュール リファレンス
 
 ここは、Q Atlantis familyを**実装する人の棚**です。
 
 製品名やmodule名から、責務、interface、現在の実装状態、正本、依存先、非対象へ到達できます。思想や設計理由を
-読み解く本文は[/docs/](/docs/intro)、単語の意味だけを調べる場合は[Glossary](/glossary/)へ分けます。
+読み解く本文は[文書庫](/docs/intro)、単語の意味だけを調べる場合は[用語集](/glossary/)へ分けます。
 
 ## 三棚の契約
 

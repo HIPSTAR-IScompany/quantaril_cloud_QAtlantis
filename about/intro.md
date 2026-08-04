@@ -93,8 +93,8 @@ Quantaril Cloudの`Cloud`も、全状態を一つの巨大AIへ預ける煙の�
 | 棚 | 主語と役割 |
 |---|---|
 | About | なぜ生き、何を信じ、どんな文化圏と未来を作るのか |
-| Docs | 哲学、信仰、実践、研究、工学作法、事故、物語を読む |
-| Reference | product、module、SDK、schema、version、実装状態を調べる |
-| Glossary | Sphere、情報子、ゲーミング宇宙論、スピリチュアルの用語を解決する |
+| 文書庫（`/docs/`） | 哲学、信仰、実践、研究、工学作法、事故、物語を読む |
+| リファレンス（`/reference/`） | product、module、SDK、schema、version、実装状態を調べる |
+| 用語集（`/glossary/`） | Sphere、情報子、ゲーミング宇宙論、スピリチュアルの用語を解決する |
 
-[Reference](/reference/)と[Glossary](/glossary/)は、独立したURLとサイドバーを持つ公開棚として構築を始めました。Aboutは、そのすべてが何のために存在するのかを失わないための上流です。
+[リファレンス](/reference/)と[用語集](/glossary/)は、独立したASCII URLとサイドバーを持つ公開棚です。Aboutは、そのすべてが何のために存在するのかを失わないための上流です。

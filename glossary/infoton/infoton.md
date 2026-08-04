@@ -20,6 +20,6 @@ Q Atlantisでは、同じ入力が異なるObserver、World、目的、変換経
 
 ## 関連
 
-- [Docs: 量子→情報子への再命名の経緯](/docs/research/infoton/quantum-to-infoton)
-- [Docs: 情報子工学](/docs/research/infoton/infoton-engineering)
-- [Docs: フルスタックエンジニアのための情報子工学入門](/docs/engineering/infoton-engineering-full-stack-guide)
+- [文書庫: 量子→情報子への再命名の経緯](/docs/research/infoton/quantum-to-infoton)
+- [文書庫: 情報子工学](/docs/research/infoton/infoton-engineering)
+- [文書庫: フルスタックエンジニアのための情報子工学入門](/docs/engineering/infoton-engineering-full-stack-guide)

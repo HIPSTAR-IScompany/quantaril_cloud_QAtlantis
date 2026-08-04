@@ -35,6 +35,6 @@ FAM
 
 ## 関連
 
-- [FAM Reference](/reference/fam/)
-- [IBD Reference](/reference/sphere/ibd)
-- [Docs: 情報子工学フルスタック入門](/docs/engineering/infoton-engineering-full-stack-guide)
+- [FAM リファレンス](/reference/fam/)
+- [IBD リファレンス](/reference/sphere/ibd)
+- [文書庫: 情報子工学フルスタック入門](/docs/engineering/infoton-engineering-full-stack-guide)

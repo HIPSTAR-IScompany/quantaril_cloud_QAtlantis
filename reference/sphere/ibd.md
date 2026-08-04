@@ -1,9 +1,9 @@
 ---
-title: IBD Reference
+title: IBD リファレンス
 description: Infoton BaseDriverの責務、Q Atlantis側の採用状態、実装正本への入口。
 ---
 
-# IBD Reference
+# IBD リファレンス
 
 状態: `RESEARCH / Phase 0`
 
@@ -26,8 +26,8 @@ IBD（Infoton BaseDriver）は、記憶、関係、provenance、FAM traceを、�
 ## 正本と関連入口
 
 - [IBD実装repository](https://github.com/saitoomituru/IBD)
-- [Docs: Q Atlantis component map](/docs/engineering/q-atlantis/component-map)
-- [Docs: Q Atlantis status](/docs/engineering/q-atlantis/status)
+- [文書庫: Q Atlantis component map](/docs/engineering/q-atlantis/component-map)
+- [文書庫: Q Atlantis status](/docs/engineering/q-atlantis/status)
 - [用語: FAM](/glossary/infoton/fam)
 
 schema、CLI、test、backend適合状況はIBD repository側を正本とします。このページの状態表示はQ Atlantis公開面の

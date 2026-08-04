@@ -22,7 +22,7 @@ description: Observer Agential Effectの短い定義と、Event・Agency・因�
 
 ## 関連
 
-- [Reference: MAGI SDK](/reference/sphere/magi)
-- [Docs: 意味次元以上としての霊的次元とOAE](/docs/research/infoton/spiritual-dimension-and-oae)
-- [Docs: 神格Agency・荒御魂・主のHost存在論](/docs/worlds/theology/divine-agency-and-host-ontology)
+- [リファレンス: MAGI SDK](/reference/sphere/magi)
+- [文書庫: 意味次元以上としての霊的次元とOAE](/docs/research/infoton/spiritual-dimension-and-oae)
+- [文書庫: 神格Agency・荒御魂・主のHost存在論](/docs/worlds/theology/divine-agency-and-host-ontology)
 - 正本: [Sphere Context Dimension OSアーキテクチャ](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/theory/sphere-context-dimension-os.ja.md)

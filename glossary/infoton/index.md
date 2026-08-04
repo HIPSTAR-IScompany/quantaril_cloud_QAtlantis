@@ -1,9 +1,9 @@
 ---
-title: 情報子 Glossary
+title: 情報子 用語集
 description: 情報子工学、FAM、IBD周辺の語を解決する索引。
 ---
 
-# 情報子 Glossary
+# 情報子 用語集
 
 | 用語 | 一文解決 |
 |---|---|
@@ -12,4 +12,4 @@ description: 情報子工学、FAM、IBD周辺の語を解決する索引。
 | IBD | FAMとprovenanceをmetaphor-neutralに保存・探索するcomponent。 |
 
 長い思想と研究は[情報子工学資料](/docs/research/infoton/infoton-engineering)、実装入口は
-[FAM Reference](/reference/fam/)と[IBD Reference](/reference/sphere/ibd)を参照してください。
+[FAM リファレンス](/reference/fam/)と[IBD リファレンス](/reference/sphere/ibd)を参照してください。

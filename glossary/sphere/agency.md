@@ -23,4 +23,4 @@ description: SphereにおけるAgencyの短い定義と、人格・権限・原�
 
 - [OAE](/glossary/sphere/oae)
 - [Effect](./effect.md)
-- [Docs: 神格Agency・荒御魂・主のHost存在論](/docs/worlds/theology/divine-agency-and-host-ontology)
+- [文書庫: 神格Agency・荒御魂・主のHost存在論](/docs/worlds/theology/divine-agency-and-host-ontology)

@@ -1,9 +1,9 @@
 ---
-title: Sphere family Reference
+title: Sphere family リファレンス
 description: SphereOS Atlantis周辺のContext OS、監査、保存moduleへ進む製品リファレンス。
 ---
 
-# Sphere family Reference
+# Sphere family リファレンス
 
 Sphere familyは、意味、World、観測、Agency、権限、因果、保存、復旧を、既存OSやdatabaseと役割分担して扱う
 Context OS architectureのfamilyです。

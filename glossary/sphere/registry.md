@@ -21,4 +21,4 @@ description: Context Registryの短い定義と、Register・普遍真理との�
 
 - [OAE](./oae.md)
 - [fact scope](./fact-scope.md)
-- [Reference: MAGI SDK](/reference/sphere/magi)
+- [リファレンス: MAGI SDK](/reference/sphere/magi)

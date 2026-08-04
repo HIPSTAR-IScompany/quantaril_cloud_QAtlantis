@@ -18,6 +18,6 @@ service classです。
 
 ## 関連
 
-- [Sphere family Reference](/reference/sphere/)
-- [Docs: 棚別文書レジスターと公開パイプライン](/docs/operations/cross-shelf-publication-register)
+- [Sphere family リファレンス](/reference/sphere/)
+- [文書庫: 棚別文書レジスターと公開パイプライン](/docs/operations/cross-shelf-publication-register)
 - 正本候補: [SphereOS Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis)

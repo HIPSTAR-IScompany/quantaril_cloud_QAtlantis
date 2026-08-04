@@ -1,9 +1,9 @@
 ---
-title: MAGI SDK Reference
+title: MAGI SDK リファレンス
 description: Atlantis-MAGIの三Position監査、source resolver、時間整合validatorのmodule-level reference。
 ---
 
-# MAGI SDK Reference
+# MAGI SDK リファレンス
 
 状態: `IMPLEMENTED-ALPHA / PARTIAL SDK SURFACE`
 
@@ -64,4 +64,4 @@ last_order:
 - [SphereOS Atlantis MAGI bundle](https://github.com/saitoomituru/SphereOS-Atlantis/tree/main/magi/0.2.1)
 - [Atlantis-MAGISDK 0.2.1](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/theory/atlantis-magi-sdk-0.2.1.ja.md)
 - [用語: OAE](/glossary/sphere/oae)
-- [Docs: Context DimensionとAtlantis World Builder](/docs/engineering/q-atlantis/context-dimension-world-builder)
+- [文書庫: Context DimensionとAtlantis World Builder](/docs/engineering/q-atlantis/context-dimension-world-builder)

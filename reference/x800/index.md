@@ -1,9 +1,9 @@
 ---
-title: x800 土偶family Reference
+title: x800 土偶family リファレンス
 description: OND800、SAO800、FAN800等、八百万を意味する800 suffixを持つ土偶製品familyの入口。
 ---
 
-# <ruby>x800<rp>（</rp><rt>エックス・ハッピャク</rt><rp>）</rp></ruby> 土偶family Reference
+# <ruby>x800<rp>（</rp><rt>エックス・ハッピャク</rt><rp>）</rp></ruby> 土偶family リファレンス
 
 状態: `FAMILY-REFERENCE / SOURCE-ROUTING`
 
@@ -49,6 +49,6 @@ familyにいながら一体ずつ異なる器として立ち上がります。x8
 ## 関連入口
 
 - [About: 齋藤みつるとは誰か](/about/saitoumitsuru)
-- [Docs: 神話・目的・人間loopを含む工学](/docs/engineering/pain-routing-and-pain-scouter)
+- [文書庫: 神話・目的・人間loopを含む工学](/docs/engineering/pain-routing-and-pain-scouter)
 
 次のsliceで、sourceと現在の試験境界を照合しながら`OND800`、`SAO800`、`FAN800`を個別Referenceへ分けます。

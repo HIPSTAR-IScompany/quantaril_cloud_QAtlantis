@@ -1,9 +1,9 @@
 ---
-title: FAM Reference
+title: FAM リファレンス
 description: FoldAccessMapperの責務、複数系譜、Last Order、実装正本へ進むreference entry。
 ---
 
-# <ruby>FAM<rp>（</rp><rt>ファム</rt><rp>）</rp></ruby> Reference
+# <ruby>FAM<rp>（</rp><rt>ファム</rt><rp>）</rp></ruby> リファレンス
 
 状態: `SPEC / MULTIPLE-LINEAGES`
 
@@ -39,6 +39,6 @@ FAMには仕様、旧実装、現行reference、MCP等の複数系譜があり�
 ## 関連入口
 
 - [用語: FAM](/glossary/infoton/fam)
-- [Docs: 情報子工学フルスタック入門](/docs/engineering/infoton-engineering-full-stack-guide)
-- [IBD Reference](/reference/sphere/ibd)
+- [文書庫: 情報子工学フルスタック入門](/docs/engineering/infoton-engineering-full-stack-guide)
+- [IBD リファレンス](/reference/sphere/ibd)
 - [Q Atlantis status](/docs/engineering/q-atlantis/status)

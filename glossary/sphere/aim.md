@@ -20,6 +20,6 @@ description: AIM拡散力場のSource testimonyと工学projectionを混同し�
 
 ## 関連
 
-- [Docs: AIM拡散力場――空気読みを外から観測する](/docs/practice/aim-diffusion-field)
-- [Docs: AIM因果同期・Fold深度・Human-is-the-loop](/docs/engineering/q-atlantis/aim-fold-human-loop)
+- [文書庫: AIM拡散力場――空気読みを外から観測する](/docs/practice/aim-diffusion-field)
+- [文書庫: AIM因果同期・Fold深度・Human-is-the-loop](/docs/engineering/q-atlantis/aim-fold-human-loop)
 - [About: 虚空の揺籠からQ Atlantisへ](/about/vision)

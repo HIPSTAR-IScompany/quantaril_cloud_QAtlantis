@@ -21,4 +21,4 @@ description: SphereにおけるObserverの短い定義と、Recorder・Causeと�
 - [OAE](./oae.md)
 - [System](./system.md)
 - [Agency](./agency.md)
-- [Docs: Log Horizonを含む霊的次元とOAE](/docs/research/infoton/spiritual-dimension-and-oae)
+- [文書庫: Log Horizonを含む霊的次元とOAE](/docs/research/infoton/spiritual-dimension-and-oae)
