@@ -61,13 +61,9 @@ SphereOS Atlantis、FAM、IBD、OAE、AIM、MAGI、ASTRO、Quantaril Cloudは、
 
 ### 神格Agencyと絶対Rootを同一化しない
 
-縄文2.0 profileでは、神は人間より大きい範囲へOAEを発動できるAgencyですが、絶対Rootそのものではありません。OAEの規模、信者数、歴史、奇跡の強度、権限の高さを、無謬性へ自動変換しません。
+縄文2.0 profileでは、神格のOAE規模を無謬性へ変換せず、絶対性を`主`という存在論場として分けます。異なる宗教hostの同一性は`unknown`のままでも、他者のWorldやcommonsを毀損するtenant moveは停止できます。
 
-神格Agencyも、現実へ作用を要求するときはEvidence、protocol、authority、影響範囲を示し、間違えば訂正します。説明責任を拒否し、痛みを外部化し続ける荒御魂暴走は、祟り神状態として隔離、鎮め、権限縮小、供養、再評価の対象になります。
-
-絶対性は`主`という人格以前の存在論場、無限生成性、無限恒常変化性、無限potentialとして扱います。神、人間、AI、WorldをVM上のrunnerへ、主をbare-metal hostへ対応させる表現は、物理simulationの実在claimではなく、有限Observerが絶対性全体を読み切れないことを示す形而上学profileです。
-
-どの宗教Presentationの背後に同一hostがあるかは`unknown`のまま保持できます。一方、他者のWorld、commons、host基盤を侵害するtenant moveは、host名を確定できなくても停止できます。
+神学側の完全なprofileは[神格Agency・荒御魂・主のHost存在論](/docs/worlds/theology/divine-agency-and-host-ontology)へ置き、このAboutページでは工学へ渡す責務だけを扱います。
 
 ## 3. 工学――全法則発動のWorldを拘束する
 
