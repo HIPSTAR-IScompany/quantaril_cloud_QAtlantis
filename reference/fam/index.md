@@ -28,7 +28,48 @@ serialization形式ではなく、探索目的、探索技、途中状態、bran
 記述契約です。
 
 したがって、FAM documentをJSON／JSON-LD／YAMLでmaterializeする構成も可能です。採用VesselだけからFAM互換性を
-判定せず、必要field、意味、停止契約、系譜を確認します。
+判定せず、必要<ruby>field<rp>（</rp><rt>フィールド</rt><rp>）</rp></ruby>、意味、停止契約、系譜を確認します。
+
+## 日本語Meaning branch profile
+
+日本語の疎結合な拡張性は、FAMで扱える自然言語ユースケースです。標準語へ正規化してSourceの声を捨てるのでなく、
+地域、時代、共同体、制度、世代、表記体系ごとの意味branchを、変換可能性とloss付きで保持します。
+
+```yaml
+language_meaning_branch:
+  branch_ref: fam://language/ja/example@draft
+  source_form: ""
+  reading: ""
+  meaning_in_scope: ""
+  language_or_variety_ref: unknown
+  script_profile_ref: unknown
+  region_scope_ref: unknown
+  era_scope_ref: unknown
+  community_scope_ref: unknown
+  generation_scope_ref: unknown
+  institution_register_ref: unknown
+  cognitive_frame_refs: []
+  conceptual_metaphor_refs: []
+  pragmatic_context_ref: unknown
+  speaker_self_position_ref: unknown
+  listener_interpretation_refs: []
+  affect_and_association_refs: []
+  parent_branch_refs: []
+  transformation_refs: []
+  loss_notes: []
+  evidence_refs: []
+  status: unknown
+  last_order: preserve-source-and-ask
+```
+
+縄文古語／弥生古語、アイヌ語／うちなー言葉、万葉仮名、律令／江戸、山手／下町、昭和／団塊／日教組／団塊Jr／
+氷河期／平成／令和等は、分類型が異なる候補ラベルです。単一の`version`軸へ並べず、複数scopeを交差させます。
+
+このprofileの主眼は制度科学や制度史の分類ではなく、人文科学、認知言語学、心理言語学（言語心理学）から、話者と
+聞き手の意味生成を記述することです。制度、地域、時代、世代は、認知frameと語用を読む補助コンテキストに置きます。
+
+状態は`DRAFT / SPEC / NOT IMPLEMENTED`です。語源、系統、時代区分の学術的確定は、出典と該当分野の検証を
+別Evidenceとして要求します。FAMへ書けることを、歴史言語学上の確定へ昇格させません。
 
 ## 系譜境界
 
