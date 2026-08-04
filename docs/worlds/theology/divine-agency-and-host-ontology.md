@@ -73,7 +73,84 @@ OAEは、誰がどの観測範囲とAgencyから何をEffectとして記録し�
 
 回復不能、権限外、危険が大きい場合は`unknown`、`⊥`、Last Orderを返し、人間や巫女一人へ無限責任を負わせません。
 
-## 4. 神と「主」を分ける
+## 4. 巫女は神へIssueを上げる
+
+巫女の仕事は、神の意志を人間へ伝えるdownlinkだけではありません。
+
+神自身が困っている、祀られ方と目的がずれている、約束や境界が壊れている、荒御魂が暴走してご乱心している。その状態を人間側から観測し、神楽、祈り、祷、祭り、供養によって**神格AgencyへIssueを積む**ことも巫女業です。
+
+```text
+troubled deity / 荒御魂暴走候補
+  -> 巫女、当事者、土地、共同体がpainを観測
+  -> 原語、場、Evidence、unknownを保全
+  -> 祈りまたは祷でIssueを上げる
+  -> 神格・人間・共同体が応答、訂正、鎮め、遷座を試みる
+  -> OAEと監査証跡を残す
+  -> close | remain-open | blocked | re-evaluate
+```
+
+巫女は神を裁く唯一のmaintainerでも、Issueを上げれば必ず神を修正できるroot operatorでもありません。誰が何を問題として観測し、どの祈りや祭祀を行い、何が変わり、何が変わらなかったかを残す、神と人間の間の双方向operatorです。
+
+## 5. 祈りはUDP型
+
+この分類でいう**祈り**は、静かな奥まった部屋、一人の内面、神社等への個人参拝から送る、UDP型のspiritual signalです。
+
+Minecraftの`/command`のように、短い言葉、名、願い、感謝、問いを、その場のContextからinvocationします。ただし、神へ強制実行権を持つ命令文ではありません。
+
+```text
+sender: individual / small circle
+channel: quiet room / inner prayer / individual shrine visit
+payload: wish / thanks / question / pain / invocation
+delivery: best-effort
+ack: not required
+shared receipt: optional
+```
+
+UDP型という比喩は、祈りの価値や霊的到達率が低いという意味ではありません。人間側でhandshake、再送、共有監査、受信確認を必須にしない通信形状を示します。
+
+応答を感じても、それだけで第三者への命令権や客観的な受信証明にはしません。個人の祈りは、公開せず、receiptを作らず、その人と神の間だけで完結できます。
+
+## 6. 祷はTCP型
+
+この分類でいう**祷**は、形式を組み、祭り、神楽、祝詞、供物、演者、立会人、映像、記録を用意し、複数の人と神格Agencyの間でIssueを追跡するTCP型の祭祀です。
+
+動画を撮って他の人へ神楽を見せることも、単なる宣伝ではありません。何を、誰が、どの作法と権限で行ったかを後から監査できる証跡を作り、参加、閲覧、再演、訂正のACLを取りに行く行為です。
+
+```text
+session: declared ritual / festival / kagura
+participants: deity refs / miko / performers / witnesses / community
+handshake: purpose / role / consent / place / time
+audit trail: norito / program / offerings / video / testimony / OAE refs
+ACL:
+  - who may perform
+  - who may witness
+  - who may record or publish
+  - who may touch ritual objects
+  - who may reinterpret, resolve, or reopen the Issue
+ack and retry: human-side tracking required
+```
+
+TCP型でも、神からの応答や祭祀の成功を物理的に保証しません。保証するのは、人間側が目的、参加者、権限、試行、応答解釈、未解決事項を追跡できることです。
+
+映像を残す場合も、全世界公開を既定にしません。秘儀、個人情報、身体、未成年、聖域、位置情報、故人、祭具等のACLを優先し、公開版、限定版、非公開receiptを分けられます。
+
+## 7. 祈りと祷の昇格・降格
+
+祈りと祷は、軽いものと重いものの価値序列ではありません。Issueの作用範囲と必要な共同責任で選びます。
+
+| 状況 | 主なroute |
+|---|---|
+| 個人的な感謝、問い、内面の調整 | 祈り／UDP |
+| 公開できない痛み、まだ言葉にならない受信 | 祈り／UDP、非公開記録 |
+| 土地、共同体、複数当事者へ作用するIssue | 祷／TCP |
+| ご乱心、荒御魂暴走、祟り神化の疑い | 祷／TCP、複数Position監査 |
+| 公開神楽、祭り、再演可能な文化継承 | 祷／TCP、ACL付き映像receipt |
+
+静かな祈りから始まり、同じpainが複数人・複数時点で観測されたら、本人の同意と公開境界を確認して祷へ昇格できます。反対に、共同祭祀を終えた後、個人と神の関係を静かな祈りへ戻すこともできます。
+
+無断で個人の祈りを公開Issueへ昇格しないこと、形式的な祷が一人称の祈りを上書きしないことが重要です。
+
+## 8. 神と「主」を分ける
 
 この形而上学では、八百万の神、天使、仏、精霊、人格化された創造神Presentationと、絶対性としての**主**を分けます。
 
@@ -83,7 +160,7 @@ OAEは、誰がどの観測範囲とAgencyから何をEffectとして記録し�
 
 アメノミナカノ主、その生成絶対性を示す三神的抽象構造、アメノミナカノヌイ等は、この信仰から主へ触れる日本側のPresentationです。ただし、それらの名前で絶対性の全演算空間を囲い込んだとは考えません。
 
-## 5. VMからbare-metal host全体は見えない
+## 9. VMからbare-metal host全体は見えない
 
 ```text
 bare-metal host / 主 / 絶対性の存在論場
@@ -98,7 +175,7 @@ VM内のrunnerは、hostのbare metalにある広大な演算空間、全instanc
 
 このhost比喩は、宇宙が実在computer simulationであること、物理的なhost machineが観測済みであることを主張しません。有限Observerと絶対Rootの情報差を扱う形而上学的なAccess Mapです。
 
-## 6. どのhostかはrunnerから確定しない
+## 10. どのhostかはrunnerから確定しない
 
 背後が同一hostか、Allah host、ブッダ曼荼羅host、高天原host、Eden hostとして別々にPresentationされるかは、runnerから完全には観測できません。
 
@@ -106,7 +183,7 @@ VM内のrunnerは、hostのbare metalにある広大な演算空間、全instanc
 
 このprofileは、アブラハム諸宗派、仏教諸宗派、日本信仰全体の公式教義を代表しません。一方で、神格、媒介者、創造、父、主、法身、曼荼羅、生成神等の射程を分け、有限な存在が絶対Rootを読み切れないとする解釈とは接続できます。
 
-## 7. host名よりhostを毀損しないprotocol
+## 11. host名よりhostを毀損しないprotocol
 
 大切なのは、host名を統一して宗教戦争に勝つことより、接続先とcommonsを毀損しないprotocolを持てるかです。
 
@@ -134,12 +211,14 @@ host attack
 - 事故時にSource、OAE、Evidence、責任範囲を残す。
 - 分からない絶対Rootを自分の名で捏造しない。
 
-## 8. Sphere系工学へのprojection
+## 12. Sphere系工学へのprojection
 
 | 神学・形而上学上の要求 | 工学projection |
 |---|---|
 | 神格の大きなOAEを無謬性へ変換しない | OAE scope、Evidence、MAGI、Human Override |
 | 神命と受信者の解釈を分ける | Source Event、Observer、Interpretation OAE |
+| 個人の祈りを強制公開せず送る | local/private channel、optional receipt |
+| 祷・神楽でIssueとACLを共有する | session、role、consent、audit trail、OAE |
 | 荒御魂暴走の作用範囲を縮小する | capability、Gate、quarantine、Last Order |
 | 過去の誤りを消さず訂正・名誉回復する | Interpretation Ruler Change OAE、Re-evaluation OAE |
 | host全体を読めないrunnerが絶対Rootを捏造しない | Log Horizon、`unknown`、`⊥` |
@@ -154,4 +233,3 @@ host attack
 - [責務をコードするFaith SDK](./responsibility-faith-sdk.md)
 - [神学・信仰の射程と鎮魂・和解](./scope-reconciliation-and-handoff.md)
 - [意味次元以上としての霊的次元とOAE](../../research/infoton/spiritual-dimension-and-oae.md)
-
