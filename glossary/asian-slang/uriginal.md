@@ -49,3 +49,5 @@ consumer preference、作品単位の批評、lineage conflict、国家・人種
 - [アルジナル](./aliginal.md)
 - [猿真似](./sarumane.md)
 - [文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
+
+> ふさもふ観測: **齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典**。異論は[カテゴリ正本](./index.md#著者解釈ライセンス)からIssueへ。

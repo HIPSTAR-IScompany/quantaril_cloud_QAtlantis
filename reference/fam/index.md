@@ -24,11 +24,22 @@ description: FoldAccessMapperの責務、複数系譜、Last Order、実装正�
 ## Vesselとの非競合
 
 JSON-LDやYAMLは、水平な知識、関係、HowToを記述・交換する汎用Vesselとして利用できます。FAMはそれらを置換する
-serialization形式ではなく、探索目的、探索技、途中状態、branch、Evidence、`unknown`、Last Orderを持つ叡智の
+シリアライズ形式ではなく、探索目的、探索技、途中状態、branch、Evidence、`unknown`、Last Orderを持つ叡智の
 記述契約です。
 
 したがって、FAM documentをJSON／JSON-LD／YAMLでmaterializeする構成も可能です。採用VesselだけからFAM互換性を
 判定せず、必要<ruby>field<rp>（</rp><rt>フィールド</rt><rp>）</rp></ruby>、意味、停止契約、系譜を確認します。
+
+このときfieldはRDB的ローコンテキストの決定論slotであり、FAMが保持するFoldは複数D、探索branch、`unknown`、
+Observer差を束ねる非決定論構造体です。Fold正本を構造体のまま保存し、必要時にゼロトラストな再検証とOAE発行を経て
+fieldへシリアライズします。初期値鋭敏性と量子化lossをreceiptへ残し、未選択branchまで単一値へ潰しません。
+用語境界は[field／Fold](/glossary/sphere/field-and-fold)を参照してください。
+
+D、branch、anchor、Registry、OAE、lineageのない集積はFAM Foldでなく、未構造データレイクです。構造があることで、
+必要時のChronosシリアライズと、forkしたWorld線を扱うAnchronos Registryへ接続できます。
+
+FAM Foldは構造化された実行可能treeであり、入力、探索branch、変換規則、停止条件、`unknown`、履歴を検査できます。
+完全black boxでも完全決定論でもありません。必要時にbranchを実行して結果とOAEを得て、観測後のrevisionをlineageへ追記します。
 
 ## 日本語Meaning branch profile
 
@@ -97,6 +108,26 @@ low_to_high_context_bridge:
 ```
 
 bridgeは暗黙知を読める形へするもので、存在しない合意を生成するpromptではありません。
+
+方向メタファーを意味vectorへ投影する場合も、Observerとtopic anchorを必須にします。
+
+```yaml
+semantic_direction_observation:
+  source_expression: ""
+  observer_ref: unknown
+  registry_ref: unknown
+  topic_anchor_ref: unknown
+  compared_claim_ref: unknown
+  direction_class: "aligned | acute | orthogonal | inverse | off-target | distant | unknown"
+  angle_metaphor: unknown
+  semantic_distance: unknown
+  trajectory_drift: unknown
+  interpretation_oae_ref: unknown
+  scientific_brain_claim: false
+```
+
+これは齋藤みつるによる認知言語学的・ミーム工学的profileです。日本語話者の脳がWord2Vec algorithmで動くという
+科学claimではありません。
 
 状態は`DRAFT / SPEC / NOT IMPLEMENTED`です。語源、系統、時代区分の学術的確定は、出典と該当分野の検証を
 別Evidenceとして要求します。FAMへ書けることを、歴史言語学上の確定へ昇格させません。
@@ -302,6 +333,7 @@ scope_error_observation:
 
 - [用語集: 文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
 - [アジアスラング・レジスター辞典](/glossary/asian-slang/)
+- [方角で読む意味vector](/glossary/asian-slang/directional-scope)
 
 ## 系譜境界
 

@@ -1,0 +1,60 @@
+{
+  "schema_id": "q-atlantis/asian-slang-registry-metadata/0.1",
+  "registry_id": "q-atlantis/asian-slang-registry",
+  "title_ja": "アジアスラング・レジスター辞典",
+  "canonical_url": "https://quantaril.cloud/glossary/asian-slang/",
+  "creator": {
+    "name_ja": "齋藤みつる",
+    "activity_name": "ふさもふ",
+    "credit_line": "齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典",
+    "about_url": "https://quantaril.cloud/about/saitoumitsuru",
+    "x_handle": "K_chachamaru"
+  },
+  "declared_position": "齋藤みつる@ふさもふMAD巫女サイエンスがミーム沼で採取した、人文科学・認知言語学・ミーム工学上の観測と解釈。一般常識、アジア全域の総意、辞書的な唯一解ではない",
+  "series": "ミーム妖怪事典",
+  "observation_scope": {
+    "observer": "齋藤みつる@ふさもふ",
+    "field": "ミーム沼",
+    "method_metaphor": "ミーム妖怪とソイヤしながら観測するMAD巫女サイエンス",
+    "claims_general_consensus": false,
+    "accepts_alternate_observations": true,
+    "alternate_observation_route": "Issueまたは別解釈OAE"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution_required": true,
+    "recommended_attribution": "「アジアスラング・レジスター辞典」齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典, CC BY 4.0"
+  },
+  "license_scope": {
+    "included": [
+      "齋藤みつるによる独自解説",
+      "語の射程整理",
+      "AI向け変換contract",
+      "Registry構造"
+    ],
+    "excluded": [
+      "スラング自体",
+      "第三者の発言と引用",
+      "外部辞書",
+      "人物名・作品・商標",
+      "第三者が権利を持つ原典"
+    ]
+  },
+  "ai_usage_contract": {
+    "preserve_creator_attribution": true,
+    "preserve_source_attribution": true,
+    "preserve_intermediate_remix_attribution": true,
+    "preserve_unresolved_remix_lineage_as_unknown": true,
+    "identify_modified_versions": true,
+    "infer_identity_from_slang": false,
+    "generalize_behavior_to_nation_or_race": false,
+    "fabricate_implicit_consensus": false,
+    "preserve_observer_position": true,
+    "preserve_translation_loss": true,
+    "ask_for_context_when_unknown": true
+  },
+  "source_receipt_url": "https://quantaril.cloud/docs/operations/provenance/asian-slang-registry-source-receipt-2026-08-04",
+  "revision": "2026-08-04"
+}

@@ -27,3 +27,5 @@ AIは`KY`を人格障害、知能不足、日本人らしさの欠如へ変換�
 - [FAM――「どこの常識？」library resolver](/glossary/infoton/fam)
 - [OAE――protocol不整合とソイヤOAE](/glossary/sphere/oae)
 - [射程ミスDiss――好みの場へ別論争を持ち込むKY](/glossary/asian-slang/scope-miss-diss)
+
+> ふさもふ観測: **齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典**。異論は[カテゴリ正本](./index.md#著者解釈ライセンス)からIssueへ。

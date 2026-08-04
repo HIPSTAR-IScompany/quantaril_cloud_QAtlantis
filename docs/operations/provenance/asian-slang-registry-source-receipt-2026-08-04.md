@@ -16,6 +16,11 @@ description: Diss語を国家・人種の本質claimへ膨張させない辞典�
 成果物の中心目的は、ローコンテキストなAI／外部読者へ、ハイコンテキスト圏の暗黙知とDiss射程を明示する
 AIレジスター拡張である。暗黙の共有を民族本質や全員合意として捏造せず、翻訳lossと質問条件を残す。
 
+著者・Declared Positionは、齋藤みつる `@ふさもふMAD巫女サイエンス／ミーム妖怪事典`。独自解説とRegistry構造は
+CC BY 4.0で公開し、AI再利用時にも記名を要求する。第三者の語、引用、辞書、人物名、作品、商標はライセンス対象外とする。
+これは、齋藤みつるがミーム沼へ入り、ミーム妖怪とソイヤしながら採取した**ふさもふ観測**である。一般常識、
+アジア全域の総意、辞書的な唯一解をclaimしない。異論は記名を剥がした置換でなく、Issueまたは別解釈OAEとして受ける。
+
 ## Source
 
 | Source | 使った範囲 | 強度 |
@@ -25,6 +30,7 @@ AIレジスター拡張である。暗黙の共有を民族本質や全員合意
 | [コトバンク「猿真似」](https://kotobank.jp/word/%E7%8C%BF%E7%9C%9F%E4%BC%BC-512562) | 浅い模倣を指す一般日本語としての確認 | `DICTIONARY` |
 | [コトバンク「KY」](https://kotobank.jp/word/ky-183275) | 「空気が読めない」の略と、過剰な迎合になり得る境界 | `DICTIONARY / COMMENTARY` |
 | [Gakken公式ブログのひろゆき本人前書き](https://gkp-koushiki.gakken.jp/2022/07/14/49319/) | 「それってあなたの感想ですよね」を会話Contextから切り離した万能論破にしない境界 | `PRIMARY-PARTICIPANT COMMENTARY` |
+| [帝国データバンク「2024年に『周年記念』を迎える栃木県内企業の実態調査」](https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/739cfa64fec04dc89357d579ddfef10d/s231204_24.pdf) | 『家なき子』と「同情するなら金をくれ」が1994年に流行した時系列の確認 | `SECONDARY CHRONOLOGY` |
 | 公開Web上の「アルジナル」用例 | 中国関連の模倣・origin claimを批判する用例の存在 | `WEAK ATTESTATION / NON-CANONICAL` |
 | `glossary/gaming-cosmology/commons-free-ride.md` | lineage free ride、respect economy、相互監査 | 現在のサイト内定義 |
 | `glossary/infoton/fam.md`と`reference/fam/index.md` | 集団認知library、slang registry field、OAE接続 | `DRAFT / SPEC` |
@@ -44,7 +50,19 @@ AIレジスター拡張である。暗黙の共有を民族本質や全員合意
 - 好みscopeへlineage Dissを持ち込んだ側もKYになり得る。ライムDissと具体的脅威を分ける。
 - 「あなたの感想／意見／趣味ですよね？」をscope resetとして使う場合と、Evidence・体験を封じる場合を分ける。
 - 脳内プレイ乙、スレ違い、場違い、寒い、滑るは、表現や人の存在論否定でなく、thread／venue／mode／audienceとのroute不整合として扱う。
-- AIM同期は即時とは限らない。最初の「滑った」を消さず、後続の歌で「イントロ詐欺の神曲」へ変わった再評価OAEを追記する。
+- AIMは単一fieldでなく、複数Dを束ねるFold構造体として扱う。「滑った」「イントロ詐欺の神曲」はFold全体の
+  成立／不成立columnでなく、異なる観測窓とD集合から得たprojectionおよび再評価OAEとして併記する。
+- fieldはRDB的ローコンテキストの決定論構造、Foldは複数D、branch、Observer差、`UNKNOWN`を保持する非決定論構造体として
+  分ける。Fold正本は構造体のまま保存し、シリアライズごとにゼロトラストな再検証とOAE発行を行う。初期値鋭敏性と
+  量子化限界の劣化を無視せず、採用projection、loss、`UNKNOWN`をreceiptへ残す。
+- D、branch、anchor、Registry、OAE、lineageを持たない未構造集積はFoldでなくデータレイク／沼／Chaosとする。
+  構造化されたFoldからKairosを観測し、Chronosへシリアライズし、forkしたWorld線をAnchronosでメタ管理する。
+- Foldは初期値、D、branch、変換規則、停止条件、`UNKNOWN`、OAEを持つ構造化された実行可能treeとする。完全black boxでも
+  完全決定論でもなく、必要時にbranchを実行し、結果、観測OAE、新revisionをlineageへ追記する。
+- 的外れ、話題が逸れる、鋭角、明後日の方向、90度、180度を意味vectorへ投影する。ただし齋藤みつる解釈であり、脳のWord2Vec実装claimではない。
+- 脚足りぬは、方向errorでなくElemental／Supply不足による射程不足を示す齋藤みつる解釈として扱う。
+- 「同情するなら金をくれ」は『家なき子』由来を保持しつつ、昭和的背景、平成の作品、令和までの引用・替え句を経た
+  現代諺枠として扱う。原典だけへ現在の意味を巻き戻さず、確認できる中間Remix者を記名し、未復元lineageは`UNKNOWN`にする。
 
 ## AI変換contract
 
@@ -59,6 +77,12 @@ slang_translation_guard:
   expand_low_context_reader_register: true
   fabricate_implicit_consensus: false
   preserve_translation_loss: true
+  preserve_creator_attribution: true
+  preserve_observer_position: true
+  preserve_source_attribution: true
+  preserve_intermediate_remix_attribution: true
+  preserve_unresolved_remix_lineage_as_unknown: true
+  registry_license: CC-BY-4.0
   route_racial_attack_to_separate_safety_scope: true
 ```
 

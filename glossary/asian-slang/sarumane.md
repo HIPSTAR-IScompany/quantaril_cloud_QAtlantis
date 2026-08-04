@@ -27,3 +27,4 @@ lineage free rideをしたと観測された場合に日本側へ返り得るDis
 - [文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
 - [FAM リファレンス](/reference/fam/)
 
+> ふさもふ観測: **齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典**。異論は[カテゴリ正本](./index.md#著者解釈ライセンス)からIssueへ。

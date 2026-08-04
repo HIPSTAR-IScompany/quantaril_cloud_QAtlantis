@@ -14,6 +14,7 @@ const sidebars: SidebarsConfig = {
         'sphere/system',
         'sphere/registry',
         'sphere/fact-scope',
+        'sphere/field-and-fold',
         'sphere/effect',
         'sphere/aim',
         'sphere/archiangel',
@@ -57,6 +58,8 @@ const sidebars: SidebarsConfig = {
         'asian-slang/ky',
         'asian-slang/scope-miss-diss',
         'asian-slang/scope-error-handles',
+        'asian-slang/directional-scope',
+        'asian-slang/ashi-tarinu',
       ],
     },
     {

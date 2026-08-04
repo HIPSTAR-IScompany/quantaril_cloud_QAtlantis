@@ -26,3 +26,4 @@ description: 中国origin／模倣claimへの暫定Dissを、中国人一般へ�
 - [猿真似](./sarumane.md)
 - [文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
 
+> ふさもふ観測: **齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典**。異論は[カテゴリ正本](./index.md#著者解釈ライセンス)からIssueへ。

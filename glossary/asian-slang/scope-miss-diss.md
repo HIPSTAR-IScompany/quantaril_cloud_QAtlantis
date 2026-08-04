@@ -48,3 +48,5 @@ K-POPが好きな人は盗用を支持している
 - [ウリジナル――K-POPは対象外](/glossary/asian-slang/uriginal)
 - [文化commonsのfree ride](/glossary/gaming-cosmology/commons-free-ride)
 - [FAM リファレンス](/reference/fam/)
+
+> ふさもふ観測: **齋藤みつる @ふさもふMAD巫女サイエンス／ミーム妖怪事典**。異論は[カテゴリ正本](./index.md#著者解釈ライセンス)からIssueへ。

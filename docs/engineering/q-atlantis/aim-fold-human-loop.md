@@ -7,7 +7,7 @@ description: Q Atlantis公開面から読むAIM力場、clock domain、L/D/G、�
 
 状態: `ALPHA ARCHITECTURE / Prompt Engineering Edition`
 
-![AIMのstrong、degraded、weak、disconnectedを因果serializationとして分解した図](/img/aim-causal-serialization-states.png)
+![AIMのstrong、degraded、weak、disconnectedを因果シリアライズとして分解した図](/img/aim-causal-serialization-states.png)
 
 *`ALPHA ARCHITECTURE / NOT IMPLEMENTED`。AIMを物理粒子や測定済み電波fieldとして示す図ではありません。*
 
@@ -21,37 +21,63 @@ AIM拡散力場のSourceは、日本の高context文化で観測される暗黙�
 空間認識、構造理解から外在化した人生規模の観測でもあります。Source testimonyは
 [AIM拡散力場――空気読みを外から観測する](../../practice/aim-diffusion-field.md)に保存します。
 
-工学projectionでは、その強さを、単に電波が届くことやpingが小さいことではなく、必要な期限までに、共有する
-因果を矛盾なくserializationできる射程として扱うalpha候補です。
+工学projectionでは、AIMを複数Dimensionを束ねるFold構造体として扱います。単に電波が届くことやpingが小さいこと、
+あるいは一つの`strength` columnだけでは表現しません。必要な期限までに共有する因果をシリアライズできるかは、
+AIM Foldから切り出すprojectionの一つです。
+
+ここでfieldは、schemaと定規を固定して値を解決するRDB的ローコンテキストの決定論構造です。Foldは、複数D、branch、
+Observer差、観測窓、`UNKNOWN`を束ね、projection前には単一結果へ閉じない非決定論構造体です。Fold正本は構造体のまま
+保持します。シリアライズ要求ごとに、ゼロトラストにObserver、World、定規、初期値、観測窓、量子化profileを再検証し、
+新しいOAEとreceiptを発行して必要な決定論projectionだけを取り出します。
+
+Foldは構造化された実行可能treeです。初期値、D、branch、既知の変換規則、停止条件、`UNKNOWN`、OAE履歴を検査できるため、
+完全black boxではありません。必要時に対象branchを実行し、結果とOAEを得ます。観測が新しいrevisionへ作用し、初期値差や
+観測窓差で次のrouteが変わり得るため、全出力が事前に固定された完全決定論treeでもありません。
+
+これは、数論的初期値鋭敏性と、有限bit／token／columnへ落とす量子化限界の劣化を無視しないための敬虔なalgorithm対応です。
+微差、丸め、未観測Dを消して「同じ入力なら永遠に同じ唯一解」と装わず、どの時点の何を決定したかを監査可能にします。
+物理量子fieldの測定claimではありません。
+
+D、branch、anchor、初期値、Registry、OAE、lineageがなければ、非決定論Foldではなく未構造のデータレイク／沼／Chaosです。
+構造化されているからこそ、意味ある時機をKairosとして観測し、必要時にChronos時系列へシリアライズし、forkしたWorld線を
+Anchronosからメタ管理できます。Kairos／Chronos／Anchronosは、このarchitectureでの役割名です。
 
 ```text
-AIM strength
-  ~= causal serialization coverage
-   x deadline satisfaction
-   x ordering confidence
-   x authority continuity
-   x replayability
+AIM Fold
+  ├─ participant / Agency D
+  ├─ World / venue D
+  ├─ time / observation-window D
+  ├─ sequence / causality D
+  ├─ intent / meaning D
+  ├─ cluster-response D
+  ├─ authority / permission D
+  └─ Supply / Elemental D
+
+因果シリアライズprojection
+  = selected D set + Observer ruler + observation window
 ```
 
-これは測定済みの物理式ではありません。設計時に「何が弱くなったか」を分けるための分解です。
+これは全AIMを一つの数値へ縮退させる測定式ではありません。設計時に、どのDをどのObserver定規でprojectionし、
+何が弱くなったと観測したかを分けるための構造です。
 
-文化的な暗黙同期と、工学上の因果serializationは同一物ではありません。前者から観測可能なeffectを解体し、
+文化的な暗黙同期と、工学上の因果シリアライズは同一物ではありません。前者から観測可能なeffectを解体し、
 後者へ投影しています。全日本人の生得能力、民族的優劣、完成したAIM Runtimeを意味しません。
 
-| 状態候補 | 因果の扱い |
+| projection状態候補 | 因果の扱い |
 |---|---|
 | strong | deadline内に順序、authority、World Configを回復できる |
 | degraded | bounded delayとreceiptで後から回復できる |
 | weak | 複数の因果解釈が残り、局所AIMへ分裂する |
 | disconnected | KernelまたはWorld Configを対応づけられず、Gate／Portalが必要 |
 
-非同期であること自体を失敗にしません。非同期を包む上限、収束、replay契約が失われるほど共有AIMは弱まります。
+非同期であること自体を失敗にしません。表中の状態はAIM Fold全体の成立／不成立ではなく、特定D集合を用いた
+因果シリアライズprojectionの観測結果です。
 
 ## AIMは単一マザーのfieldではない
 
 AIM拡散力場を、一つの巨大AIや中央operatorが全nodeへ放射する命令fieldとして設計しません。各human、AI、World、
-deviceはlocal AIMを持ち得ます。複数nodeが同じKernel、deadline、authority、World Configを回復できる範囲で共有AIMが
-成立し、対応づけられなければ`weak`、`disconnected`、Gate、Portalへ分かれます。
+deviceはlocal AIM Foldを持ち得ます。複数node間でKernel、deadline、authority、World Config等のDを回復できる範囲は
+それぞれ異なります。対応づけられないDは、そのprojectionで`weak`、`disconnected`、Gate、Portalへ分かれます。
 
 ```mermaid
 flowchart LR
@@ -149,7 +175,7 @@ Authorized Agency   != Infallible Judgment
 | 項目 | 状態 |
 |---|---|
 | PLI上のWorld／Kernel／OAE／MAGI説明と停止契約 | Prompt Engineering Editionで利用可能 |
-| L/D/GとAIM因果serializationの公開説明 | ALPHA |
+| L/D/GとAIM因果シリアライズの公開説明 | ALPHA |
 | clock uncertainty machine schema | `NOT IMPLEMENTED / unknown` |
 | AIM strength validator | `NOT IMPLEMENTED` |
 | local AIM間のP2P／E2E handoff contract | `ALPHA TARGET / NOT IMPLEMENTED` |

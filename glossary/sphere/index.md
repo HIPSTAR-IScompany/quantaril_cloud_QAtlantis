@@ -13,8 +13,9 @@ description: SphereOS AtlantisのWorld、観測、Agency、同期、監査、ser
 | [System（システム）](./system.md) | OAEを観測・記録・処理する構成体。単一製品名ではない。 |
 | [Registry（レジストリー）](./registry.md) | Contextの型、意味、境界、unknown、変換条件を定める定規。 |
 | [fact scope（ファクト・スコープ）](./fact-scope.md) | claimを事実として扱うWorld・定規・観測範囲。 |
+| [field（フィールド）／Fold](./field-and-fold.md) | 決定論的な低context slotと、複数Dを保持する非決定論構造体を分ける。 |
 | [Effect（エフェクト）](./effect.md) | Agency関与として観測・記録された作用結果。 |
-| [AIM（エイム）](./aim.md) | 場・時機・関係・意図の暗黙同期を観測し、工学projectionへ渡す概念。 |
+| [AIM（エイム）](./aim.md) | 場・時機・関係・意図等の複数Dを束ね、暗黙同期の観測を保持するFold構造体。 |
 | [ArchiAngel（アーキエンジェル）](./archiangel.md) | Worldやarchitectureのroutingへ関与するSphere service class。 |
 
 実装状態、schema、versionを探す場合は[Sphere family リファレンス](/reference/sphere/)へ進んでください。

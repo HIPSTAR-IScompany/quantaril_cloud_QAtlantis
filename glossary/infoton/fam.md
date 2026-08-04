@@ -14,7 +14,7 @@ description: 汎用叡智記述フォーマットFAMの短い定義と、JSON-LD
 ## JSON-LD／YAMLとの関係
 
 [JSON-LD](https://www.w3.org/TR/json-ld11/)やYAMLは、対象、属性、関係、手順等の水平な知識やHowToを記述・交換する
-ために利用できる汎用形式です。FAMはそれらを置換する競合serialization形式ではありません。
+ために利用できる汎用形式です。FAMはそれらを置換する競合シリアライズ形式ではありません。
 
 ```text
 JSON-LD / YAML
