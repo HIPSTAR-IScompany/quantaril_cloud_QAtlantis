@@ -7,6 +7,8 @@ description: 既存ITと人間工学を否定せず、意味・目的・観測�
 
 状態: `ALPHA GUIDE / Layer A-C bridge`
 
+2026-10-19追記: 情報子・候補の束・動的グラフ・ABC証拠射程の新しい日英解説は[Fold文書siteのmain](https://github.com/HIPSTAR-IScompany/fold/tree/main/docs/research)に展開しました。本稿と旧URLは保存します。[移行と出典の扱い](../operations/migration/publication-2026-10-19.ja.md)を参照してください。
+
 情報子工学は、既存のInformation Technology、Computer Science、Software Engineering、Human Factorsを
 否定したり、古いものとして置き換えたりする学問ではありません。
 

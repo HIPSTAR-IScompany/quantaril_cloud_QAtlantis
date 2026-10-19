@@ -53,3 +53,13 @@ streams:
     target: docs/engineering/pain-routing-and-pain-scouter.md
     source_revision: b37e547
     content_status: ALPHA
+
+# 旧streamsのstatusは当時の転送票。4site移植完了とは解釈しない。
+publication_batch_2026_10_19:
+  status: PARTIAL_PROJECTION
+  canonical_language: ja-JP
+  reference_language: en-US
+  report: docs/operations/migration/publication-2026-10-19.ja.md
+  ledger: migration/content-ledger-v2.json
+  source_retained: true
+  deployment: NOT_VERIFIED

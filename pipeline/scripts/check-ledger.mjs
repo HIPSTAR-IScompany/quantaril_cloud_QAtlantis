@@ -1,5 +1,6 @@
 import {access, readFile} from 'node:fs/promises';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -66,7 +67,9 @@ async function main() {
   }
   if (problems.length > 0) {
     process.exitCode = 1;
+    return;
   }
+  execFileSync(process.execPath, [path.join(scriptDir, 'check-multi-repo-ledger.mjs')], {cwd: repositoryRoot, stdio: 'inherit'});
 }
 
 main().catch((error) => {

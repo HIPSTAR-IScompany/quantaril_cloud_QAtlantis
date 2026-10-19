@@ -23,3 +23,7 @@ Q Atlantisでは、同じ入力が異なるObserver、World、目的、変換経
 - [文書庫: 量子→情報子への再命名の経緯](/docs/research/infoton/quantum-to-infoton)
 - [文書庫: 情報子工学](/docs/research/infoton/infoton-engineering)
 - [文書庫: フルスタックエンジニアのための情報子工学入門](/docs/engineering/infoton-engineering-full-stack-guide)
+
+## 2026-10-19の解説導線
+
+[Foldの日本語用語集](https://github.com/HIPSTAR-IScompany/fold/blob/main/docs/glossary/index.md)と[en-US参照写本](https://github.com/HIPSTAR-IScompany/fold/blob/main/i18n/en/docusaurus-plugin-content-docs/current/glossary/index.md)へ、FAM参照境界と候補の束を含む解説を追加しました。旧Q3の「最小単位」という命名記録は歴史資料として残し、現行の参照identityと同一視しません。

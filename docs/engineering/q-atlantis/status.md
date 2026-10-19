@@ -4,7 +4,12 @@ title: 実装・移行ステータス
 
 # 実装・移行ステータス
 
-更新日: 2026-08-21
+更新日: 2026-08-21（以下の表の観測時点）
+
+## 2026-10-19 現在の文書導線
+
+[日英展開と時系列整理](../../operations/migration/publication-2026-10-19.ja.md)を追加しました。公開採用元はAtlantisのmain `bd8c7a807d5f016eb244c9ffbf39a62cee5e2d65`です。今回の文書取り込みから`dev/m6xx.1-reincarnation-sdk`を除外し、開発線として保持します。下の旧status表は2026-08-21の記録であり、future側の能力表示を現在の公開mainへ昇格しません。現在のSDK解説は[SphereOS文書main](https://github.com/HIPSTAR-IScompany/sphereos/tree/main/docs)を照合してください。
+
 
 全体凍結ではありません。開発入口は開いていますが、runtimeとedge実装の火力は不足しています。
 現在の全体表示は`OPEN / RESOURCE-WAIT / REVIEW-WANTED`です。

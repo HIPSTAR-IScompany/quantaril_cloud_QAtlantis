@@ -1,4 +1,9 @@
 # 🧿 Quantaril Cloud — Q Atlantis
+
+## 2026-10-19 文書サイトの日英展開
+
+Manifest由来の日英29組をFold／SphereOS／Quantaril／Worldのmainへ展開しました。日本語正本・en-US参照写本です。[進捗と出典台帳](docs/operations/migration/publication-2026-10-19.ja.md) / [English report](docs/operations/migration/publication-2026-10-19.en-US.md)を参照してください。4site本番deploy・原典全移植・top renameはまだ完了していません。top将来slug `infinite-synthesis` は#20で既決です。
+
 ## Q3世代から再鍛造する、分散World・人格・AI・実機のメタエンジン
 
 **神話を消さない。観測を捨てない。感じたことを、感じなかったことにしない。**

@@ -5,7 +5,9 @@ description: 少量の初期指示から規約、停止条件、資源探索、�
 
 # SphereOS Atlantis DOS 初回ブートの現在地
 
-更新日: 2026-07-29
+更新日: 2026-07-29（初回ブート稿の観測時点）
+
+2026-10-19追記: この稿のdev preview運用は当時の記録です。現在の文書整備はUser指定によりmainへ反映し、理由なくbranchを増やしません。Atlantisのfuture枝は保持・除外します。現行の移行・検証状態は[日英展開と時系列整理](../../operations/migration/publication-2026-10-19.ja.md)を参照してください。
 
 Status: `CONTROL PLANE OPERATING / STANDALONE RUNTIME NOT IMPLEMENTED`
 

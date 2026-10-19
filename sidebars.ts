@@ -184,6 +184,8 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'operations/index'},
       items: [
         'operations/migration/index',
+        'operations/migration/publication-2026-10-19.ja',
+        'operations/migration/publication-2026-10-19.en-US',
         'operations/migration/manifest-transfer-notes',
         'operations/content-pipeline/index',
         'operations/japanese-technical-writing',

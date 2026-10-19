@@ -48,3 +48,7 @@ Source保存、棚別projection、安定面だけの公開、`unknown`時の停�
 ## このサイトの責務
 
 この文書は正本の複製ではなく、Q Atlantisサイトが何を受け取ったかを示す受領票です。具体的な転送状態は`migration/transfer-status.yml`で追跡します。
+
+## 2026-10-19 4siteへの編集解説
+
+今回の受領先はQ一箇所ではなく、Fold／SphereOS／Quantaril／Worldです。[日英展開報告](./publication-2026-10-19.ja.md)とv2台帳で対応を追跡します。古い転送queueの個別稿を転送済みに一括変更せず、生Noteと旧Q本文を保持します。
