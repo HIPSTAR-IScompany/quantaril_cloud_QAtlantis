@@ -136,6 +136,7 @@ const sidebars: SidebarsConfig = {
         'projects/dr-silicon/intro',
         'projects/opensource-kominka/intro',
         'projects/project-fapta/intro',
+        'projects/project-fapta/overview.en-US',
       ],
     },
     {

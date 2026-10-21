@@ -1,10 +1,31 @@
 ---
 sidebar_position: 1
+title: プロジェクトファプタ / OpenFAPTA
+description: 回収可能性と未知コモンズの探索フロンティアを扱う、トポロジー・評価単位自由の信用創造マーチャントエンジン。
+keywords: [OpenFAPTA, FAPTA, merchant-engine, credit-creation, frontier-exploration, portfolio-management, commons, topology]
+canonical_language: ja-JP
 ---
 
-# プロジェクトファプタ - FIATのサービス終了
+# プロジェクトファプタ / OpenFAPTA
 
-## 概要
+## 現在の用途（2026-10-21）
+
+**回収可能性と未知コモンズの探索フロンティアを発見・試行・再評価する、オープン信用創造・汎用マーチャントエンジン。**
+
+通貨発行母体・信用供与主体が、回収候補を登録し、実際の試行・リトライから未知や新しい探索余地を更新する。M次元チャートでは探索範囲、ボラティリティ、回収条件、他Foldとの資源関係を保持する。面積測度・評価単位とFoldのトポロジーを利用者が選び、その構成アルゴリズムを比較するフラクタル設計である。
+
+交換単位、通貨発行・残高、決済、分散台帳は外部実装の責務。暗号通貨・ステーブルコイン・商品券・ポイント等の選択をOpenFAPTAへ固定しない。現行codeは資源activation、台帳可視性、未知benefit・探索状態のPython toy。汎用M次元チャートと永続リトライ管理は設計・実装課題である。
+
+- [日本語の責務正本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md)
+- [en-US参照写本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.en-US.md)
+- [この紹介のen-US版](overview.en-US.md)
+
+以下は旧稿・投稿の年代記として保持する。旧生成概要にある「ビットコインへの移行を提唱」は、現在のOpenFAPTAの実装責務を表す要約には採用しない。投稿原文・日付・URLは変更しない。
+
+<details>
+<summary>旧生成概要を読む（歴史資料）</summary>
+
+### 旧生成概要
 
 FIATはサービス終了する。これは陰謀論ではなく、構造分析である。
 
@@ -21,6 +42,9 @@ FIATはサービス終了する。これは陰謀論ではなく、構造分析�
 
 プロジェクトファプタは、この構造的必然性を記録し、
 ビットコインをはじめとする非中央集権的通貨への移行を提唱する。
+
+
+</details>
 
 ## X投稿アーカイブ
 

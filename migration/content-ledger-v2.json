@@ -6063,6 +6063,19 @@
     {
       "path": "docs/operations/migration/publication-2026-10-19.en-US.md",
       "reason": "2026-10-19の台帳・validatorまたは日英進捗報告。原典payloadの代替ではない。"
+    },
+    {
+      "path": "docs/projects/project-fapta/overview.en-US.md",
+      "reason": "2026-10-21のOpenFAPTA紹介のen-US参照写本。旧投稿・原典は保持。"
     }
-  ]
+  ],
+  "publication_updates_2026_10_21": {
+    "repository": "saitoomituru/OpenFAPTA",
+    "baseline_revision": "a11695d677501ccd20b9170067cc1c1ebcbd92cb",
+    "canonical_document": "https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md",
+    "mode": "project-summary-updated-original-posts-retained",
+    "currency_and_ledger": "external-implementation",
+    "japanese": "docs/projects/project-fapta/intro.md",
+    "english": "docs/projects/project-fapta/overview.en-US.md"
+  }
 }
